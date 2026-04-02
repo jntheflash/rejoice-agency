@@ -1,7 +1,7 @@
 # Rejoice Agency — Site vitrine
 
 ## Stack
-- 4 pages HTML statiques : index.html, services.html, ressources.html, secteurs.html
+- 5 pages HTML statiques : index.html, services.html, ressources.html, secteurs.html, apropos.html
 - 1 fichier CSS partagé : style.css
 - Hébergé sur Netlify via drag and drop manuel
 - Domaine : rejoice-agency.fr
