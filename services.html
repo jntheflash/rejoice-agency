@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Rejoice · Intégratrice Odoo</title>
+  <meta name="description" content="Découvrez les services Odoo proposés par Rejoice : audit et cadrage, déploiement sur-mesure, formation, support et maintenance. Accompagnement complet pour les PME, de A à Z." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/services.html" />
+  <meta property="og:title" content="Services Odoo — Rejoice · Intégratrice Indépendante" />
+  <meta property="og:description" content="Découvrez les services Odoo proposés par Rejoice : audit et cadrage, déploiement sur-mesure, formation, support et maintenance. Accompagnement complet pour les PME, de A à Z." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Services Odoo — Rejoice · Intégratrice Indépendante" />
+  <meta name="twitter:description" content="Découvrez les services Odoo proposés par Rejoice : audit et cadrage, déploiement sur-mesure, formation, support et maintenance. Accompagnement complet pour les PME, de A à Z." />
+  <link rel="canonical" href="https://rejoice-agency.fr/services.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Services Odoo — Rejoice",
+    "description": "Audit et cadrage, déploiement sur-mesure, formation, support et maintenance Odoo pour les PME françaises.",
+    "url": "https://rejoice-agency.fr/services.html",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "sameAs": ["https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/"]
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "France"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services Odoo",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Audit et cadrage Odoo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Déploiement Odoo sur-mesure" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formation Odoo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Support et maintenance Odoo" } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">✦ <span>Rejoice</span></a>
+      <nav>
+        <a href="services.html" class="active">Services</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="services.html">Services</a>
+      <a href="secteurs.html">Secteurs</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="#contact" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span>/</span>
+          <span>Services</span>
+        </div>
+        <h1 >
+          Mes <em>services</em> d'intégration Odoo
+        </h1>
+        <p >
+          Du diagnostic initial à la prise en main par vos équipes, je vous accompagne sur chaque étape de votre projet Odoo — avec rigueur, pédagogie et bonne humeur.
+        </p>
+        <div class="page-hero-btns">
+          <a href="#integration-erp" class="btn btn-primary">Voir les services →</a>
+          <a href="#contact" class="btn btn-outline">Prendre RDV gratuit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ NAVIGATION ANCRES ════════════════════════ -->
+  <nav class="services-nav">
+    <div class="container">
+      <div class="services-nav-inner">
+        <a href="#integration-erp"  class="snav-link"><div class="snav-dot" style="background:var(--rose-d)"></div>Intégration ERP</a>
+        <a href="#integration-crm"  class="snav-link"><div class="snav-dot" style="background:var(--lavender-d)"></div>Intégration CRM</a>
+        <a href="#audit"            class="snav-link"><div class="snav-dot" style="background:var(--mint-d)"></div>Audit ERP</a>
+        <a href="#formation"        class="snav-link"><div class="snav-dot" style="background:var(--peach-d)"></div>Formation Odoo</a>
+        <a href="#ia"               class="snav-link"><div class="snav-dot" style="background:var(--sky-d)"></div>Intégration IA</a>
+        <a href="#offres"           class="snav-link"><div class="snav-dot" style="background:var(--lemon-d)"></div>Offres & tarifs</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════ SERVICE 1 : INTÉGRATION ERP ════════════════════════ -->
+  <section class="service-section" id="integration-erp">
+    <div class="container">
+      <div class="service-grid">
+
+        <!-- Illustration -->
+        <div class="service-illus" style="background:linear-gradient(145deg,#F0ECFC,#D4C9F0)">
+          <div class="service-illus-inner">
+            <div class="illus-emoji">🏗️</div>
+            <!-- Mini dashboard SVG -->
+            <svg width="220" height="130" viewBox="0 0 220 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="220" height="130" rx="14" fill="white" fill-opacity=".55"/>
+              <!-- KPI cards -->
+              <rect x="10" y="10" width="58" height="42" rx="8" fill="var(--rose)" fill-opacity=".6"/>
+              <rect x="15" y="18" width="24" height="6" rx="3" fill="white" fill-opacity=".8"/>
+              <rect x="15" y="30" width="36" height="8" rx="4" fill="white"/>
+              <rect x="78" y="10" width="58" height="42" rx="8" fill="var(--lavender)" fill-opacity=".6"/>
+              <rect x="83" y="18" width="20" height="6" rx="3" fill="white" fill-opacity=".8"/>
+              <rect x="83" y="30" width="30" height="8" rx="4" fill="white"/>
+              <rect x="152" y="10" width="58" height="42" rx="8" fill="var(--mint)" fill-opacity=".6"/>
+              <rect x="157" y="18" width="28" height="6" rx="3" fill="white" fill-opacity=".8"/>
+              <rect x="157" y="30" width="36" height="8" rx="4" fill="white"/>
+              <!-- Bar chart -->
+              <rect x="10" y="62" width="130" height="60" rx="8" fill="white" fill-opacity=".4"/>
+              <rect x="22" y="95" width="14" height="20" rx="4" fill="var(--rose-d)"/>
+              <rect x="42" y="82" width="14" height="33" rx="4" fill="var(--lavender-d)"/>
+              <rect x="62" y="88" width="14" height="27" rx="4" fill="var(--mint-d)"/>
+              <rect x="82" y="76" width="14" height="39" rx="4" fill="var(--peach-d)"/>
+              <rect x="102" y="84" width="14" height="31" rx="4" fill="var(--sky-d)"/>
+              <!-- Pipeline -->
+              <rect x="152" y="62" width="58" height="60" rx="8" fill="white" fill-opacity=".4"/>
+              <rect x="158" y="70" width="46" height="8" rx="4" fill="var(--rose)" fill-opacity=".8"/>
+              <rect x="158" y="84" width="36" height="8" rx="4" fill="var(--lavender)" fill-opacity=".8"/>
+              <rect x="158" y="98" width="42" height="8" rx="4" fill="var(--mint)" fill-opacity=".8"/>
+              <rect x="158" y="108" width="28" height="8" rx="4" fill="var(--peach)" fill-opacity=".8"/>
+            </svg>
+            <div class="illus-label">Votre Odoo sur mesure</div>
+          </div>
+          <div class="illus-badge top-right">⚡ Démarrage 15 jours</div>
+          <div class="illus-badge bottom-left">🔧 Clé en main</div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="service-content">
+          <div class="tag" style="background:var(--lavender);color:var(--text)">Service phare</div>
+          <h2>Intégration ERP Odoo complète</h2>
+          <p class="lead">
+            Je prends en charge l'intégralité de votre projet Odoo, de l'analyse de vos processus métier jusqu'à la mise en production et la formation de vos équipes. Vous obtenez un ERP qui correspond exactement à votre fonctionnement, pas l'inverse.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--lavender)">✓</div>
+              <div><strong>Analyse & audit de vos processus</strong><span>Cartographie complète de vos flux avant de toucher à la moindre configuration</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--lavender)">✓</div>
+              <div><strong>Paramétrage & personnalisation</strong><span>Configuration sur mesure des modules, workflows, tableaux de bord et droits d'accès</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--lavender)">✓</div>
+              <div><strong>Migration des données</strong><span>Import sécurisé de vos données existantes depuis Excel, Sage, EBP ou tout autre outil</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--lavender)">✓</div>
+              <div><strong>Tests & recette utilisateurs</strong><span>Validation des scénarios métier avant toute mise en production</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--lavender)">✓</div>
+              <div><strong>Formation & accompagnement</strong><span>Formation adaptée à chaque profil d'utilisateur, supports inclus</span></div>
+            </div>
+          </div>
+          <div class="modules-mini">
+            <span class="mod-chip" style="background:var(--rose)">Ventes</span>
+            <span class="mod-chip" style="background:var(--lavender)">Achats</span>
+            <span class="mod-chip" style="background:var(--mint)">Stocks</span>
+            <span class="mod-chip" style="background:var(--peach)">Comptabilité</span>
+            <span class="mod-chip" style="background:var(--sky)">RH</span>
+            <span class="mod-chip" style="background:var(--lemon)">Projet</span>
+            <span class="mod-chip" style="background:var(--rose)">Fabrication</span>
+            <span class="mod-chip" style="background:var(--lavender)">eCommerce</span>
+          </div>
+          <div class="tarif-box">
+            <span>💶</span>
+            <div><strong>À partir de 5 000 €</strong> <span>· Devis personnalisé après audit gratuit</span></div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Démarrer mon projet →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ SERVICE 2 : INTÉGRATION CRM ════════════════════════ -->
+  <section class="service-section" id="integration-crm">
+    <div class="container">
+      <div class="service-grid reverse">
+
+        <!-- Contenu -->
+        <div class="service-content">
+          <div class="tag" style="background:var(--rose);color:var(--text)">Commercial & relation client</div>
+          <h2>Intégration CRM Odoo</h2>
+          <p class="lead">
+            Centralisez vos prospects, automatisez votre suivi commercial et pilotez votre pipeline en temps réel. Le CRM Odoo s'intègre nativement avec vos devis, factures et emails pour une vision 360° de chaque client.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--rose)">✓</div>
+              <div><strong>Pipeline de vente visuel</strong><span>Vue kanban personnalisable par étape, par équipe ou par responsable commercial</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--rose)">✓</div>
+              <div><strong>Automatisations commerciales</strong><span>Relances automatiques, affectation des leads, séquences d'emails et alertes</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--rose)">✓</div>
+              <div><strong>Intégration email & agenda</strong><span>Synchronisation Gmail / Outlook, historique des échanges, RDV directement dans Odoo</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--rose)">✓</div>
+              <div><strong>Reporting & prévisions</strong><span>Tableaux de bord des performances commerciales, prévisions de CA et taux de conversion</span></div>
+            </div>
+          </div>
+          <div class="modules-mini">
+            <span class="mod-chip" style="background:var(--rose)">CRM</span>
+            <span class="mod-chip" style="background:var(--peach)">Ventes</span>
+            <span class="mod-chip" style="background:var(--lavender)">Email Marketing</span>
+            <span class="mod-chip" style="background:var(--mint)">Agenda</span>
+            <span class="mod-chip" style="background:var(--sky)">Facturation</span>
+          </div>
+          <div class="tarif-box">
+            <span>💶</span>
+            <div><strong>À partir de 2 500 €</strong> <span>· Module CRM seul ou couplé aux Ventes</span></div>
+          </div>
+          <a href="#contact" class="btn btn-rose">Découvrir le CRM Odoo →</a>
+        </div>
+
+        <!-- Illustration -->
+        <div class="service-illus" style="background:linear-gradient(145deg,#FEF0F0,#F7C5C5)">
+          <div class="service-illus-inner">
+            <div class="illus-emoji">🎯</div>
+            <svg width="210" height="120" viewBox="0 0 210 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="210" height="120" rx="14" fill="white" fill-opacity=".55"/>
+              <!-- Kanban columns -->
+              <rect x="8"  y="8"  width="56" height="104" rx="8" fill="var(--rose)"    fill-opacity=".3"/>
+              <rect x="70" y="8"  width="56" height="104" rx="8" fill="var(--peach)"   fill-opacity=".3"/>
+              <rect x="132" y="8" width="70" height="104" rx="8" fill="var(--mint)"    fill-opacity=".3"/>
+              <!-- Column titles -->
+              <rect x="14"  y="14" width="32" height="6" rx="3" fill="var(--rose-d)"    fill-opacity=".8"/>
+              <rect x="76"  y="14" width="32" height="6" rx="3" fill="var(--peach-d)"   fill-opacity=".8"/>
+              <rect x="138" y="14" width="32" height="6" rx="3" fill="var(--mint-d)"    fill-opacity=".8"/>
+              <!-- Cards col 1 -->
+              <rect x="13"  y="26" width="46" height="22" rx="5" fill="white" fill-opacity=".85"/>
+              <rect x="17"  y="30" width="24" height="4" rx="2" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="17"  y="38" width="16" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <rect x="13"  y="54" width="46" height="22" rx="5" fill="white" fill-opacity=".85"/>
+              <rect x="17"  y="58" width="28" height="4" rx="2" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="17"  y="66" width="18" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <!-- Cards col 2 -->
+              <rect x="75"  y="26" width="46" height="22" rx="5" fill="white" fill-opacity=".85"/>
+              <rect x="79"  y="30" width="20" height="4" rx="2" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="79"  y="38" width="28" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <!-- Cards col 3 -->
+              <rect x="137" y="26" width="58" height="22" rx="5" fill="white" fill-opacity=".85"/>
+              <rect x="141" y="30" width="32" height="4" rx="2" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="141" y="38" width="20" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <rect x="137" y="54" width="58" height="22" rx="5" fill="white" fill-opacity=".85"/>
+              <rect x="141" y="58" width="28" height="4" rx="2" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="141" y="66" width="36" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+            </svg>
+            <div class="illus-label">Pipeline de vente visuel</div>
+          </div>
+          <div class="illus-badge top-right">📈 +35% taux conversion</div>
+          <div class="illus-badge bottom-left">🔄 Sync email auto</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ SERVICE 3 : AUDIT ERP ════════════════════════ -->
+  <section class="service-section" id="audit">
+    <div class="container">
+      <div class="service-grid">
+
+        <!-- Illustration -->
+        <div class="service-illus" style="background:linear-gradient(145deg,#EAFAF4,#B8E8D4)">
+          <div class="service-illus-inner">
+            <div class="illus-emoji">🔍</div>
+            <svg width="200" height="110" viewBox="0 0 200 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="200" height="110" rx="14" fill="white" fill-opacity=".55"/>
+              <!-- Audit checklist -->
+              <rect x="10" y="10" width="85" height="90" rx="8" fill="white" fill-opacity=".5"/>
+              <circle cx="24" cy="28" r="6" fill="var(--mint)" fill-opacity=".8"/>
+              <rect x="34" y="24" width="48" height="5" rx="2.5" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="34" y="32" width="36" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <circle cx="24" cy="50" r="6" fill="var(--rose)" fill-opacity=".8"/>
+              <rect x="34" y="46" width="54" height="5" rx="2.5" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="34" y="54" width="40" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <circle cx="24" cy="72" r="6" fill="var(--lemon)" fill-opacity=".8"/>
+              <rect x="34" y="68" width="42" height="5" rx="2.5" fill="var(--text)" fill-opacity=".5"/>
+              <rect x="34" y="76" width="30" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <circle cx="24" cy="90" r="6" fill="var(--sky)" fill-opacity=".8"/>
+              <rect x="34" y="86" width="50" height="5" rx="2.5" fill="var(--text)" fill-opacity=".5"/>
+              <!-- Score gauge -->
+              <rect x="105" y="10" width="85" height="90" rx="8" fill="white" fill-opacity=".5"/>
+              <text x="147" y="50" text-anchor="middle" font-family="Caveat,cursive" font-size="26" font-weight="700" fill="#2D2A26" opacity="0.7">87</text>
+              <text x="147" y="64" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#7A7570">/100</text>
+              <circle cx="147" cy="52" r="30" fill="none" stroke="var(--mint)" stroke-width="5" stroke-dasharray="130 50" stroke-linecap="round" transform="rotate(-90 147 52)"/>
+              <rect x="115" y="82" width="64" height="8" rx="4" fill="var(--mint)" fill-opacity=".5"/>
+            </svg>
+            <div class="illus-label">Score de maturité digitale</div>
+          </div>
+          <div class="illus-badge top-right">📋 Rapport détaillé</div>
+          <div class="illus-badge bottom-left">⏱️ Résultat en 5 jours</div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="service-content">
+          <div class="tag" style="background:var(--mint);color:var(--text)">Diagnostic</div>
+          <h2>Audit ERP Odoo</h2>
+          <p class="lead">
+            Vous avez déjà Odoo mais vous sentez que quelque chose cloche ? Ou vous envisagez de migrer et vous voulez y voir clair avant de vous lancer ? L'audit Rejoice vous livre un diagnostic honnête et actionnable en 5 jours ouvrés.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--mint)">✓</div>
+              <div><strong>Audit de votre instance Odoo existante</strong><span>Analyse de la configuration, des personnalisations, des données et des performances</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--mint)">✓</div>
+              <div><strong>Cartographie des processus métier</strong><span>Identification des goulots d'étranglement, doublons et tâches manuelles inutiles</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--mint)">✓</div>
+              <div><strong>Rapport de préconisations</strong><span>Plan d'action priorisé avec estimations de temps et de ROI pour chaque amélioration</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--mint)">✓</div>
+              <div><strong>Restitution en visioconférence</strong><span>Session de 1h pour commenter le rapport et répondre à vos questions</span></div>
+            </div>
+          </div>
+          <div class="tarif-box">
+            <span>💶</span>
+            <div><strong>890 € HT</strong> <span>· Rapport livré en 5 jours ouvrés · Offert si intégration complète</span></div>
+          </div>
+          <a href="#contact" class="btn btn-mint">Commander mon audit →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ SERVICE 4 : FORMATION ODOO ════════════════════════ -->
+  <section class="service-section" id="formation">
+    <div class="container">
+      <div class="service-grid reverse">
+
+        <!-- Contenu -->
+        <div class="service-content">
+          <div class="tag" style="background:var(--peach);color:var(--text)">Montée en compétences</div>
+          <h2>Formation Odoo sur mesure</h2>
+          <p class="lead">
+            Vos équipes sont votre meilleur atout. Une formation bien conçue fait toute la différence entre un Odoo adopté avec enthousiasme et un outil qui prend la poussière. Je forme chaque profil à son propre rythme, avec des exercices sur votre vraie base de données.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--peach)">✓</div>
+              <div><strong>Formation sur mesure par profil</strong><span>Programme différent pour le dirigeant, le commercial, le comptable, le magasinier…</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--peach)">✓</div>
+              <div><strong>En présentiel ou en distanciel</strong><span>Sessions individuelles ou en groupe, à votre rythme, avec replay disponible</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--peach)">✓</div>
+              <div><strong>Supports & guides adaptés</strong><span>Fiches pratiques et guides d'utilisation rédigés pour votre propre configuration Odoo</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--peach)">✓</div>
+              <div><strong>Suivi post-formation</strong><span>Session de questions/réponses 4 semaines après la formation pour ancrer les apprentissages</span></div>
+            </div>
+          </div>
+          <div class="modules-mini">
+            <span class="mod-chip" style="background:var(--peach)">Utilisateur final</span>
+            <span class="mod-chip" style="background:var(--rose)">Administrateur</span>
+            <span class="mod-chip" style="background:var(--lavender)">Manager</span>
+            <span class="mod-chip" style="background:var(--mint)">Comptable</span>
+            <span class="mod-chip" style="background:var(--sky)">Commercial</span>
+          </div>
+          <div class="tarif-box">
+            <span>💶</span>
+            <div><strong>À partir de 400 € / demi-journée</strong> <span>· Financement OPCO possible</span></div>
+          </div>
+          <a href="#contact" class="btn btn-peach">Organiser une formation →</a>
+        </div>
+
+        <!-- Illustration -->
+        <div class="service-illus" style="background:linear-gradient(145deg,#FFF5E6,#FDDCB5)">
+          <div class="service-illus-inner">
+            <div class="illus-emoji">🎓</div>
+            <svg width="200" height="110" viewBox="0 0 200 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="200" height="110" rx="14" fill="white" fill-opacity=".55"/>
+              <!-- Laptop screen -->
+              <rect x="20" y="8" width="120" height="76" rx="8" fill="var(--peach)" fill-opacity=".4"/>
+              <rect x="28" y="16" width="104" height="60" rx="6" fill="white" fill-opacity=".8"/>
+              <!-- Screen content - lesson -->
+              <rect x="34" y="22" width="60" height="6" rx="3" fill="var(--peach-d)" fill-opacity=".7"/>
+              <rect x="34" y="33" width="92" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <rect x="34" y="41" width="80" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <rect x="34" y="49" width="86" height="4" rx="2" fill="var(--muted)" fill-opacity=".4"/>
+              <!-- Progress bar -->
+              <rect x="34" y="61" width="92" height="6" rx="3" fill="var(--border)"/>
+              <rect x="34" y="61" width="62" height="6" rx="3" fill="var(--peach-d)"/>
+              <!-- Laptop base -->
+              <rect x="10" y="84" width="140" height="8" rx="4" fill="var(--peach)" fill-opacity=".5"/>
+              <rect x="40" y="88" width="80" height="4" rx="2" fill="var(--peach-d)" fill-opacity=".4"/>
+              <!-- Participant avatars -->
+              <circle cx="160" cy="28" r="14" fill="var(--rose)" fill-opacity=".5"/>
+              <text x="160" y="33" text-anchor="middle" font-size="14">👩</text>
+              <circle cx="160" cy="60" r="14" fill="var(--lavender)" fill-opacity=".5"/>
+              <text x="160" y="65" text-anchor="middle" font-size="14">👨</text>
+              <circle cx="160" cy="92" r="14" fill="var(--mint)" fill-opacity=".5"/>
+              <text x="160" y="97" text-anchor="middle" font-size="14">👩‍💼</text>
+            </svg>
+            <div class="illus-label">Formation personnalisée</div>
+          </div>
+          <div class="illus-badge top-right">📚 Supports inclus</div>
+          <div class="illus-badge bottom-left">💡 OPCO finançable</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ SERVICE 5 : INTÉGRATION IA ════════════════════════ -->
+  <section class="service-section" id="ia">
+    <div class="container">
+      <div class="service-grid">
+
+        <!-- Illustration -->
+        <div class="service-illus" style="background:linear-gradient(145deg,#E8F4FD,#B8D8F0)">
+          <div class="service-illus-inner">
+            <div class="illus-emoji">🤖</div>
+            <svg width="210" height="120" viewBox="0 0 210 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="210" height="120" rx="14" fill="white" fill-opacity=".55"/>
+              <!-- Chat bubbles IA -->
+              <rect x="10" y="10" width="130" height="26" rx="13" fill="var(--sky)" fill-opacity=".6"/>
+              <rect x="16" y="20" width="80" height="6" rx="3" fill="white" fill-opacity=".8"/>
+              <rect x="10" y="44" width="110" height="26" rx="13" fill="var(--sky)" fill-opacity=".6"/>
+              <rect x="16" y="54" width="60" height="6" rx="3" fill="white" fill-opacity=".8"/>
+              <!-- IA response bubble -->
+              <rect x="30" y="78" width="170" height="32" rx="13" fill="var(--lavender)" fill-opacity=".6"/>
+              <circle cx="50" cy="94" r="10" fill="white" fill-opacity=".7"/>
+              <text x="50" y="98" text-anchor="middle" font-size="10">🤖</text>
+              <rect x="66" y="88" width="90" height="5" rx="2.5" fill="white" fill-opacity=".8"/>
+              <rect x="66" y="97" width="70" height="5" rx="2.5" fill="white" fill-opacity=".6"/>
+              <!-- Nodes connexion -->
+              <circle cx="170" cy="20" r="10" fill="var(--rose)" fill-opacity=".6"/>
+              <circle cx="190" cy="50" r="8" fill="var(--mint)" fill-opacity=".6"/>
+              <circle cx="172" cy="60" r="6" fill="var(--peach)" fill-opacity=".6"/>
+              <line x1="170" y1="30" x2="190" y2="42" stroke="var(--border)" stroke-width="1.5"/>
+              <line x1="190" y1="58" x2="172" y2="66" stroke="var(--border)" stroke-width="1.5"/>
+            </svg>
+            <div class="illus-label">IA connectée à votre Odoo</div>
+          </div>
+          <div class="illus-badge top-right">✨ Gain de temps ×3</div>
+          <div class="illus-badge bottom-left">🔗 Natif Odoo 17</div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="service-content">
+          <div class="tag" style="background:var(--sky);color:var(--text)">Innovation</div>
+          <h2>Intégration IA dans Odoo</h2>
+          <p class="lead">
+            L'intelligence artificielle n'est plus réservée aux grandes entreprises. Odoo 17 intègre nativement des fonctionnalités IA que je configure pour automatiser vos tâches répétitives, enrichir vos données et augmenter la productivité de vos équipes.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--sky)">✓</div>
+              <div><strong>Assistant IA Odoo (Copilot)</strong><span>Génération de devis, réponses email, résumés de leads et prédictions directement dans l'interface</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--sky)">✓</div>
+              <div><strong>Scoring et prédiction des leads</strong><span>Priorisation automatique de vos opportunités commerciales grâce au machine learning</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--sky)">✓</div>
+              <div><strong>Automatisation des flux documentaires</strong><span>Reconnaissance et extraction automatique des données depuis vos factures fournisseurs et bons de commande</span></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-check" style="background:var(--sky)">✓</div>
+              <div><strong>Connexion à des IA externes</strong><span>Intégration d'OpenAI, Mistral ou d'autres LLM pour des cas d'usage spécifiques à votre métier</span></div>
+            </div>
+          </div>
+          <div class="tarif-box">
+            <span>💶</span>
+            <div><strong>Sur devis</strong> <span>· En complément d'un projet d'intégration ou en standalone</span></div>
+          </div>
+          <a href="#contact" class="btn btn-sky">Explorer les possibilités →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ TABLEAU COMPARATIF ════════════════════════ -->
+  <section class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag" style="background:var(--lemon);color:var(--text)">Récapitulatif</div>
+        <h2>Quel service pour quel besoin ?</h2>
+        <p>Un aperçu rapide pour identifier l'accompagnement qui correspond à votre situation.</p>
+      </div>
+      <div  style="overflow-x:auto">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Migration données</th>
+              <th>Paramétrage</th>
+              <th>Formation</th>
+              <th>Support inclus</th>
+              <th>Durée</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="service-name"><span class="service-icon" style="background:var(--lavender)" aria-hidden="true">🏗️</span> Intégration ERP</div></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td>4 – 16 sem.</td>
+            </tr>
+            <tr>
+              <td><div class="service-name"><span class="service-icon" style="background:var(--rose)" aria-hidden="true">🎯</span> Intégration CRM</div></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-part">◐</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td>2 – 6 sem.</td>
+            </tr>
+            <tr>
+              <td><div class="service-name"><span class="service-icon" style="background:var(--mint)" aria-hidden="true">🔍</span> Audit ERP</div></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-no">✕</span></td>
+              <td>5 jours</td>
+            </tr>
+            <tr>
+              <td><div class="service-name"><span class="service-icon" style="background:var(--peach)" aria-hidden="true">🎓</span> Formation Odoo</div></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-part">◐</span></td>
+              <td>½j – 3j</td>
+            </tr>
+            <tr>
+              <td><div class="service-name"><span class="service-icon" style="background:var(--sky)" aria-hidden="true">🤖</span> Intégration IA</div></td>
+              <td><span class="check-no">✕</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td><span class="check-yes">✓</span></td>
+              <td>1 – 4 sem.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ OFFRES & TARIFS ════════════════════════ -->
+  <section class="offres" id="offres">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag" style="background:var(--rose);color:var(--text)">Offres & tarifs</div>
+        <h2>Choisissez la formule qui vous convient</h2>
+        <p>Des offres transparentes, sans frais cachés. Chaque projet fait l'objet d'un devis personnalisé après l'appel découverte.</p>
+      </div>
+      <div class="offres-grid">
+
+        <!-- Starter -->
+        <div class="offre-card">
+          <div class="offre-icon">🌱</div>
+          <div class="offre-name">Starter</div>
+          <div class="offre-desc">Idéal pour une TPE souhaitant un premier déploiement Odoo rapide sur 1 à 2 modules.</div>
+          <div class="offre-price">5 000 €<sub> HT</sub></div>
+          <div class="offre-features">
+            <div class="offre-feat"><div class="dot"></div> Audit initial (2h)</div>
+            <div class="offre-feat"><div class="dot"></div> 1 à 2 modules Odoo</div>
+            <div class="offre-feat"><div class="dot"></div> Migration données de base</div>
+            <div class="offre-feat"><div class="dot"></div> Formation ½ journée</div>
+            <div class="offre-feat"><div class="dot"></div> Support 30 jours post-launch</div>
+          </div>
+          <div class="offre-cta">
+            <a href="#contact" class="btn btn-outline btn-full">Choisir Starter</a>
+          </div>
+        </div>
+
+        <!-- Growth (featured) -->
+        <div class="offre-card featured">
+          <div class="offre-ribbon">⭐ Le plus populaire</div>
+          <div class="offre-icon">🚀</div>
+          <div class="offre-name">Growth</div>
+          <div class="offre-desc">Pour une PME qui veut un déploiement complet et une transformation digitale durable.</div>
+          <div class="offre-price">12 000 €<sub> HT</sub></div>
+          <div class="offre-features">
+            <div class="offre-feat"><div class="dot"></div> Audit approfondi + cahier des charges</div>
+            <div class="offre-feat"><div class="dot"></div> Jusqu'à 5 modules Odoo</div>
+            <div class="offre-feat"><div class="dot"></div> Migration complète des données</div>
+            <div class="offre-feat"><div class="dot"></div> Développements spécifiques inclus</div>
+            <div class="offre-feat"><div class="dot"></div> Formation 2 jours multi-profils</div>
+            <div class="offre-feat"><div class="dot"></div> Support 90 jours + 1 rev. trimestrielle</div>
+          </div>
+          <div class="offre-cta">
+            <a href="#contact" class="btn btn-outline btn-full">Choisir Growth</a>
+          </div>
+        </div>
+
+        <!-- Scale -->
+        <div class="offre-card">
+          <div class="offre-icon">🏆</div>
+          <div class="offre-name">Scale</div>
+          <div class="offre-desc">Pour les projets complexes : multi-sites, intégration IA, flux avancés ou migration depuis un ERP existant.</div>
+          <div class="offre-price">Sur devis</div>
+          <div class="offre-features">
+            <div class="offre-feat"><div class="dot"></div> Périmètre sur mesure</div>
+            <div class="offre-feat"><div class="dot"></div> Modules illimités</div>
+            <div class="offre-feat"><div class="dot"></div> Développements avancés</div>
+            <div class="offre-feat"><div class="dot"></div> Intégration IA & API tierces</div>
+            <div class="offre-feat"><div class="dot"></div> Formation multi-sites</div>
+            <div class="offre-feat"><div class="dot"></div> Contrat de maintenance annuel</div>
+          </div>
+          <div class="offre-cta">
+            <a href="#contact" class="btn btn-outline btn-full">Discuter mon projet</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ TÉMOIGNAGES ════════════════════════ -->
+  <section class="temoignages">
+    <div class="blob blob-t1"></div>
+    <div class="blob blob-t2"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="tag" style="background:var(--mint);color:var(--text)">Témoignages</div>
+        <h2>Ce qu'ils disent de Rejoice</h2>
+        <p>Des retours d'expérience sincères, de vrais clients, de vrais projets.</p>
+      </div>
+      <div class="temos-grid">
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">Sophie a totalement transformé notre façon de travailler. En 8 semaines, on est passés d'Excel et d'emails en vrac à un Odoo parfaitement configuré pour notre atelier. La formation était top, mes équipes ont adoré.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--rose)" aria-hidden="true">👨‍🔧</div>
+            <div class="temo-author-info">
+              <strong>Marc Lefebvre</strong>
+              <span>Dirigeant · Atelier Métal Pro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">L'audit ERP m'a ouvert les yeux sur des problèmes que je ne soupçonnais même pas. Le rapport était concret, priorisé et livré dans les délais annoncés. Vraiment professionnel et accessible à la fois.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--lavender)" aria-hidden="true">👩‍💼</div>
+            <div class="temo-author-info">
+              <strong>Céline Moreau</strong>
+              <span>DAF · Cabinet Durand & Co</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">On avait déjà essayé d'installer Odoo nous-mêmes, sans succès. Avec Rejoice, en 6 semaines c'était en production. La migration de nos données depuis Sage s'est faite sans accroc. Je recommande sans hésiter.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--mint)" aria-hidden="true">👨‍💻</div>
+            <div class="temo-author-info">
+              <strong>Thomas Girard</strong>
+              <span>CEO · Négoce Ibérique</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CTA FINAL ════════════════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="blob blob-c1"></div>
+    <div class="blob blob-c2"></div>
+    <div class="container">
+      <div class="cta-box">
+        <div class="tag" style="background:var(--mint);color:var(--text)">On commence ?</div>
+        <h2>Parlons de votre projet Odoo ✨</h2>
+        <p>Réservez un appel découverte gratuit de 30 minutes. Je vous pose les bonnes questions, je vous donne un premier avis honnête — sans engagement de votre côté.</p>
+        <div class="cta-btns">
+          <a href="index.html#rdv" class="btn btn-primary">📅 Réserver un créneau gratuit</a>
+          <a href="/cdn-cgi/l/email-protection#e685898892878592a694838c898f8583c88094" class="btn btn-outline">✉️ Envoyer un email</a>
+        </div>
+        <p class="muted-note">Réponse garantie sous 24h · Appel sans engagement · 100% adapté à votre métier</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">✦ <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="secteurs.html">Secteurs</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="#contact">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="/cdn-cgi/l/email-protection#cba8a4a5bfaaa8bf8bb9aea1a4a2a8aee5adb9"><span class="__cf_email__" data-cfemail="94f7fbfae0f5f7e0d4e6f1fefbfdf7f1baf2e6">[email&#160;protected]</span></a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Calendly</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Rejoice — Tous droits réservés</span>
+        <span>Mentions légales · Politique de confidentialité</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    /* Mobile menu */
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* Sticky header shadow */
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Snav active link on click */
+    document.querySelectorAll('.snav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.snav-link').forEach(function(l) { l.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+
+  </script>
+
+</body>
+</html>
