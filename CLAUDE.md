@@ -48,6 +48,14 @@
 - sitemap.xml mis à jour avec les 9 nouvelles URLs
 - Tous les liens internes mis à jour
 
+## Améliorations — Session du 03/04/2025
+- Hero index.html restructuré : titre + texte + boutons centrés, illustration en dessous
+- Nouvelle section "Mes services d'intégration Odoo" (id="services-odoo") sur index.html avec 5 cartes cliquables vers les sous-pages
+- Dropdown header : fond blanc pur (#FFFFFF), sans transparence ni blur
+- Dropdown header : suppression de toutes les animations et soulignages sur les liens du header
+- Dropdown header : suppression des triangles/flèches dd-arrow
+- Logos vrais clients dans la section "Ils nous font confiance" sur index.html (dossier images/ : blobb.png, epiphyse.png, gwinizh.png, holeo.png, maison_warin.png)
+
 ## Prochaines améliorations possibles
-- Migration Cloudflare Pages (prévue ce soir)
+- Migration Cloudflare Pages
 - Optimisation images si ajout futur
