@@ -48,8 +48,25 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">✦ <span>Rejoice</span></a>
       <nav>
-        <a href="services.html">Services</a>
-        <a href="secteurs.html">Secteurs</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Services <span class="dd-arrow" aria-hidden="true">&#9660;</span></a>
+          <div class="dropdown-menu">
+            <a href="services/integration-erp.html"><div class="dd-dot" style="background:var(--lavender)"></div>Intégration ERP</a>
+            <a href="services/integration-crm.html"><div class="dd-dot" style="background:var(--rose)"></div>Intégration CRM</a>
+            <a href="services/audit-erp.html"><div class="dd-dot" style="background:var(--mint)"></div>Audit ERP</a>
+            <a href="services/formation-odoo.html"><div class="dd-dot" style="background:var(--peach)"></div>Formation Odoo</a>
+            <a href="services/integration-ia.html"><div class="dd-dot" style="background:var(--sky)"></div>Intégration IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">Secteurs <span class="dd-arrow" aria-hidden="true">&#9660;</span></a>
+          <div class="dropdown-menu">
+            <a href="secteurs/cabinet-expertise-comptable.html"><div class="dd-dot" style="background:var(--lavender)"></div>Cabinet d'expertise comptable</a>
+            <a href="secteurs/industrie-fabrication.html"><div class="dd-dot" style="background:var(--peach)"></div>Industrie &amp; fabrication</a>
+            <a href="secteurs/negoce-distribution.html"><div class="dd-dot" style="background:var(--mint)"></div>Négoce &amp; distribution</a>
+            <a href="secteurs/services-professionnels.html"><div class="dd-dot" style="background:var(--sky)"></div>Services professionnels</a>
+          </div>
+        </div>
         <a href="ressources.html" class="active">Ressources</a>
         <a href="apropos.html">À propos</a>
         <a href="index.html#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
@@ -59,8 +76,25 @@
       </button>
     </div>
     <div class="mobile-nav" id="mobileNav">
-      <a href="services.html">Services</a>
-      <a href="secteurs.html">Secteurs</a>
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">Services <span class="dd-arrow" aria-hidden="true">&#9660;</span></a>
+        <div class="dropdown-menu">
+          <a href="services/integration-erp.html">Intégration ERP</a>
+          <a href="services/integration-crm.html">Intégration CRM</a>
+          <a href="services/audit-erp.html">Audit ERP</a>
+          <a href="services/formation-odoo.html">Formation Odoo</a>
+          <a href="services/integration-ia.html">Intégration IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">Secteurs <span class="dd-arrow" aria-hidden="true">&#9660;</span></a>
+        <div class="dropdown-menu">
+          <a href="secteurs/cabinet-expertise-comptable.html">Cabinet d'expertise comptable</a>
+          <a href="secteurs/industrie-fabrication.html">Industrie &amp; fabrication</a>
+          <a href="secteurs/negoce-distribution.html">Négoce &amp; distribution</a>
+          <a href="secteurs/services-professionnels.html">Services professionnels</a>
+        </div>
+      </div>
       <a href="ressources.html">Ressources</a>
       <a href="apropos.html">À propos</a>
       <a href="index.html#rdv" class="btn btn-primary align-start">Prendre RDV</a>
@@ -491,8 +525,8 @@
           <h4>Navigation</h4>
           <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="secteurs.html">Secteurs</a></li>
+            <li><a href="services/integration-erp.html">Intégration ERP</a></li>
+            <li><a href="secteurs/cabinet-expertise-comptable.html">Secteurs</a></li>
             <li><a href="ressources.html">Ressources</a></li>
             <li><a href="index.html#rdv">Prendre RDV</a></li>
           </ul>
@@ -574,6 +608,23 @@
     /* Make all article cards visible on load */
     document.querySelectorAll('.article-card').forEach(function(c) {
       c.classList.add('visible');
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
     });
 
   </script>

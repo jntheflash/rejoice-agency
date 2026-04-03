@@ -1,9 +1,13 @@
 # Rejoice Agency — Site vitrine
 
 ## Stack
-- 5 pages HTML statiques : index.html, services.html, ressources.html, secteurs.html, apropos.html
+- Pages racine : index.html, ressources.html, apropos.html, 404.html
+- Sous-pages services : services/integration-erp.html, services/integration-crm.html, services/audit-erp.html, services/formation-odoo.html, services/integration-ia.html
+- Sous-pages secteurs : secteurs/cabinet-expertise-comptable.html, secteurs/industrie-fabrication.html, secteurs/negoce-distribution.html, secteurs/services-professionnels.html
 - 1 fichier CSS partagé : style.css
-- Hébergé sur Netlify via drag and drop manuel
+- Hébergé sur Netlify (drag and drop) — migration Cloudflare Pages prévue
+- Repo GitHub : jntheflash/rejoice-agency
+- Workflow déploiement : `git add . && git commit -m "..." && git push` puis drag & drop sur Netlify
 - Domaine : rejoice-agency.fr
 
 ## Améliorations déjà faites
@@ -28,6 +32,22 @@
 - Google Search Console configuré et vérifié
 - Fichier de vérification Google ajouté
 
+## Améliorations — Session du 02/04/2025 (suite)
+- Suppression du lien "Accueil" dans le header des 5 pages (le logo suffit)
+- Création page apropos.html avec SEO complet (meta, OG, JSON-LD Person + ProfessionalService, canonical)
+- Ajout "À propos" dans le header desktop + mobile des 5 pages
+- sitemap.xml mis à jour avec apropos.html
+- Titre index.html changé en "Rejoice : l'agence d'intégration Odoo" (og:title aussi)
+- Connexion GitHub configurée (repo : jntheflash/rejoice-agency)
+
+## Améliorations — Session du 02/04/2025 (restructuration)
+- 9 sous-pages créées (5 services, 4 secteurs) avec SEO complet (meta, OG, JSON-LD, canonical)
+- Dropdowns header sur toutes les pages (survol desktop, clic mobile)
+- services.html et secteurs.html supprimés
+- CSS dropdown ajouté dans style.css
+- sitemap.xml mis à jour avec les 9 nouvelles URLs
+- Tous les liens internes mis à jour
+
 ## Prochaines améliorations possibles
+- Migration Cloudflare Pages (prévue ce soir)
 - Optimisation images si ajout futur
-- Connexion GitHub pour déploiement automatique sur Netlify
