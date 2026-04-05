@@ -1863,6 +1863,45 @@ footer {
   .chiffres-grid      { grid-template-columns: 1fr 1fr; }
 }
 
+/* ── Top Banner ── */
+.top-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 300;
+  height: 40px;
+  background: var(--lavender);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  font-size: .82rem;
+  font-weight: 700;
+  padding: 0 3rem;
+}
+.top-banner a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+  white-space: nowrap;
+}
+.top-banner-close {
+  position: absolute;
+  right: 1rem;
+  top: 50%; transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: .9rem;
+  color: inherit;
+  opacity: .6;
+  padding: .25rem;
+  line-height: 1;
+}
+.top-banner-close:hover { opacity: 1; }
+/* Décale le header sous le banner */
+body.has-banner header { top: 40px; }
+
 /* ── Dropdown navigation ── */
 .nav-dropdown { position: relative; }
 .nav-dropdown-toggle {

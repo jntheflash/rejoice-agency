@@ -23,7 +23,24 @@
   { "@context": "https://schema.org", "@type": "Service", "name": "Intégration IA dans Odoo", "url": "https://rejoice-agency.fr/services/integration-ia.html", "provider": { "@type": "ProfessionalService", "name": "Rejoice", "url": "https://rejoice-agency.fr" } }
   </script>
 </head>
-<body>
+<body><div class="top-banner" id="topBanner">
+  <span aria-hidden="true">🧾</span>
+  Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo
+  <a href="../index.html#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
 
   <header>
     <div class="container header-inner">

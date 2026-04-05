@@ -56,6 +56,16 @@
 - Dropdown header : suppression des triangles/flèches dd-arrow
 - Logos vrais clients dans la section "Ils nous font confiance" sur index.html (dossier images/ : blobb.png, epiphyse.png, gwinizh.png, holeo.png, maison_warin.png)
 
+## Améliorations — Session du 03/04/2026
+- Top Banner ajouté sur les 13 pages (fond var(--lavender), emoji 🧾 UTF-8, font-weight 700)
+  - Texte : "Facture électronique : Anticipez dès maintenant avec Odoo" + lien "Prendre RDV →" vers #rdv
+  - Bouton ✕ avec fermeture persistante via sessionStorage
+  - body.has-banner header { top: 40px } pour décaler le header
+  - Chemins relatifs adaptés (index.html#rdv pour racine, ../index.html#rdv pour sous-pages)
+- Section "Témoignages" ajoutée sur index.html entre les modules et la section #rdv (5 temo-cards, vrais clients)
+- Logos clients agrandis à height: 60px (width: auto) dans la section "Ils nous font confiance"
+- Bouton CTA sous les logos clients changé en btn-primary, lien vers apropos.html
+
 ## Prochaines améliorations possibles
 - Migration Cloudflare Pages
 - Optimisation images si ajout futur
