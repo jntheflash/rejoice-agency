@@ -1902,6 +1902,38 @@ footer {
 /* Décale le header sous le banner */
 body.has-banner header { top: 40px; }
 
+@media (max-width: 768px) {
+  .top-banner {
+    height: auto;
+    min-height: 40px;
+    padding: .5rem 2.5rem .6rem .75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .25rem .3rem;
+    line-height: 1.4;
+    font-size: .8rem;
+  }
+  /* Force le lien sur une 2e ligne, centré */
+  .top-banner a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: .15rem;
+    white-space: nowrap;
+  }
+  /* ✕ ancré en haut à droite (hauteur variable) */
+  .top-banner-close {
+    top: .55rem;
+    transform: none;
+  }
+  /* Décale le header sous le banner (2 lignes ≈ 80px) */
+  body.has-banner header { top: 80px; }
+  /* Compense la hauteur du banner pour le contenu de page */
+  body.has-banner { padding-top: 80px; }
+}
+
 /* ── Dropdown navigation ── */
 .nav-dropdown { position: relative; }
 .nav-dropdown-toggle {
