@@ -1901,37 +1901,68 @@ footer {
 .top-banner-close:hover { opacity: 1; }
 /* Décale le header sous le banner */
 body.has-banner header { top: 40px; }
+/* Desktop : ticker wrappers transparents, doublon caché */
+.banner-ticker-wrap,
+.banner-ticker { display: contents; }
+.banner-ticker-dup { display: none; }
+@keyframes banner-ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 @media (max-width: 768px) {
+  /* Bandeau fixe, une seule ligne de 40px */
   .top-banner {
-    height: auto;
+    height: 40px;
     min-height: 40px;
-    padding: .5rem 2.5rem .6rem .75rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: .25rem .3rem;
-    line-height: 1.4;
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 0;
     font-size: .8rem;
   }
-  /* Force le lien sur une 2e ligne, centré */
+  /* Zone de défilement : prend tout l'espace disponible */
+  .banner-ticker-wrap {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    min-width: 0;
+    align-items: center;
+  }
+  /* Texte animé en continu de droite à gauche */
+  .banner-ticker {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    white-space: nowrap;
+    animation: banner-ticker-scroll 18s linear infinite;
+  }
+  /* Doublon visible pour boucle sans saut */
+  .banner-ticker-dup { display: inline; }
+  /* Bouton "Prendre RDV" fixe à droite du ticker */
   .top-banner a {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-top: .15rem;
+    flex-shrink: 0;
+    display: inline;
+    width: auto;
+    text-align: left;
+    margin-top: 0;
+    padding: 0 .3rem 0 .5rem;
+    font-size: .75rem;
     white-space: nowrap;
   }
-  /* ✕ ancré en haut à droite (hauteur variable) */
+  /* ✕ dans le flux flex (plus de position absolute) */
   .top-banner-close {
-    top: .55rem;
+    position: static;
+    top: auto;
     transform: none;
+    flex-shrink: 0;
+    padding: .25rem .4rem .25rem .1rem;
   }
-  /* Décale le header sous le banner (2 lignes ≈ 80px) */
-  body.has-banner header { top: 80px; }
-  /* Compense la hauteur du banner pour le contenu de page */
-  body.has-banner { padding-top: 80px; }
+  /* Header et contenu décalés de 40px (une seule ligne) */
+  body.has-banner header { top: 40px; }
+  body.has-banner { padding-top: 40px; }
 }
 
 /* ── Dropdown navigation ── */
