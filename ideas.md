@@ -5,7 +5,7 @@
 > Ajoute tes idées librement ici, ou lance `/idees-articles` dans Claude Code pour en générer.
 > Format : titre — mot-clé principal — catégorie.
 
-- [ ] Actualités Odoo (août 2026) : le récap du mois — actualités odoo — Actualités
+- [x] Actualités Odoo (août 2026) : le récap du mois — actualités odoo — Actualités
 - [ ] Odoo vs Dolibarr : quel ERP pour votre PME ? — odoo vs dolibarr — Comparatif
 - [ ] Démo Odoo : à quoi ressemble l'outil au quotidien — démo odoo — Guide
 - [ ] Odoo vs WordPress/WooCommerce pour votre site e-commerce — odoo vs wordpress — Comparatif
