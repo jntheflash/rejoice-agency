@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo pour RH — Gérez vos ressources humaines simplement | Rejoice</title>
+  <meta name="description" content="Rejoice Agency, intégratrice Odoo certifiée. Odoo RH pour PME. Congés, notes de frais, recrutement, évaluations. Tout en un seul outil." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/metier/rh" />
+  <meta property="og:title" content="Odoo pour RH — Gérez vos ressources humaines simplement | Rejoice" />
+  <meta property="og:description" content="Rejoice Agency, intégratrice Odoo certifiée. Odoo RH pour PME. Congés, notes de frais, recrutement, évaluations. Tout en un seul outil." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Odoo pour RH — Gérez vos ressources humaines simplement | Rejoice" />
+  <meta name="twitter:description" content="Rejoice Agency, intégratrice Odoo certifiée. Odoo RH pour PME. Congés, notes de frais, recrutement, évaluations. Tout en un seul outil." />
+  <link rel="canonical" href="https://rejoice-agency.fr/metier/rh" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Odoo pour les RH — Gestion des ressources humaines en PME",
+    "description": "Solution Odoo RH pour PME : gestion des congés, notes de frais, recrutement, évaluations, suivi des présences. Connecté à la comptabilité et à la planification. Certifié Odoo Partner.",
+    "url": "https://rejoice-agency.fr/metier/rh",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <span>Métier</span>
+          <span>/</span>
+          <span>RH</span>
+        </div>
+        <h1>Odoo pour les RH&nbsp;: simplifiez la gestion de vos collaborateurs avec <em>un ERP tout-en-un</em></h1>
+        <p>Gérer les congés dans un tableau Excel, les notes de frais par email, le recrutement dans un autre outil — la fonction RH d'une PME croule sous les outils disparates. Odoo réunit toute la gestion des collaborateurs dans un seul système, connecté à votre comptabilité et à vos projets.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#127774;</span> Congés &amp; absences</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128101;</span> Recrutement intégré</div>
+          <div class="hero-stat"><span aria-hidden="true">&#9989;</span> Tout en un seul outil</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Marchand</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Les défis RH en PME au quotidien</div>
+          <h2>Trop d'outils, trop de saisies, pas assez de temps pour les personnes</h2>
+          <p>Dans une PME, la fonction RH est souvent assurée par une seule personne — parfois en plus d'autres responsabilités. Elle jongle entre les demandes de congés reçues par email, les notes de frais en attente de validation, les contrats à renouveler, les entretiens à planifier et les reportings à produire pour la direction. Des tâches administratives qui empiètent sur le temps disponible pour l'accompagnement réel des collaborateurs.</p>
+          <p>L'absence d'un outil centralisé génère des erreurs et des frictions&nbsp;: un congé saisi dans Excel non reflété dans le planning projet, une note de frais perdue dans une boîte mail, un entretien annuel oublié faute de rappel automatique. Les équipes s'impatientent, et le RH passe son temps à gérer des corrections plutôt qu'à créer de la valeur.</p>
+          <p><em>Odoo RH centralise l'ensemble des processus collaborateurs dans un seul outil — avec des workflows automatisés, des accès en libre-service pour les salariés et une intégration native avec la comptabilité et la planification.</em></p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--rose)"><span aria-hidden="true">&#127774;</span> Congés</span>
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#128101;</span> Recrutement</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#128203;</span> Notes de frais</span>
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#127919;</span> Évaluations</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CE QU'ODOO APPORTE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Ce qu'Odoo apporte</div>
+        <h2>Tous les processus RH dans un seul outil, automatisés de bout en bout</h2>
+        <p>Le module RH d'Odoo couvre l'ensemble du cycle de vie du collaborateur — de l'offre d'emploi à l'entretien annuel — avec un libre-service salarié qui réduit les sollicitations quotidiennes de votre équipe RH.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#127774;</div>
+          <h3>Gestion des congés</h3>
+          <p>Les salariés soumettent leurs demandes de congés directement dans Odoo (ou depuis l'application mobile). Le manager reçoit une notification, valide ou refuse en un clic, et le solde de congés est mis à jour automatiquement. Les absences validées sont visibles dans le planning projet en temps réel — plus de décalage entre RH et opérations.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128203;</div>
+          <h3>Notes de frais</h3>
+          <p>Les collaborateurs photographient leurs justificatifs depuis l'application mobile et soumettent leurs notes de frais en quelques secondes. La validation se fait en ligne par le manager, puis les remboursements s'intègrent automatiquement dans la prochaine paie via la comptabilité. Fin de la collecte de tickets papier et des tableaux Excel mensuels.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128101;</div>
+          <h3>Recrutement</h3>
+          <p>Gérez l'intégralité du processus de recrutement dans Odoo — création des offres d'emploi, réception et tri des candidatures, pipeline par étape (présélection, entretien téléphonique, entretien, proposition), communication avec les candidats. Chaque candidature est tracée et accessible à toutes les personnes impliquées dans le processus.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#127919;</div>
+          <h3>Évaluations</h3>
+          <p>Planifiez et suivez les entretiens annuels et les évaluations de mi-année depuis Odoo. Les formulaires d'évaluation sont personnalisables, les rappels automatiques évitent les oublis, et les historiques d'entretiens sont centralisés dans la fiche collaborateur. La direction dispose d'une vue consolidée des évaluations réalisées et en attente.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128196;</div>
+          <h3>Fiches de poste</h3>
+          <p>Centralisez les fiches de poste, les contrats et les documents RH dans la fiche de chaque collaborateur. Gérez les renouvellements de contrat avec des alertes automatiques, suivez l'historique des postes et des rémunérations. L'information collaborateur est accessible aux RH, aux managers et à la direction selon leurs droits respectifs.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128337;</div>
+          <h3>Suivi des présences</h3>
+          <p>Enregistrez les heures de travail et les présences directement dans Odoo — par pointage manuel, badgeuse connectée ou saisie des feuilles de temps. Les données de présence alimentent automatiquement la comptabilité analytique et le module Projet pour le suivi des heures par activité. Idéal pour les entreprises facturant au temps passé.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTÉGRATION NATIVE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Intégration native</div>
+        <h2>Les RH connectées à la comptabilité, au projet et au planning</h2>
+        <p>L'avantage d'Odoo RH sur un SIRH indépendant est son intégration native avec tous les autres modules. Les données RH circulent automatiquement là où elles sont nécessaires — sans export, sans synchronisation, sans ressaisie.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128200;</div>
+          <h3>Connecté à la Comptabilité</h3>
+          <p>Les notes de frais validées, les remboursements de frais kilométriques et les acomptes sur salaire s'intègrent directement dans la comptabilité sans ressaisie. Les charges salariales issues de la paie alimentent les écritures comptables automatiquement. Votre comptable dispose d'une vision financière RH toujours à jour sans attendre les fichiers mensuels.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128197;</div>
+          <h3>Connecté au Projet</h3>
+          <p>Les congés et absences validés dans le module RH sont visibles en temps réel dans la planification des projets. Les chefs de projet voient la disponibilité effective de chaque collaborateur avant d'assigner des tâches. Les heures saisies sur les projets remontent dans les fiches collaborateur pour le suivi de la charge de travail réelle.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128466;</div>
+          <h3>Connecté au Planning</h3>
+          <p>Le planning d'équipe Odoo intègre automatiquement les absences et congés validés. Planifiez les équipes, les rotations et les permanences en tenant compte des disponibilités réelles de chaque collaborateur. Les conflits de planning sont détectés automatiquement, avant qu'ils ne créent des problèmes opérationnels.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#127891;</div>
+          <h3>Connecté à la Formation</h3>
+          <p>Gérez les plans de formation et les parcours d'onboarding directement dans Odoo eLearning. Associez les formations suivies aux fiches collaborateur, suivez les certifications obtenues et les renouvellements à prévoir. Les besoins de formation identifiés lors des entretiens annuels alimentent directement votre plan de développement des compétences.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ POURQUOI REJOICE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Rejoice ?</div>
+        <h2>Un paramétrage RH adapté aux PME françaises, une formation sur mesure</h2>
+        <p>Le module RH d'Odoo doit être configuré selon le droit du travail français — types d'absences légales, règles d'acquisition des congés payés, obligations de traçabilité. Un paramétrage générique ne suffit pas pour une PME soumise à la législation française.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#127941;</div>
+          <h3>Expert Odoo certifié</h3>
+          <p>La certification Odoo Partner couvre les modules RH, Paie et Présences dans leur configuration française. Je maîtrise les particularités du droit du travail français appliquées à Odoo&nbsp;: types de contrats, motifs d'absence légaux (CP, RTT, maladie, maternité, événements familiaux), règles de calcul des soldes de congés et obligations de suivi du temps de travail.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#127464;&#127479;</div>
+          <h3>Paramétrage RH adapté aux PME françaises</h3>
+          <p>Je configure Odoo selon votre convention collective, vos accords d'entreprise et vos règles internes — types de contrats utilisés, périodes d'essai, règles d'acquisition des CP et RTT, motifs d'absence, niveaux de validation des demandes. Le paramétrage est documenté et conforme aux obligations légales françaises en vigueur.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#127891;</div>
+          <h3>Formation équipes RH</h3>
+          <p>La formation est conçue pour les profils RH, pas pour des utilisateurs généralistes. On couvre les flux de gestion des absences, le traitement des notes de frais, la gestion du pipeline de recrutement, le paramétrage des formulaires d'évaluation et la production des reportings RH. Vos équipes ressortent autonomes sur leurs usages quotidiens.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128101;</div>
+          <h3>Libre-service salarié configuré</h3>
+          <p>Je configure l'espace salarié Odoo pour que vos collaborateurs puissent gérer leurs demandes de congés, soumettre leurs notes de frais et consulter leurs documents RH en autonomie — sans solliciter le service RH pour chaque action. La réduction des sollicitations quotidiennes libère du temps pour les missions à valeur ajoutée.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128272;</div>
+          <h3>Droits d'accès sur mesure</h3>
+          <p>Les données RH sont sensibles. Je configure les niveaux d'accès selon vos règles internes&nbsp;: ce que le manager peut voir de son équipe, ce que le salarié voit de sa propre fiche, ce que la direction accède en synthèse. La confidentialité des données RH est respectée sans sacrifier la fluidité des workflows de validation.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#9889;</div>
+          <h3>Démarrage rapide</h3>
+          <p>Un déploiement focalisé sur les modules Congés, Notes de frais et Recrutement peut être opérationnel en 2 à 4 semaines. Les salariés sont onboardés progressivement, avec une communication interne préparée avec vous pour faciliter l'adoption. Le libre-service salarié est opérationnel dès le premier jour.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Simplifier votre gestion RH &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Parlons de vos enjeux RH &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. Décrivez-moi comment vous gérez vos collaborateurs aujourd'hui — outils en place, points de friction, volume de salariés — et je vous montre concrètement ce qu'Odoo peut automatiser dans votre quotidien RH.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice &#8212; Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

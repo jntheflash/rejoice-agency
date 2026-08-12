@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qu'est-ce qu'un ERP ? Définition, fonctionnement et choix | Rejoice</title>
+  <meta name="description" content="ERP : définition, fonctionnement, avantages. Tout comprendre avant de choisir votre logiciel de gestion d'entreprise." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://rejoice-agency.fr/ressources/quest-ce-quun-erp" />
+  <meta property="og:title" content="Qu'est-ce qu'un ERP ? Définition, fonctionnement et choix | Rejoice" />
+  <meta property="og:description" content="ERP : définition, fonctionnement, avantages. Tout comprendre avant de choisir votre logiciel de gestion d'entreprise." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Qu'est-ce qu'un ERP ? Définition, fonctionnement et choix | Rejoice" />
+  <meta name="twitter:description" content="ERP : définition, fonctionnement, avantages. Tout comprendre avant de choisir votre logiciel de gestion d'entreprise." />
+  <link rel="canonical" href="https://rejoice-agency.fr/ressources/quest-ce-quun-erp" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Qu'est-ce qu'un ERP ? Définition complète et guide pour choisir le bon logiciel",
+    "description": "ERP : définition, fonctionnement, avantages et critères de choix. Guide complet pour les PME qui veulent comprendre avant de décider.",
+    "url": "https://rejoice-agency.fr/ressources/quest-ce-quun-erp",
+    "dateModified": "2026-06-29",
+    "inLanguage": "fr",
+    "author": {
+      "@type": "Person",
+      "name": "Sophie Merdrignac",
+      "url": "https://rejoice-agency.fr/agence/qui-sommes-nous"
+    },
+    "publisher": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-split">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="/">Accueil</a>
+            <span>/</span>
+            <a href="../ressources">Ressources</a>
+            <span>/</span>
+            <span>Qu'est-ce qu'un ERP ?</span>
+          </div>
+          <div class="card-meta">
+            <span class="article-badge article-badge--mint">Guide</span>
+            <span>&#128218; 10 min de lecture</span>
+          </div>
+          <h1>Qu'est-ce qu'un ERP&nbsp;? Définition complète et guide pour <em>choisir le bon logiciel</em></h1>
+          <p>ERP, PGI, logiciel de gestion intégré : les termes varient mais désignent la même réalité. Avant d'investir dans un projet ERP, il est essentiel de comprendre ce que c'est vraiment, comment ça fonctionne, et ce qui distingue un bon choix d'un projet qui s'enlise.</p>
+          <div class="article-author">
+            <img class="article-author-avatar" src="/images/sophie-merdrignac.webp" alt="Sophie Merdrignac" width="44" height="44">
+            <div class="article-author-info">
+              <span class="article-author-name">Sophie Merdrignac</span>
+              <span class="article-author-role">Intégratrice Odoo certifiée à Nantes</span>
+              <span class="article-author-meta">Mis à jour le 29 juin 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-hero-image">
+          <img src="/images/odooproject.webp" alt="Tableau de bord de gestion de projet Odoo" width="889" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CORPS DE L'ARTICLE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+
+      <aside class="article-tldr">
+        <div class="article-tldr-title">L'essentiel</div>
+        <ul>
+          <li>Un ERP (Enterprise Resource Planning) centralise la gestion de toutes les fonctions de l'entreprise dans une seule base de données partagée : ventes, achats, comptabilité, stocks, RH, projets.</li>
+          <li>Il élimine les doubles saisies, les erreurs entre logiciels cloisonnés et les tableaux de consolidation manuels qui font perdre des heures chaque semaine.</li>
+          <li>Un bon projet ERP commence par cartographier ses processus réels, pas par comparer des catalogues de fonctionnalités ou assister à des démonstrations commerciales.</li>
+          <li>Le choix de l'intégrateur est aussi important que celui du logiciel : un ERP bien choisi mais mal implémenté échoue autant qu'un mauvais outil bien déployé.</li>
+        </ul>
+      </aside>
+
+      <div class="article-layout">
+
+        <aside class="article-aside">
+          <div class="article-aside-inner">
+            <span class="article-toc-title">Sommaire</span>
+            <nav class="article-toc" aria-label="Sommaire">
+              <ul>
+                <li><a href="#definition">Définition</a></li>
+                <li><a href="#fonctionnement">Fonctionnement</a></li>
+                <li><a href="#avantages">Avantages</a></li>
+                <li><a href="#choisir">Comment choisir</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <div class="article-content">
+
+          <section>
+            <h2 id="definition">Un ERP, c'est quoi concrètement ?</h2>
+            <p>ERP signifie <em>Enterprise Resource Planning</em>, traduit en français par Progiciel de Gestion Intégré (PGI). Derrière ce terme technique se cache une idée simple : un logiciel unique qui centralise la gestion de toutes les fonctions d'une entreprise dans un seul système. Ventes, achats, comptabilité, stocks, ressources humaines, production, projets : tout est dans le même outil, avec la même base de données.</p>
+            <p>Sans ERP, chaque département utilise son propre outil. Le commercial a son CRM, le comptable son logiciel de facturation, le responsable logistique son tableur de stock, le RH son logiciel de paie séparé. Ces outils ne communiquent pas entre eux. L'information voyage par email, par export de fichiers, par ressaisie manuelle. Chaque changement dans un système doit être répercuté à la main dans les autres.</p>
+            <p><em>Un ERP brise ces silos en rassemblant toutes ces fonctions dans une base de données partagée. Une seule saisie, accessible partout, par tout le monde selon ses droits, en temps réel.</em></p>
+            <div class="callout callout--info">
+              <span class="callout-label">Bon à savoir</span>
+              <p>Le mode cloud (SaaS) est aujourd'hui le standard pour les PME : l'hébergement, les mises à jour et la sécurité sont gérés par l'éditeur. Plus besoin d'équipe IT dédiée pour maintenir l'infrastructure. C'est le modèle qu'utilisent la grande majorité des PME qui se lancent avec Odoo.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 id="fonctionnement">Comment fonctionne un ERP ?</h2>
+            <p>Un ERP est structuré autour de trois concepts fondamentaux : les modules fonctionnels, la base de données centralisée et les flux automatiques entre les fonctions. Comprendre ces trois mécanismes permet de saisir pourquoi un ERP change radicalement le fonctionnement d'une entreprise.</p>
+
+            <h3>Les modules fonctionnels</h3>
+            <p>Un ERP est composé de modules qui correspondent chacun à une fonction de l'entreprise : un module Ventes, un module Comptabilité, un module Stocks, un module RH, etc. Chaque module couvre les besoins spécifiques d'un département. L'entreprise active les modules dont elle a besoin et peut en ajouter d'autres au fil du temps. C'est le principe de modularité qui distingue un ERP d'un logiciel monolithique.</p>
+
+            <h3>La base de données centralisée</h3>
+            <p>Tous les modules d'un ERP partagent la même base de données. Un client créé dans le module CRM est immédiatement disponible dans le module Facturation. Un produit créé dans le catalogue est accessible dans les modules Ventes, Achats et Stocks. Cette centralisation est le coeur du fonctionnement ERP : elle garantit la cohérence des données et élimine les doublons, les conflits et les incohérences entre services.</p>
+
+            <h3>Les flux automatiques entre fonctions</h3>
+            <p>Dans un ERP bien configuré, la validation d'une action dans un module déclenche automatiquement les actions correspondantes dans les autres modules. Une commande client confirmée génère un ordre de préparation en logistique, déclenche une réservation de stock et crée une facture à émettre en comptabilité, sans aucune intervention manuelle. Ces flux éliminent les saisies redondantes et les délais d'information entre services.</p>
+
+            <h3>Les droits d'accès par rôle</h3>
+            <p>Un ERP gère finement les droits d'accès selon les rôles de chaque utilisateur. Le commercial voit les commandes et les clients mais pas la comptabilité détaillée. Le comptable accède aux factures et aux écritures mais pas aux données RH. La direction a une vue consolidée de tout. Cette granularité des accès est essentielle pour la sécurité des données et la confidentialité des informations sensibles.</p>
+
+            <h3>Le reporting en temps réel</h3>
+            <p>Parce que toutes les données sont centralisées, un ERP peut produire des tableaux de bord et des rapports en temps réel : chiffre d'affaires du jour, marge par produit, trésorerie disponible, performance commerciale. Ces informations ne nécessitent aucune consolidation manuelle. Elles sont disponibles à tout moment depuis n'importe quel appareil, pour les personnes autorisées.</p>
+          </section>
+
+          <section>
+            <h2 id="avantages">Les avantages concrets pour votre PME</h2>
+            <p>Les bénéfices d'un ERP ne sont pas théoriques : ils se mesurent en heures gagnées, en erreurs évitées et en décisions mieux éclairées. Voici les quatre avantages les plus concrets pour une PME.</p>
+
+            <h3>Gain de temps opérationnel</h3>
+            <p>Les tâches répétitives disparaissent ou se réduisent drastiquement. Les relances clients se déclenchent automatiquement, les factures se génèrent depuis les commandes, les rapprochements bancaires se font en quelques minutes. Des études sectorielles estiment que les PME récupèrent entre 20 et 40 % du temps passé sur des tâches administratives après le déploiement d'un ERP. Ce temps se réinvestit dans des activités à valeur ajoutée.</p>
+
+            <div class="callout callout--example">
+              <span class="callout-label">Exemple</span>
+              <p>Une PME de services professionnels de 18 personnes que nous avons accompagnée avait quatre outils distincts (CRM, facturation, paie, notes de frais). Après déploiement Odoo, le temps de consolidation mensuel est passé de deux journées complètes à moins d'une heure.</p>
+            </div>
+
+            <h3>Zéro double saisie</h3>
+            <p>Chaque information n'est saisie qu'une seule fois dans le système. La fiche client créée lors d'un premier devis est réutilisée dans toutes les commandes, factures et relances suivantes. Le produit saisi dans le catalogue alimente automatiquement les offres commerciales, les bons de commande fournisseurs et la comptabilité analytique. Les erreurs de ressaisie entre logiciels appartiennent au passé.</p>
+
+            <h3>Vision globale de l'activité</h3>
+            <p>Avec un ERP, le dirigeant et les managers disposent d'une vision unifiée et cohérente de toute l'activité. Pas de données contradictoires entre le rapport du commercial et celui du comptable, pas de stock affiché comme disponible alors qu'il a déjà été réservé. Cette cohérence est fondamentale pour coordonner les équipes, anticiper les tensions de trésorerie et planifier les ressources.</p>
+
+            <h3>Meilleure prise de décision</h3>
+            <p>Décider sur la base de données précises et à jour, c'est radicalement différent de décider sur des impressions ou des rapports consolidés à la main une fois par mois. Un ERP donne accès en temps réel aux indicateurs qui comptent : rentabilité par client, délai moyen de règlement, rotation des stocks, taux de transformation commercial.</p>
+          </section>
+
+          <section>
+            <h2 id="choisir">Comment choisir son ERP ?</h2>
+            <p>Choisir un ERP est une décision structurante pour une PME : c'est un investissement en temps, en argent et en énergie d'équipe. Une bonne décision se prépare en amont, pas en répondant à des démonstrations commerciales.</p>
+
+            <h3>Cartographiez vos processus actuels</h3>
+            <p>Avant de regarder un seul logiciel, documentez comment vous travaillez aujourd'hui. Quels sont vos flux de commandes, vos processus de facturation, votre gestion des stocks ? Où se trouvent les frictions, les délais, les ressaisies ? Cette cartographie est le cahier des charges de votre futur ERP, et elle révèle souvent que certains processus doivent être améliorés avant d'être automatisés.</p>
+
+            <h3>Définissez votre périmètre prioritaire</h3>
+            <p>Vouloir tout déployer en même temps est le premier piège des projets ERP. Identifiez les 2 ou 3 fonctions qui vous feront gagner le plus de valeur immédiatement : souvent la comptabilité, les ventes et le CRM pour commencer. Un déploiement progressif par blocs fonctionnels permet d'obtenir des résultats rapides et de former les équipes progressivement.</p>
+
+            <h3>Évaluez le coût total, pas juste la licence</h3>
+            <p>Le prix de la licence n'est qu'une partie du coût total. Ajoutez l'implémentation par un partenaire (paramétrage, migration des données, formation), la maintenance annuelle, les éventuels développements spécifiques et le coût interne en temps d'équipe mobilisée. Pour des fourchettes concrètes, consultez notre page <a href="/ressources/comment-integrer-odoo">Comment intégrer Odoo</a>.</p>
+
+            <h3>Choisissez votre intégrateur avec soin</h3>
+            <p>L'intégrateur est aussi important que le logiciel lui-même. Un bon ERP mal implémenté échoue. Cherchez un partenaire certifié par l'éditeur, spécialisé dans votre secteur ou votre taille d'entreprise, avec des références vérifiables. Préférez un interlocuteur unique qui connaît votre contexte de bout en bout.</p>
+
+            <div class="callout callout--note">
+              <span class="callout-label">À noter</span>
+              <p>Quatre erreurs reviennent systématiquement dans les projets ERP : vouloir personnaliser tout avant d'avoir testé le standard, négliger la formation des équipes, sous-estimer la migration des données, et choisir sur une démo sans avoir vérifié les fonctionnalités sur vos cas d'usage réels.</p>
+            </div>
+
+            <h3>Les questions à poser avant de décider</h3>
+            <p>Avant de signer, posez ces questions à tout intégrateur : Combien de clients similaires à notre profil avez-vous déployé ? Quelle est votre méthode de migration des données existantes ? Comment se déroule la formation des utilisateurs ? Quel est le délai réaliste avant que nous soyons opérationnels ? Les réponses vous diront si vous avez affaire à un partenaire de confiance. Pour aller plus loin, voyez notre comparatif <a href="/ressources/pourquoi-odoo">Pourquoi choisir Odoo</a>.</p>
+          </section>
+
+          <section class="related-section">
+            <h2>À lire aussi</h2>
+            <div class="related-grid">
+              <a href="/ressources/pourquoi-odoo" class="related-card">
+                <span class="related-card-cat">Guide</span>
+                <h3>Pourquoi choisir Odoo&nbsp;?</h3>
+                <p>Les 6 raisons qui font d'Odoo l'ERP préféré des PME.</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+              <a href="/ressources/comment-integrer-odoo" class="related-card">
+                <span class="related-card-cat">Guide</span>
+                <h3>Comment intégrer Odoo&nbsp;?</h3>
+                <p>Les étapes clés d'un déploiement réussi pour votre PME.</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+              <a href="/ressources/odoo-community-vs-enterprise" class="related-card">
+                <span class="related-card-cat">Comparatif</span>
+                <h3>Community vs Enterprise</h3>
+                <p>Quelle édition Odoo choisir pour votre activité ?</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

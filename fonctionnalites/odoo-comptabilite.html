@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo Comptabilité — Gestion financière simplifiée pour PME | Rejoice</title>
+  <meta name="description" content="Odoo Comptabilité pour PME. Facturation, rapprochement bancaire, TVA, bilan. Connecté à tous vos autres modules Odoo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/fonctionnalites/odoo-comptabilite" />
+  <meta property="og:title" content="Odoo Comptabilité — Gestion financière simplifiée pour PME | Rejoice" />
+  <meta property="og:description" content="Odoo Comptabilité pour PME. Facturation, rapprochement bancaire, TVA, bilan. Connecté à tous vos autres modules Odoo." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Odoo Comptabilité — Gestion financière simplifiée pour PME | Rejoice" />
+  <meta name="twitter:description" content="Odoo Comptabilité pour PME. Facturation, rapprochement bancaire, TVA, bilan. Connecté à tous vos autres modules Odoo." />
+  <link rel="canonical" href="https://rejoice-agency.fr/fonctionnalites/odoo-comptabilite" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Odoo Comptabilité — Gestion financière pour PME",
+    "description": "Module Odoo Comptabilité pour PME : facturation automatique, rapprochement bancaire, déclaration TVA, bilan, suivi paiements. Certifié Odoo Partner.",
+    "url": "https://rejoice-agency.fr/fonctionnalites/odoo-comptabilite",
+    "dateModified": "2026-06-30",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <span>Fonctionnalités</span>
+          <span>/</span>
+          <span>Odoo Comptabilité</span>
+        </div>
+        <h1>Odoo Comptabilité&nbsp;: automatisez votre gestion financière <em>et gagnez du temps</em></h1>
+        <p>La comptabilité d'une PME ne devrait pas être une corvée. Avec Odoo, la majorité des écritures se génèrent automatiquement depuis vos ventes et vos achats — votre comptable passe son temps à analyser, pas à saisir.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#128181;</span> Facturation automatique</div>
+          <div class="hero-stat"><span aria-hidden="true">&#127981;</span> Rapprochement bancaire IA</div>
+          <div class="hero-stat"><span aria-hidden="true">&#9989;</span> Conforme droit français</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Merdrignac</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Pourquoi la comptabilité Odoo change tout</div>
+          <h2>Fini la double saisie entre votre outil de vente et votre logiciel comptable</h2>
+          <p>Dans la plupart des PME, la comptabilité vit dans un outil séparé du reste — Sage, EBP, Cegid — et les données arrivent par lot, souvent en retard, toujours à ressaisir. Votre comptable passe des heures à faire correspondre des numéros de factures, des montants et des noms de clients entre deux systèmes qui ne se parlent pas.</p>
+          <p>Avec Odoo, la comptabilité est le prolongement naturel de votre activité commerciale. Une commande validée génère un bon de livraison, qui génère une facture, qui génère les écritures comptables correspondantes. <em>Sans aucune intervention manuelle.</em></p>
+          <p>Votre direction a une visibilité financière en temps réel. Votre comptable n'est plus occupé à ressaisir ce que les autres services ont déjà saisi dans d'autres outils : il analyse, valide et optimise.</p>
+          <p>Vous cherchez à voir comment Odoo s'intègre dans le quotidien d'un comptable de PME ? Consultez notre page <a href="/metier/comptable">Odoo pour les comptables</a>.</p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#128203;</span> Facturation</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#127981;</span> Rapprochement</span>
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#128200;</span> TVA</span>
+            <span class="profil-pill" style="background:var(--rose)"><span aria-hidden="true">&#128181;</span> Bilan</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FONCTIONNALITÉS CLÉS ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Fonctionnalités clés</div>
+        <h2>Une comptabilité complète, sans module additionnel</h2>
+        <p>Le module Comptabilité d'Odoo couvre l'intégralité des besoins comptables d'une PME française — des écritures quotidiennes aux états financiers de clôture.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128203;</div>
+          <h3>Facturation automatique</h3>
+          <p>Les factures clients se créent automatiquement depuis les bons de commande ou les bons de livraison. Modèles personnalisés aux couleurs de votre entreprise, numérotation automatique conforme, envoi par email en un clic. La facturation électronique 2026 est incluse nativement dans les versions récentes d'Odoo.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#127981;</div>
+          <h3>Rapprochement bancaire automatique</h3>
+          <p>Odoo se connecte à votre banque via Open Banking et importe vos relevés automatiquement. Un algorithme propose les correspondances entre les mouvements bancaires et vos écritures comptables. Le rapprochement qui prenait 2 heures par semaine se fait en quelques minutes — les cas ambigus seulement nécessitent une validation manuelle.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128200;</div>
+          <h3>Déclaration TVA</h3>
+          <p>Calcul automatique de la TVA collectée et déductible selon les règles françaises (taux multiples, TVA sur encaissements, autoliquidation). La déclaration CA3 se prépare en quelques clics et peut être transmise directement via EDI. Les contrôles de cohérence intégrés évitent les erreurs de déclaration.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128181;</div>
+          <h3>Bilan &amp; compte de résultat</h3>
+          <p>États financiers générés en temps réel, à tout moment — pas seulement en clôture. Bilan actif/passif, compte de résultat, balance générale, journaux détaillés. Votre direction a une vision financière instantanée sans attendre les arrêtés mensuels de votre expert-comptable.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128336;</div>
+          <h3>Suivi des paiements</h3>
+          <p>Tableau de bord des créances et dettes en temps réel&nbsp;: factures clients impayées avec âge de la créance, factures fournisseurs à régler et leur échéance, solde de trésorerie prévisionnel. Les relances clients peuvent être automatisées selon des scénarios paramétrables — rappel à 30 jours, mise en demeure à 60 jours.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128176;</div>
+          <h3>Notes de frais</h3>
+          <p>Vos collaborateurs photographient leurs justificatifs depuis l'application mobile Odoo. L'OCR lit le montant, la date et le fournisseur automatiquement. Les notes de frais validées génèrent les écritures comptables correspondantes et déclenchent le remboursement — sans aucune saisie manuelle côté comptabilité.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTÉGRATION NATIVE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Intégration native</div>
+        <h2>La comptabilité au cœur de votre système de gestion</h2>
+        <p>Le module Comptabilité d'Odoo ne fonctionne pas en silo. Chaque opération dans les autres modules génère automatiquement les écritures comptables correspondantes.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128203;</div>
+          <h3>Connecté aux Ventes</h3>
+          <p>Un devis accepté par votre client se transforme en commande, puis en bon de livraison, puis en facture — automatiquement. Chaque facture générée crée instantanément l'écriture comptable correspondante dans le journal des ventes, sans aucune intervention de votre comptable.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128722;</div>
+          <h3>Connecté aux Achats</h3>
+          <p>Les factures fournisseurs sont rapprochées automatiquement avec les bons de commande et les réceptions. Odoo signale les écarts de quantité ou de prix avant validation. Le lettrage avec les paiements fournisseurs se fait automatiquement dès que la transaction bancaire est importée.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128230;</div>
+          <h3>Connecté aux Stocks</h3>
+          <p>Chaque mouvement de stock génère automatiquement les écritures comptables correspondantes — entrée en stock, sortie, régularisation d'inventaire. La valorisation de votre stock est donc toujours cohérente avec votre comptabilité, sans travaux de réconciliation en fin de période.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128101;</div>
+          <h3>Connecté aux RH</h3>
+          <p>Les notes de frais approuvées et les charges sociales calculées dans le module RH sont directement intégrées dans la comptabilité. Les salaires, cotisations et provisions s'écrivent dans les bons journaux sans ressaisie. Votre comptable valide, il ne saisit pas.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128197;</div>
+          <h3>Connecté au Projet</h3>
+          <p>Pour les entreprises qui facturent au temps passé ou à l'avancement, les heures saisies dans le module Projet alimentent directement la facturation — et donc la comptabilité. Le suivi de rentabilité par projet est disponible en temps réel sans export ni calcul manuel.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128274;</div>
+          <h3>Export expert-comptable</h3>
+          <p>Si votre expert-comptable travaille avec un autre outil (Cegid, ACD, etc.), Odoo exporte vos données dans le format FEC (Fichier des Écritures Comptables) requis par l'administration fiscale, ainsi que dans les formats d'import des principaux logiciels comptables du marché.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ POURQUOI REJOICE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Rejoice ?</div>
+        <h2>Un paramétrage comptable français rigoureux, dès le premier jour</h2>
+        <p>La comptabilité est le module Odoo qui tolère le moins les erreurs de configuration. Un plan comptable mal paramétré, des journaux mal définis ou des règles TVA incorrectes créent des problèmes qui se découvrent à la clôture — et se corrigent douloureusement.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#127941;</div>
+          <h3>Expert Odoo certifié</h3>
+          <p>La certification Odoo Partner couvre le module Comptabilité en profondeur. Je connais les spécificités du plan comptable français dans Odoo, les bonnes pratiques de configuration des journaux, des taxes et des modes de paiement — et les paramètres qui semblent anodins mais font toute la différence à la clôture.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128203;</div>
+          <h3>Paramétrage fiscal français</h3>
+          <p>La localisation française d'Odoo couvre le PCG (Plan Comptable Général), les taux de TVA français, la DEB/DES pour le commerce intracommunautaire, et la préparation du FEC. Je configure ces éléments correctement dès le départ — pas après que votre expert-comptable a signalé les erreurs en fin d'exercice.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#127891;</div>
+          <h3>Formation de vos équipes comptables</h3>
+          <p>Vos comptables et assistants administratifs sont formés sur les opérations courantes dans Odoo&nbsp;: saisie des factures fournisseurs, rapprochement bancaire, lettrage, relances clients, préparation de la TVA. Ils repartent autonomes, avec des supports de référence adaptés à leur configuration réelle.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128101;</div>
+          <h3>Coordination avec votre expert-comptable</h3>
+          <p>Je peux travailler en coordination avec votre expert-comptable pour valider le paramétrage comptable avant le go-live. Si votre expert travaille avec un autre outil, on configure les exports pour faciliter son travail. L'objectif est que tout le monde gagne du temps — vous, votre équipe et votre expert.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128200;</div>
+          <h3>Migration depuis votre outil actuel</h3>
+          <p>Vous migrez depuis Sage, EBP, Cegid ou un autre logiciel comptable&nbsp;? Je gère la reprise des soldes d'ouverture, l'import de l'historique clients/fournisseurs et la validation de la cohérence des données reprises avant le premier jour de saisie réelle dans Odoo.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#9889;</div>
+          <h3>Démarrage en 15 jours</h3>
+          <p>La mise en place du module Comptabilité seul, ou combiné aux Ventes et aux Achats, peut être réalisée en 3 à 6 semaines selon votre situation de départ. Le démarrage est planifié sous 15 jours — vous n'attendez pas des mois avant de voir des résultats concrets.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Discuter de votre comptabilité Odoo &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Automatisons votre comptabilité &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. On analyse ensemble votre organisation comptable actuelle, ce qui vous prend trop de temps, et je vous montre concrètement ce qu'Odoo peut automatiser dans votre contexte.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

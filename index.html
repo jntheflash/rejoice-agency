@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expert Odoo : partenaire Odoo certifié, Rejoice Agency</title>
+  <meta name="description" content="Rejoice Agency, expert Odoo certifié. Intégration ERP sur mesure pour PME. Audit, déploiement, formation. Démarrage en 15 jours." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/" />
+  <meta property="og:title" content="Expert Odoo : partenaire Odoo certifié, Rejoice Agency" />
+  <meta property="og:description" content="Rejoice Agency, expert Odoo certifié. Intégration ERP sur mesure pour PME. Audit, déploiement, formation. Démarrage en 15 jours." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Rejoice, Agence d'intégration Odoo indépendante" />
+  <meta name="twitter:description" content="Rejoice, agence d'intégration Odoo indépendante et certifiée, accompagne les PME dans la mise en place et la personnalisation de leur ERP Odoo. Audit, déploiement, formation, sur-mesure et sans engagement." />
+  <link rel="canonical" href="https://rejoice-agency.fr/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Rejoice",
+    "description": "Agence d'intégration Odoo indépendante et certifiée, spécialisée dans l'accompagnement des PME françaises. Audit, déploiement, formation et support Odoo sur-mesure.",
+    "url": "https://rejoice-agency.fr",
+    "email": "sophie@rejoice-agency.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nantes",
+      "addressRegion": "Pays de la Loire",
+      "addressCountry": "FR"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Nantes" },
+      { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+      { "@type": "Country", "name": "France" }
+    ],
+    "telephone": "+33 6 48 75 28 57",
+    "knowsAbout": ["Odoo", "ERP", "CRM", "PME", "Intégration logicielle", "Formation Odoo"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services Odoo",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Audit ERP Odoo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intégration ERP Odoo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intégration CRM Odoo" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formation Odoo sur mesure" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intégration IA dans Odoo" } }
+      ]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/"
+    ]
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="services/consultant-odoo">Audit ERP CRM</a>
+          <a href="services/formation-odoo">Formation Odoo</a>
+          <a href="services/integration-odoo">Intégration Odoo</a>
+          <a href="services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="metier/comptable">Comptable</a>
+          <a href="metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="agence/methodologie">Notre Méthodologie</a>
+          <a href="agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="hero-eyebrow">&#10024; Agence Odoo certifiée</div>
+          <h1>
+            Agence Expert <em>Odoo</em> certifié pour PME
+          </h1>
+          <p class="hero-body">
+            Votre entreprise mérite un ERP soigné et adapté aux besoins de vos équipes et adaptable. C'est ce que nous faisons : nous sommes experts en intégration de l'ERP Odoo pour les PME et TPE.
+          </p>
+          <div class="hero-btns">
+            <a href="#rdv" class="btn btn-lavender">Prendre RDV &#8594;</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/sophie-merdrignac.webp" alt="Sophie Merdrignac, fondatrice de Rejoice, agence d'intégration Odoo certifiée" width="616" height="691">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANCE -->
+  <section class="confiance">
+    <div class="container">
+      <div class="confiance-layout">
+        <div class="confiance-intro">
+          <div class="tag">Nos clients</div>
+          <h2>Ils nous font confiance</h2>
+          <p class="confiance-tagline"><strong>Plus de 30</strong> PME et TPE accompagnées, de l'artisanat à l'industrie.</p>
+          <a href="agence/qui-sommes-nous" class="arg-card-link">Découvrir pourquoi ils nous font confiance &#8594;</a>
+        </div>
+        <div class="confiance-logos">
+          <img src="images/blobb.webp"        alt="BLOBB.io"     width="286" height="120" />
+          <img src="images/epiphyse.webp"     alt="Epiphyse"     width="286" height="120" />
+          <img src="images/gwinizh.webp"      alt="Gwinizh"      width="286" height="120" />
+          <img src="images/holeo.webp"        alt="Holeo"        width="286" height="120" />
+          <img src="images/maison_warin.webp" alt="Maison Warin" width="286" height="120" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARGUMENTS -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Odoo ?</div>
+        <h2>Pourquoi choisir l'ERP Odoo ?</h2>
+        <p>Odoo est l'ERP le plus simple, accessible et flexible parmis les solutions ERP pour les PME. Les centaines de modules intégrables en font un outil pratique et interconnecté du quotidien, qui fluidifie le fonctionnement de votre entreprise.</p>
+      </div>
+      <div class="args-grid args-grid--2col">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#129513;</div>
+          <h3>Modulaire à l'infini</h3>
+          <p>Activez uniquement les modules dont vous avez besoin. CRM, facturation, stocks, RH, vous construisez votre ERP à votre rythme.</p>
+          <a href="#" class="arg-card-link">TBD &#8594;</a>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128176;</div>
+          <h3>Coût maîtrisé</h3>
+          <p>Une licence par utilisateur, sans frais cachés. Odoo propose jusqu'à 3x moins cher que SAP ou Salesforce à fonctionnalités équivalentes.</p>
+          <a href="/tarifs-odoo" class="arg-card-link">Voir les tarifs Odoo &#8594;</a>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#9889;</div>
+          <h3>Tout-en-un natif</h3>
+          <p>Tous vos outils communiquent entre eux dès l'installation. Fini les exports CSV et les doubles saisies qui vous font perdre un temps précieux.</p>
+          <a href="#" class="arg-card-link">TBD &#8594;</a>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128200;</div>
+          <h3>Évolutif avec vous</h3>
+          <p>De 5 à 500 utilisateurs sans changer de plateforme. Odoo grandit avec votre entreprise sans refonte coûteuse.</p>
+          <a href="#" class="arg-card-link">TBD &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+        <div class="profil-photo">
+          <img src="images/gruenantes.webp" alt="Agence basée à Nantes" width="1400" height="1050">
+        </div>
+        <div class="profil-content">
+          <div class="tag">L'agence</div>
+          <h2>Pourquoi choisir Rejoice ?</h2>
+          <p>Spécialisée ERP Odoo pour les TPE et PME, nous avons mené plus de 40 projets d'intégration Odoo dans différentes industries. Au delà de cette expérience, nous mettons surtout en avant notre passion pour les organisations, pour les systèmes d’information, et pour la performance des entreprises.</p>
+          <p>Notre leitmotiv : un ERP Odoo performant, qui progresse avec l’évolution de votre activité.</p>
+          <p>C’est pourquoi vous bénéficiez d'un interlocuteur unique, d'une méthode éprouvée et d'un accompagnement humain de A à Z, de l'audit initial jusqu'au suivi post-déploiement.</p>
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--rose)">&#127941; Certifiée Odoo</span>
+            <span class="profil-pill" style="background:var(--lavender)">&#128197; 6 ans d'expérience</span>
+            <span class="profil-pill" style="background:var(--mint)">&#127970; 40+ projets</span>
+            <span class="profil-pill" style="background:var(--peach)">&#128188; Spécialisée PME</span>
+          </div>
+          <a href="#" class="arg-card-link">Découvrir l'agence &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES ODOO -->
+  <section class="arguments" id="services-odoo">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Ce que nous faisons</div>
+        <h2>Nos expertise ERP d'intégration Odoo</h2>
+        <p>De l'audit initial à la formation de vos équipes, un accompagnement complet, sur mesure et sans intermédiaire.</p>
+      </div>
+      <div class="services-block">
+
+        <div class="services-photo">
+          <img src="images/odoohome.webp" alt="Tableau de bord Odoo, l'ERP modulaire des PME" width="889" height="500">
+          <img src="images/odooproject.webp" alt="Gestion de projet dans Odoo" width="1008" height="500">
+        </div>
+
+        <div class="services-panel">
+          <div class="services-grid">
+
+            <a href="services/integration-odoo" class="service-card">
+              <div class="service-icon service-icon-lavender" aria-hidden="true">&#127959;</div>
+              <h3>Intégration Odoo (ERP &amp; CRM)</h3>
+              <p>Déploiement complet de votre ERP et CRM Odoo : audit, paramétrage sur mesure, migration de données, tests et mise en production.</p>
+              <span class="arg-card-link">Découvrir &#8594;</span>
+            </a>
+
+            <a href="services/consultant-odoo" class="service-card">
+              <div class="service-icon service-icon-mint" aria-hidden="true">&#128269;</div>
+              <h3>Audit ERP Odoo</h3>
+              <p>Diagnostic honnête et actionnable de votre Odoo existant ou pré-projet. Rapport de préconisations livre en 5 jours ouvrés.</p>
+              <span class="arg-card-link">Découvrir &#8594;</span>
+            </a>
+
+            <a href="services/formation-odoo" class="service-card">
+              <div class="service-icon service-icon-peach" aria-hidden="true">&#127891;</div>
+              <h3>Formation Odoo sur mesure</h3>
+              <p>Formations adaptées à chaque profil, dirigeant, commercial, comptable, magasinier. En présentiel ou distanciel, OPCO finançable.</p>
+              <span class="arg-card-link">Découvrir &#8594;</span>
+            </a>
+
+            <a href="services/developpement-odoo" class="service-card">
+              <div class="service-icon service-icon-sky" aria-hidden="true">&#129302;</div>
+              <h3>Intégration IA dans Odoo</h3>
+              <p>Automatisation, scoring de leads, OCR factures, connexion OpenAI ou Mistral. L'intelligence artificielle dans votre Odoo 19.</p>
+              <span class="arg-card-link">Découvrir &#8594;</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODE -->
+  <section class="methode">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Comment ça marche</div>
+        <h2>Notre méthode pour intégrer Odoo dans votre entreprise</h2>
+        <p>Une approche structurée et humaine, en 5 étapes claires pour un déploiement réussi.</p>
+      </div>
+      <div class="methode-steps">
+        <div class="step">
+          <div class="step-num" style="background:var(--rose);color:var(--text)">1</div>
+          <h3>Audit</h3>
+          <p>Analyse de vos processus métier, outils existants et besoins réels</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:var(--lavender);color:var(--text)">2</div>
+          <h3>Cadrage</h3>
+          <p>Définition du périmètre, des modules, du planning et du budget</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:var(--mint);color:var(--text)">3</div>
+          <h3>Paramétrage</h3>
+          <p>Configuration sur mesure d'Odoo, développements spécifiques si nécessaire</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:var(--peach);color:var(--text)">4</div>
+          <h3>Formation</h3>
+          <p>Formation personnalisée de vos équipes, à votre rythme, en présentiel ou distanciel</p>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:var(--sky);color:var(--text)">5</div>
+          <h3>Suivi</h3>
+          <p>Accompagnement post-lancement, hotline dédiée et évolutions continues</p>
+        </div>
+      </div>
+      <div class="methode-cta">
+        <a href="#rdv" class="btn btn-primary">Démarrer mon projet &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-title">Rejoignez les 12 millions d'utilisateurs qui développent leur activité avec Odoo</h2>
+          <p class="cta-banner-subtitle">Passez à la vitesse supérieure avec une intégratrice Odoo certifiée à vos côtés.</p>
+        </div>
+        <a href="/#rdv" class="btn btn-white">Contactez-nous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="temoignages">
+    <div class="blob blob-t1"></div>
+    <div class="blob blob-t2"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Témoignages</div>
+        <h2>Ce qu'ils disent de Rejoice</h2>
+        <p>Des retours qui font notre fierté.</p>
+      </div>
+      <div class="temos-grid">
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">Sophie a su comprendre nos contraintes dès le premier appel. En quelques semaines, notre Odoo était opérationnel et nos équipes formées.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--lavender)" aria-hidden="true">👩‍💼</div>
+            <div class="temo-author-info">
+              <strong>Flowrent.</strong>
+              <span>CEO · BLOBB.io</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">On avait peur que la migration soit longue et douloureuse. Ça s'est passé en 3 semaines sans interruption d'activité.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--mint)" aria-hidden="true">👨‍⚕️</div>
+            <div class="temo-author-info">
+              <strong>Pierre-Emmanuel.</strong>
+              <span>CEO · Epiphyse Conseil</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">Notre activité est très saisonnière et notre production assez spécifique. Un gain de temps fou sur la gestion des commandes.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--rose)" aria-hidden="true">👩‍🌾</div>
+            <div class="temo-author-info">
+              <strong>Mathias</strong>
+              <span>CEO · Gwinizh</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">Le module CRM Odoo a transformé notre suivi commercial. Les relances sont automatisées.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--sky)" aria-hidden="true">👨‍💻</div>
+            <div class="temo-author-info">
+              <strong>Maxence</strong>
+              <span>CEO · Holeo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="temo-card">
+          <div class="temo-stars">★★★★★</div>
+          <p class="temo-text">Rejoice a déployé uniquement ce dont on avait besoin : on pilote nos stocks, nos commandes, notre compta, depuis une seule interface.</p>
+          <div class="temo-author">
+            <div class="temo-avatar" style="background:var(--lemon)" aria-hidden="true">🧑‍🍳</div>
+            <div class="temo-author-info">
+              <strong>Floriane</strong>
+              <span>CEO · Maison Warin</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RDV -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-layout">
+
+        <div class="rdv-intro">
+          <div class="tag">Contact</div>
+          <h2>Prenons rendez-vous &#10024;</h2>
+          <p>Réservez un appel découverte gratuit de 30 minutes. On discute de votre projet, de vos contraintes, et nous vous proposons une approche adaptée, sans engagement.</p>
+          <p class="rdv-calendar-fallback">Le calendrier ne s'affiche pas&nbsp;? <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener">Réserver un rendez-vous</a>.</p>
+        </div>
+
+        <div class="rdv-calendar-col">
+          <div id="rdvCalendarEmbed" class="rdv-calendar-embed" data-src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0-UM1lZSrJIbFYUbgJlIww-_bfOdtYMWOJ6B1ctRm90sqsyOPjxiAA8kv36JLpkwoi3FzNaRC8?gv=true" aria-live="polite">
+            <div class="rdv-calendar-notice">
+              <p>Le calendrier de réservation nécessite l'acceptation des cookies pour s'afficher ici. Vous pouvez aussi le réserver directement dans un nouvel onglet ci-dessous.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">FAQ</div>
+        <h2>Questions fréquentes</h2>
+        <p>Tout ce que vous voulez savoir avant de vous lancer avec Odoo.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Quel est le coût d'une intégration Odoo ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Le coût dépend de la complexité du projet, du nombre de modules à déployer et des développements spécifiques. Nous vous proposons toujours un devis transparent et détaillé après l'audit initial, sans frais cachés. Nous détaillons les licences Odoo, le coût d'accompagnement et un exemple chiffré sur <a href="/tarifs-odoo">notre page tarifs</a>.<br>
+            <a href="/tarifs-odoo" class="arg-card-link">Voir les tarifs Odoo &#8594;</a>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Combien de temps dure un projet Odoo ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            La durée dépend du périmètre défini ensemble. Un déploiement standard (2 à 4 modules) prend entre 4 et 10 semaines. Pour des projets plus complexes avec migrations de données et développements sur mesure, comptez 3 à 6 mois. Nous nous engageons sur un planning précis dès le cadrage du projet.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Puis-je migrer mes données depuis mon logiciel actuel ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui, la migration de données est une étape clé que nous gérons de A à Z. Que vous utilisiez Excel, Sage, EBP, Ciel ou tout autre outil, nous analysons la structure de vos données et planifions une migration sécurisée avec validation à chaque étape pour garantir l'intégrité de vos informations.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            La formation de mes équipes est-elle incluse ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Absolument. La formation est un pilier de notre méthode. Nous formons chaque profil d'utilisateur selon son rôle : dirigeant, comptable, commercial, magasinier. Les formations sont dispensées en présentiel ou en visioconférence, avec des supports adaptés à votre entreprise et des sessions de suivi incluses.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Proposez-vous un support après le lancement ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui, nous proposons plusieurs formules de support post-déploiement : de l'assistance ponctuelle à un contrat de maintenance mensuel incluant les mises à jour Odoo, la correction de bugs et un nombre d'heures d'accompagnement dédiées. Vous n'êtes jamais seul(e) après la mise en production.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Odoo convient-il vraiment aux petites entreprises ?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Totalement ! C'est d'ailleurs l'un des grands atouts d'Odoo : il est accessible dès 1 utilisateur et s'adapte à toutes les tailles de structure. Nous avons déployé Odoo pour des auto-entrepreneurs comme pour des PME de 80 salariés. La clé, c'est de commencer par les modules vraiment utiles, puis d'étendre progressivement.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESSOURCES -->
+  <section class="ressources">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Blog &amp; Ressources</div>
+        <h2>Ressources &amp; conseils Odoo</h2>
+        <p>Des articles pratiques pour vous aider à préparer, réussir et optimiser votre intégration Odoo.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="article-card">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--rose),var(--lavender))">&#128202;</div>
+          <div class="article-body">
+            <div class="article-cat" style="color:var(--text)">Guide débutant</div>
+            <h3>Odoo vs Sage : lequel choisir pour votre PME ?</h3>
+            <p>On compare les deux solutions sur les critères qui comptent vraiment : coût total, modularité, facilité de prise en main et évolutivité.</p>
+            <a href="ressources" class="btn btn-rose" style="align-self:flex-start;padding:.55rem 1.1rem;font-size:.82rem">Lire l'article &#8594;</a>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--mint),var(--sky))">&#128640;</div>
+          <div class="article-body">
+            <div class="article-cat" style="color:var(--text)">Bonnes pratiques</div>
+            <h3>Les 5 erreurs à éviter lors d'un déploiement Odoo</h3>
+            <p>Mauvaise préparation des données, formation bâclée, périmètre trop large… découvrez les pièges les plus fréquents et comment les contourner.</p>
+            <a href="ressources" class="btn btn-mint" style="align-self:flex-start;padding:.55rem 1.1rem;font-size:.82rem">Lire l'article &#8594;</a>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img" style="background:linear-gradient(135deg,var(--peach),var(--lemon))">&#128161;</div>
+          <div class="article-body">
+            <div class="article-cat" style="color:var(--text)">Astuce</div>
+            <h3>Comment automatiser votre facturation avec Odoo ?</h3>
+            <p>Relances automatiques, abonnements récurrents, intégration bancaire, découvrez comment Odoo peut vous faire gagner 3h par semaine.</p>
+            <a href="ressources" class="btn btn-rose" style="align-self:flex-start;padding:.55rem 1.1rem;font-size:.82rem;background:var(--peach)">Lire l'article &#8594;</a>
+          </div>
+        </article>
+      </div>
+      <div class="ressources-cta">
+        <a href="ressources" class="btn btn-outline">Voir toutes les ressources &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="services/integration-odoo">Intégration ERP</a></li>
+            <li><a href="metier/comptable">Secteurs</a></li>
+            <li><a href="ressources">Ressources</a></li>
+            <li><a href="#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="mentions-legales">Mentions l&eacute;gales</a> &#183; <a href="politique-confidentialite">Politique de confidentialit&eacute;</a> &#183; <a href="politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS, toutes les fonctions sont globales (pas de modules ES) -->
+
+
+  <!-- JS -->
+  <script>
+    /* Mobile menu */
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* Sticky header shadow */
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* FAQ accordion */
+    function toggleFaq(btn) {
+      var item   = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    }
+
+    /* Dropdown nav, clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+
+  </script>
+
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+      window.dispatchEvent(new CustomEvent('cookieConsentAccepted'));
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+
+  <!-- CALENDRIER RDV : chargement differe (IntersectionObserver + consentement cookies) -->
+  <script>
+    (function() {
+      var embed = document.getElementById('rdvCalendarEmbed');
+      if (!embed) return;
+      var url = embed.getAttribute('data-src');
+      var loaded = false;
+      var inView = false;
+
+      function isConsentGiven() {
+        try { return localStorage.getItem('cookieConsent') === 'accepted'; }
+        catch (e) { return false; }
+      }
+
+      function insertCalendar() {
+        if (loaded) return;
+        loaded = true;
+
+        embed.textContent = '';
+        embed.classList.add('is-loaded');
+
+        // Overlay de chargement, retire quand l'iframe declenche son event load
+        var loading = document.createElement('div');
+        loading.className = 'rdv-calendar-loading';
+        loading.setAttribute('role', 'status');
+        loading.setAttribute('aria-live', 'polite');
+
+        var spinner = document.createElement('div');
+        spinner.className = 'rdv-calendar-spinner';
+        spinner.setAttribute('aria-hidden', 'true');
+
+        var text = document.createElement('p');
+        text.className = 'rdv-calendar-loading-text';
+        text.textContent = 'Chargement du calendrier...';
+
+        loading.appendChild(spinner);
+        loading.appendChild(text);
+        embed.appendChild(loading);
+
+        var iframe = document.createElement('iframe');
+        iframe.src = url;
+        iframe.title = 'Prise de rendez-vous';
+        iframe.loading = 'lazy';
+        iframe.setAttribute('allow', 'fullscreen');
+        iframe.addEventListener('load', function() {
+          loading.classList.add('is-hidden');
+          setTimeout(function() {
+            if (loading.parentNode) loading.parentNode.removeChild(loading);
+          }, 300);
+        });
+        embed.appendChild(iframe);
+      }
+
+      function tryLoad() {
+        if (inView && isConsentGiven()) insertCalendar();
+      }
+
+      if ('IntersectionObserver' in window) {
+        // rootMargin genereux : le calendrier commence a se charger bien avant
+        // que la section soit visible, pour qu'il soit souvent pret a l'arrivee.
+        var io = new IntersectionObserver(function(entries, obs) {
+          entries.forEach(function(e) {
+            if (e.isIntersecting) {
+              inView = true;
+              obs.disconnect();
+              tryLoad();
+            }
+          });
+        }, { rootMargin: '600px 0px' });
+        io.observe(embed);
+      } else {
+        inView = true;
+        tryLoad();
+      }
+
+      window.addEventListener('cookieConsentAccepted', tryLoad);
+    })();
+  </script>
+</body>
+</html>

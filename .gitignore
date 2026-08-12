@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+Thumbs.db
+
+# Divers
+*.log
+.env
+node_modules/
+
+# Claude Code (réglages personnels locaux, à ne pas versionner)
+.claude/settings.local.json
+
+# Brouillons en cours (les brouillons partent en ligne via les Pull Requests, pas via main)

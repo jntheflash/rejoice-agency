@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo Logistique : réceptions, expéditions et transporteurs | Rejoice</title>
+  <meta name="description" content="Gérez vos flux logistiques dans Odoo : réceptions, expéditions, transporteurs, suivi des colis et retours. Un ERP connecté à votre stock et vos ventes, intégré par une agence Odoo certifiée." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/fonctionnalites/odoo-logistique" />
+  <meta property="og:title" content="Odoo Logistique : réceptions, expéditions et transporteurs | Rejoice" />
+  <meta property="og:description" content="Gérez vos flux logistiques dans Odoo : réceptions, expéditions, transporteurs, suivi des colis et retours. Un ERP connecté à votre stock et vos ventes, intégré par une agence Odoo certifiée." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Odoo Logistique : réceptions, expéditions et transporteurs | Rejoice" />
+  <meta name="twitter:description" content="Gérez vos flux logistiques dans Odoo : réceptions, expéditions, transporteurs, suivi des colis et retours. Un ERP connecté à votre stock et vos ventes, intégré par une agence Odoo certifiée." />
+  <link rel="canonical" href="https://rejoice-agency.fr/fonctionnalites/odoo-logistique" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Odoo Logistique : pilotez vos flux de livraison et d'expédition",
+    "description": "Gérez vos flux logistiques dans Odoo : réceptions fournisseurs, préparations, expéditions, transporteurs, suivi des colis et retours clients. Un ERP intégré par une agence Odoo certifiée.",
+    "url": "https://rejoice-agency.fr/fonctionnalites/odoo-logistique",
+    "dateModified": "2026-06-30",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <span>Fonctionnalités</span>
+          <span>/</span>
+          <span>Odoo Logistique</span>
+        </div>
+        <h1>Odoo Logistique&nbsp;: pilotez vos flux de marchandises</h1>
+        <p>De la réception fournisseur à la livraison client, en passant par les transferts entre entrepôts et les retours SAV, Odoo centralise tous vos flux logistiques dans un seul outil, connecté en temps réel à votre stock, vos ventes et votre facturation.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#128666;</span> Expéditions automatisées</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128200;</span> Suivi en temps réel</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128257;</span> Multi-transporteurs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO / POURQUOI ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div class="profil-photo-name">Sophie Merdrignac</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Pourquoi optimiser sa logistique avec Odoo</div>
+          <h2>La logistique, c'est là où les promesses commerciales se concrétisent</h2>
+          <p>Un commercial peut signer la meilleure affaire du monde&nbsp;: si la livraison arrive en retard, incomplète ou endommagée, c'est l'impression qui reste. La logistique est souvent le parent pauvre de la digitalisation des PME. On automatise les ventes, on connecte la comptabilité, mais les flux physiques restent gérés à la main, avec des bons de livraison imprimés et re-saisis.</p>
+          <p>Chez Rejoice, nous voyons régulièrement ce déséquilibre lors des audits. Odoo intègre nativement la gestion logistique au cœur de l'ERP. Pas un module satellite à synchroniser&nbsp;: le même système qui gère vos ventes prépare vos expéditions, met à jour votre stock et génère vos bons de livraison. <em>Sans ressaisie, sans délai, sans écart entre ce que vous avez promis et ce que vous avez envoyé.</em></p>
+          <p>Pour les PME qui expédient régulièrement, c'est souvent le module qui produit le retour sur investissement le plus visible dès les premières semaines d'utilisation.</p>
+
+          <div class="profil-pills">
+            <span class="profil-pill profil-pill--sky"><span aria-hidden="true">&#128666;</span> Expéditions</span>
+            <span class="profil-pill profil-pill--mint"><span aria-hidden="true">&#128203;</span> Bons de livraison</span>
+            <span class="profil-pill profil-pill--lavender"><span aria-hidden="true">&#128257;</span> Transporteurs</span>
+            <span class="profil-pill profil-pill--rose"><span aria-hidden="true">&#128260;</span> Retours SAV</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ LE CYCLE LOGISTIQUE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Une vue d'ensemble</div>
+        <h2>Le cycle logistique, de la réception au retour</h2>
+        <p>Odoo couvre chaque étape du parcours de vos marchandises, avec une traçabilité complète et un stock à jour en temps réel.</p>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128229;</div>
+          <div class="flow-step-label">Réception</div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128450;</div>
+          <div class="flow-step-label">Rangement</div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128203;</div>
+          <div class="flow-step-label">Préparation</div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128230;</div>
+          <div class="flow-step-label">Expédition</div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128666;</div>
+          <div class="flow-step-label">Livraison</div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step-icon" aria-hidden="true">&#128260;</div>
+          <div class="flow-step-label">Retours</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FONCTIONNALITÉS CLÉS ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Fonctionnalités clés</div>
+        <h2>Tous vos flux dans un seul outil</h2>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-visual feature-visual--lavande">
+          <div class="feature-visual-emoji" aria-hidden="true">&#128666;</div>
+          <div class="badge-row">
+            <span class="badge">Colissimo</span>
+            <span class="badge">Chronopost</span>
+            <span class="badge">DHL</span>
+            <span class="badge">UPS</span>
+            <span class="badge">DPD</span>
+            <span class="badge">Mondial Relay</span>
+          </div>
+        </div>
+        <div class="feature-text">
+          <h3>Vos transporteurs connectés à Odoo</h3>
+          <p>Connexion native avec les principaux transporteurs français et européens. Vous éditez les étiquettes d'expédition depuis Odoo, récupérez automatiquement les numéros de suivi et les transmettez au client par email. Les numéros restent visibles depuis la commande, la fiche client et le portail client, donc vos équipes savent où en est une livraison sans appeler le transporteur.</p>
+        </div>
+      </div>
+
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-visual feature-visual--menthe">
+          <div class="feature-visual-emoji" aria-hidden="true">&#128230;</div>
+        </div>
+        <div class="feature-text">
+          <h3>Des réceptions fiables, un stock toujours juste</h3>
+          <p>À l'arrivée des marchandises, Odoo rapproche la réception du bon de commande fournisseur et signale les écarts de quantité. Vous validez le contrôle qualité à la réception, et le stock se met à jour en temps réel, par entrepôt et par emplacement, sans ressaisie. La traçabilité par numéro de lot ou de série est native, utile pour les rappels produits et la conformité.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-visual feature-visual--peche">
+          <div class="feature-visual-emoji" aria-hidden="true">&#128203;</div>
+        </div>
+        <div class="feature-text">
+          <h3>De la préparation à l'expédition, sans friction</h3>
+          <p>Chaque commande validée génère un ordre de préparation, classé par priorité et par date de livraison promise. Des règles de rangement et de routage automatisent le chemin des marchandises&nbsp;: mise en stock guidée, cross-docking, transferts entre sites, flux push et pull. À l'expédition, le bon de livraison se génère à votre identité visuelle, les livraisons partielles et les reliquats sont suivis automatiquement, et la facturation se déclenche en un clic.</p>
+        </div>
+      </div>
+
+      <div class="feature-row feature-row--reverse">
+        <div class="feature-visual feature-visual--ciel">
+          <div class="feature-visual-emoji" aria-hidden="true">&#128260;</div>
+        </div>
+        <div class="feature-text">
+          <h3>Des retours clients maîtrisés</h3>
+          <p>Gestion complète des retours&nbsp;: bon de retour créé depuis la livraison d'origine, réception des marchandises, remise en stock ou mise en quarantaine, déclenchement de l'avoir ou du remplacement. Chaque retour reste lié à sa commande pour un SAV traçable. Et pour scanner produits, lots et emplacements sans saisie clavier, l'application Code-barres accélère toutes ces opérations.</p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <p>Pour la gestion fine des niveaux de stock et de la valorisation, découvrez aussi notre page <a href="/fonctionnalites/odoo-gestion-stock">gérer vos niveaux de stock et l'inventaire dans Odoo</a>.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ BÉNÉFICES ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Les bénéfices</div>
+        <h2>Optimiser sa logistique, c'est un levier direct de marge</h2>
+        <p>Au-delà du confort d'organisation, voici ce que nos clients constatent.</p>
+      </div>
+
+      <div class="benefit-band">
+        <div class="benefit-item">
+          <div class="benefit-item-icon" aria-hidden="true">&#128201;</div>
+          <h3>Moins de ruptures et de surstock</h3>
+          <p>Le réapprovisionnement automatique garde le bon niveau de stock au bon endroit.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item-icon" aria-hidden="true">&#9201;&#65039;</div>
+          <h3>Des délais de livraison tenus</h3>
+          <p>Préparation priorisée et transporteurs intégrés&nbsp;: vos commandes partent plus vite.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item-icon" aria-hidden="true">&#128257;</div>
+          <h3>Fini les doubles saisies</h3>
+          <p>Une seule commande alimente le stock, la livraison et la facture.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item-icon" aria-hidden="true">&#128202;</div>
+          <h3>Visibilité temps réel</h3>
+          <p>Des tableaux de bord pour piloter votre supply chain sur des données fiables.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTÉGRATION NATIVE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Intégration native</div>
+        <h2>La logistique connectée à tout votre système de gestion</h2>
+        <p>La logistique Odoo n'est pas un module isolé&nbsp;: c'est le lien entre vos flux commerciaux, votre stock et vos achats. Chaque action logistique a un impact immédiat sur tous les modules concernés. Pour une vision complète du périmètre, consultez aussi notre page <a href="/fonctionnalites/odoo-erp">Odoo ERP</a>.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon arg-icon--mint" aria-hidden="true">&#128230;</div>
+          <h3>Connecté à <a href="/fonctionnalites/odoo-gestion-stock">la gestion de stock et l'inventaire</a></h3>
+          <p>Chaque mouvement logistique (réception, expédition, transfert, retour) met à jour le stock en temps réel. La disponibilité des produits est instantanément reflétée dans tous les modules. Vos commerciaux voient ce qu'ils peuvent promettre, votre équipe achats sait quand commander.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon arg-icon--rose" aria-hidden="true">&#128203;</div>
+          <h3>Connecté aux <a href="/fonctionnalites/crm-odoo">Ventes / CRM</a></h3>
+          <p>La confirmation d'une commande client déclenche automatiquement le flux logistique correspondant. La livraison partielle ou totale met à jour le statut de la commande. Le client voit l'avancement de sa commande dans son portail, sans que votre équipe commerciale ait à le tenir informé manuellement.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon arg-icon--lavender" aria-hidden="true">&#128722;</div>
+          <h3>Connecté aux Achats</h3>
+          <p>La réception des marchandises fournisseurs est directement liée aux bons de commande correspondants. Odoo vérifie automatiquement les quantités reçues par rapport aux quantités commandées et signale les écarts. La réception déclenche le rapprochement avec la facture fournisseur.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FAQ ════════════════════════ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">FAQ</div>
+        <h2>Vos questions sur la logistique Odoo</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Odoo gère-t-il plusieurs entrepôts et emplacements&nbsp;?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui. Odoo gère le multi-entrepôts et les emplacements internes (zones, allées, quais), avec des transferts entre sites et un suivi du stock par emplacement en temps réel.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Odoo se connecte-t-il à mon transporteur&nbsp;?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui. L'intégration couvre les principaux transporteurs (Colissimo, Chronopost, DHL, UPS, DPD, Mondial Relay) pour l'édition des étiquettes et la remontée automatique des numéros de suivi. D'autres transporteurs peuvent être raccordés selon vos besoins.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Peut-on automatiser le réapprovisionnement et éviter les ruptures&nbsp;?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui. Vous définissez des règles de stock minimum et de réapprovisionnement&nbsp;: Odoo propose ou déclenche les commandes d'achat et les transferts pour garder le bon niveau de stock au bon endroit.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Odoo assure-t-il la traçabilité par lot et le code-barres&nbsp;?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Oui. La traçabilité par numéro de lot ou de série et la gestion par code-barres sont natives, ce qui facilite les rappels produits, les contrôles qualité et la conformité.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Faut-il remplacer tous mes outils d'un coup&nbsp;?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Non. On déploie la logistique Odoo progressivement, en la connectant à vos ventes, vos achats et votre stock à votre rythme. Pour le budget d'un projet, voyez notre page <a href="/tarifs-odoo">Tarifs Odoo</a>.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CTA FINALE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Parlons de votre projet</div>
+        <h2>Envie de fluidifier votre logistique&nbsp;?</h2>
+        <p>On commence par un échange gratuit de 30 minutes pour cartographier vos flux (réceptions, expéditions, transport, retours) et voir où Odoo vous ferait gagner le plus de temps. Sans engagement.</p>
+      </div>
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Prendre RDV &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleFaq(btn) {
+      var item   = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    }
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav, clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

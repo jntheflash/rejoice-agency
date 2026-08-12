@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment intégrer Odoo dans votre PME ? La méthode complète | Rejoice</title>
+  <meta name="description" content="Les 6 étapes d'une intégration Odoo réussie : audit, paramétrage, migration, formation. Délais, budgets et erreurs à éviter." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://rejoice-agency.fr/ressources/comment-integrer-odoo" />
+  <meta property="og:title" content="Comment intégrer Odoo dans votre PME ? La méthode complète | Rejoice" />
+  <meta property="og:description" content="Les 6 étapes d'une intégration Odoo réussie : audit, paramétrage, migration, formation. Délais, budgets et erreurs à éviter." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Comment intégrer Odoo dans votre PME ? La méthode complète | Rejoice" />
+  <meta name="twitter:description" content="Les 6 étapes d'une intégration Odoo réussie : audit, paramétrage, migration, formation. Délais, budgets et erreurs à éviter." />
+  <link rel="canonical" href="https://rejoice-agency.fr/ressources/comment-integrer-odoo" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Comment intégrer Odoo dans votre PME ? La méthode complète en 6 étapes",
+    "description": "Les 6 étapes d'une intégration Odoo réussie pour une PME : audit, cadrage, paramétrage, migration des données, formation et suivi post-déploiement.",
+    "url": "https://rejoice-agency.fr/ressources/comment-integrer-odoo",
+    "dateModified": "2026-06-29",
+    "inLanguage": "fr",
+    "author": {
+      "@type": "Person",
+      "name": "Sophie Merdrignac",
+      "url": "https://rejoice-agency.fr/agence/qui-sommes-nous"
+    },
+    "publisher": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-split">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="/">Accueil</a>
+            <span>/</span>
+            <a href="../ressources">Ressources</a>
+            <span>/</span>
+            <span>Comment intégrer Odoo</span>
+          </div>
+          <div class="card-meta">
+            <span class="article-badge article-badge--peach">Guide</span>
+            <span>&#128218; 9 min de lecture</span>
+          </div>
+          <h1>Comment intégrer Odoo dans votre PME&nbsp;? La méthode <em>en 6 étapes</em></h1>
+          <p>Un déploiement Odoo réussi ne dépend pas du logiciel mais de la méthode. Trop de projets échouent pour des raisons organisationnelles prévisibles : périmètre trop large, migration bâclée, formation négligée. Voici comment éviter ces pièges.</p>
+          <div class="article-author">
+            <img class="article-author-avatar" src="/images/sophie-merdrignac.webp" alt="Sophie Merdrignac" width="44" height="44">
+            <div class="article-author-info">
+              <span class="article-author-name">Sophie Merdrignac</span>
+              <span class="article-author-role">Intégratrice Odoo certifiée à Nantes</span>
+              <span class="article-author-meta">Mis à jour le 29 juin 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-hero-image">
+          <img src="/images/odooproject.webp" alt="Gestion de projet Odoo" width="889" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CORPS DE L'ARTICLE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+
+      <aside class="article-tldr">
+        <div class="article-tldr-title">L'essentiel</div>
+        <ul>
+          <li>Un déploiement Odoo pour une PME prend de 4 à 12 semaines selon le périmètre : un premier périmètre minimal opérationnel vaut mieux qu'un grand projet monolithique.</li>
+          <li>La méthode en 6 étapes (audit, cadrage, paramétrage, migration, formation, suivi) garantit que l'outil final correspond à vos besoins réels et non à ce que vous imaginiez avoir besoin avant de commencer.</li>
+          <li>Le coût d'implémentation varie de 3 000 à 30 000 euros selon la complexité ; la licence Enterprise coûte entre 20 et 45 euros par utilisateur et par mois selon le forfait.</li>
+          <li>Les projets qui échouent ratent pour des raisons organisationnelles, pas techniques : périmètre trop large, formation négligée, migration bâclée, résistance au changement non anticipée.</li>
+        </ul>
+      </aside>
+
+      <div class="article-layout">
+
+        <aside class="article-aside">
+          <div class="article-aside-inner">
+            <span class="article-toc-title">Sommaire</span>
+            <nav class="article-toc" aria-label="Sommaire">
+              <ul>
+                <li><a href="#methode">Pourquoi une méthode</a></li>
+                <li><a href="#etapes">Les 6 étapes</a></li>
+                <li><a href="#budget">Durée et coût</a></li>
+                <li><a href="#erreurs">Erreurs à éviter</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <div class="article-content">
+
+          <section>
+            <h2 id="methode">Pourquoi l'intégration Odoo demande une méthode</h2>
+            <p>Odoo est un logiciel très complet. Cette richesse est une force mais aussi un risque : sans cadre structuré, il est tentant d'activer trop de modules dès le départ, de paramétrer selon des cas d'usage théoriques plutôt que réels, et de sous-estimer la part humaine du projet. Le résultat est souvent un outil qui ne ressemble plus aux processus de l'entreprise et que les équipes rechignent à utiliser.</p>
+            <p>Une méthode rigoureuse permet trois choses. D'abord, aligner les attentes de toutes les parties prenantes avant de toucher au logiciel. Ensuite, livrer un périmètre fonctionnel minimal rapidement pour que les équipes voient concrètement ce qu'elles gagnent. Enfin, construire progressivement sur une base solide plutôt que de tout déployer d'un coup.</p>
+            <div class="callout callout--info">
+              <span class="callout-label">Bon à savoir</span>
+              <p>La plupart des PME qui tentent une installation Odoo en autonomie n'utilisent que 10 à 15 % des fonctionnalités disponibles, souvent les mauvaises. La valeur d'un intégrateur ne tient pas dans l'installation technique mais dans l'alignement de l'outil avec vos processus réels et la formation de vos équipes à l'utiliser efficacement.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 id="etapes">Les 6 étapes d'un déploiement réussi</h2>
+            <p>Ces six étapes s'appliquent à tous les projets Odoo, quelle que soit leur taille. Les durées varient selon le périmètre, mais l'ordre ne change pas.</p>
+
+            <h3>Étape 1 : Audit des processus</h3>
+            <p>Avant d'ouvrir Odoo, on documente l'existant. Quels sont vos flux de commandes, vos processus de facturation, votre gestion des stocks ? Quels outils utilisez-vous aujourd'hui, et lesquels remplacera Odoo ? Où se trouvent les frictions, les doublons, les pertes de temps ? Cette phase dure généralement 2 à 5 jours. Elle produit un document de synthèse qui sert de référence pour tout le reste du projet.</p>
+
+            <h3>Étape 2 : Cadrage et définition du périmètre</h3>
+            <p>A partir de l'audit, on définit ce qui sera déployé en priorité. Le périmètre est délimité : quels modules, quels flux, quels utilisateurs, quelle date de mise en production visée. On identifie aussi les données à migrer et les éventuelles spécificités à développer. Un bon cadrage prend 1 à 2 jours et évite les dérives de périmètre qui font exploser les budgets.</p>
+
+            <h3>Étape 3 : Paramétrage et tests</h3>
+            <p>C'est la phase de configuration de l'outil selon les décisions prises en cadrage. Comptes comptables, taxes, listes de prix, modèles d'emails, séquences de documents, workflows : tout est mis en place dans un environnement de test. Des sessions de validation sont organisées avec les équipes métier pour vérifier que le paramétrage correspond à leur réalité quotidienne. Les ajustements sont faits à cette étape, pas après la mise en production.</p>
+
+            <h3>Étape 4 : Migration des données</h3>
+            <p>Les données existantes (clients, fournisseurs, produits, historique comptable, stocks) sont extraites de vos anciens logiciels, nettoyées et importées dans Odoo. La qualité de la migration conditionne la confiance des équipes dans le nouvel outil. Une donnée client incorrectement migrée génère des erreurs dès la mise en production et entame la confiance. Cette étape dure généralement 1 à 3 jours selon le volume.</p>
+
+            <div class="callout callout--example">
+              <span class="callout-label">Exemple</span>
+              <p>Pour une PME de négoce de 15 utilisateurs couvrant la comptabilité, les ventes et les stocks, nous terminons généralement la migration des données en une journée et demie et la formation complète en deux sessions de trois heures. Le projet complet tient en 6 semaines, go-live inclus.</p>
+            </div>
+
+            <h3>Étape 5 : Formation des utilisateurs</h3>
+            <p>La formation est l'étape la plus souvent sous-budgétée. Pourtant, un outil mal maîtrisé sera contourné. Nous organisons des sessions par profil d'utilisateur : la formation du comptable n'est pas la même que celle du commercial ou du gestionnaire de stock. Chaque session est centrée sur des cas d'usage réels, pas sur un tour de toutes les fonctionnalités. Des supports de référence rapide sont remis à chaque équipe.</p>
+
+            <h3>Étape 6 : Suivi post-déploiement</h3>
+            <p>Les deux premières semaines après la mise en production sont critiques. Les équipes découvrent des cas non couverts, les habitudes s'ancrent (bonnes ou mauvaises), les questions s'accumulent. Un accompagnement post-déploiement structuré répond rapidement aux problèmes, ajuste les paramètres si besoin et s'assure que personne ne retourne à ses anciennes méthodes par facilité.</p>
+          </section>
+
+          <section>
+            <h2 id="budget">Durée et coût : des fourchettes réalistes</h2>
+            <p>Les budgets et délais d'un projet Odoo varient beaucoup selon le périmètre, le nombre d'utilisateurs, la quantité de données à migrer et les éventuels développements spécifiques. Voici des fourchettes honnêtes pour une PME de 5 à 50 utilisateurs.</p>
+
+            <h3>Durée de déploiement</h3>
+            <p>Un déploiement sur un périmètre minimal (2 à 3 modules : ventes + comptabilité + stocks, par exemple) prend de 4 à 6 semaines. Un périmètre étendu (5 modules ou plus, avec migration de données complexe ou développements spécifiques) prend de 8 à 16 semaines. Une règle simple : chaque module ajouté au périmètre initial ajoute 1 à 2 semaines de projet.</p>
+
+            <h3>Coût d'implémentation</h3>
+            <p>Les honoraires d'un intégrateur pour une PME varient de 3 000 euros pour un projet minimal et simple, à 30 000 euros pour un projet multi-sites ou avec des développements sur mesure significatifs. La majorité des projets PME se situent entre 5 000 et 15 000 euros. Ces chiffres n'incluent pas la licence logicielle.</p>
+
+            <h3>Coût de la licence</h3>
+            <p>La licence Odoo Enterprise est facturée par utilisateur et par mois. Le forfait Standard est autour de 20 à 25 euros par utilisateur, le forfait Pro (avec Odoo Studio) autour de 35 à 45 euros. Comptez donc entre 200 et 900 euros par mois pour une PME de 10 à 20 utilisateurs selon l'édition choisie. La version Community est gratuite mais sans support officiel ni applications mobiles. Consultez notre comparatif <a href="/ressources/odoo-community-vs-enterprise">Community vs Enterprise</a> pour choisir.</p>
+
+            <div class="callout callout--note">
+              <span class="callout-label">À noter</span>
+              <p>Le coût de la résistance au changement est rarement budgété, mais c'est l'un des postes les plus coûteux à terme. Prévoyez du temps de communication interne avant le lancement, et si votre équipe est nombreuse, envisagez un atelier d'adhésion pour identifier les freins et les lever avant la mise en production.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2 id="erreurs">Les erreurs qui font échouer les projets Odoo</h2>
+            <p>Ces quatre erreurs reviennent dans la majorité des projets ERP qui s'enlisent ou échouent. Elles sont toutes évitables si elles sont anticipées.</p>
+
+            <h3>Vouloir tout déployer en même temps</h3>
+            <p>C'est l'erreur la plus fréquente. L'enthousiasme du début pousse à activer tous les modules, à couvrir tous les cas d'usage dès le premier jour. Le résultat : un projet qui dure trop longtemps, des équipes épuisées par le changement, et souvent un abandon partiel. La bonne approche est de déployer un périmètre minimal rapidement, puis d'étendre progressivement une fois que le coeur est maîtrisé.</p>
+
+            <h3>Négliger la migration des données</h3>
+            <p>Importer des données non nettoyées dans Odoo, c'est importer des problèmes. Des doublons clients, des prix incorrects, un historique comptable incohérent : tout cela génère des erreurs dès la mise en production et entame la confiance des équipes dans le nouvel outil. La migration mérite autant d'attention que le paramétrage lui-même.</p>
+
+            <h3>Sous-estimer la formation</h3>
+            <p>Un utilisateur non formé qui découvre Odoo en situation réelle développe des habitudes incorrectes difficiles à corriger ensuite. Pire, il peut trouver des contournements qui court-circuitent les processus censés être automatisés. La formation n'est pas une option : c'est ce qui détermine si l'investissement porte ses fruits ou non.</p>
+
+            <h3>Personnaliser avant de tester le standard</h3>
+            <p>Odoo couvre la grande majorité des besoins d'une PME dans sa configuration standard. Demander des développements spécifiques dès le départ, avant d'avoir travaillé dans l'outil, génère du coût et de la complexité souvent inutiles. La bonne pratique est de travailler en standard pendant 3 à 6 mois, puis d'identifier les rares cas où une personnalisation est réellement nécessaire.</p>
+          </section>
+
+          <section class="related-section">
+            <h2>À lire aussi</h2>
+            <div class="related-grid">
+              <a href="/ressources/pourquoi-odoo" class="related-card">
+                <span class="related-card-cat">Guide</span>
+                <h3>Pourquoi choisir Odoo&nbsp;?</h3>
+                <p>Les 6 raisons qui font d'Odoo l'ERP préféré des PME.</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+              <a href="/ressources/quest-ce-quun-erp" class="related-card">
+                <span class="related-card-cat">Guide</span>
+                <h3>Qu'est-ce qu'un ERP&nbsp;?</h3>
+                <p>Définition, fonctionnement et critères de choix pour les PME.</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+              <a href="/ressources/odoo-community-vs-enterprise" class="related-card">
+                <span class="related-card-cat">Comparatif</span>
+                <h3>Community vs Enterprise</h3>
+                <p>Quelle édition Odoo choisir pour votre activité ?</p>
+                <span class="related-card-link">Lire l'article &#8594;</span>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

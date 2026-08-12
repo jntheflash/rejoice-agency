@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM Odoo — Gérez vos prospects et clients efficacement | Rejoice</title>
+  <meta name="description" content="CRM Odoo pour PME. Pipeline de ventes, suivi prospects, relances automatiques. Intégration native avec vos autres modules." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/fonctionnalites/crm-odoo" />
+  <meta property="og:title" content="CRM Odoo — Gérez vos prospects et clients efficacement | Rejoice" />
+  <meta property="og:description" content="CRM Odoo pour PME. Pipeline de ventes, suivi prospects, relances automatiques. Intégration native avec vos autres modules." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CRM Odoo — Gérez vos prospects et clients efficacement | Rejoice" />
+  <meta name="twitter:description" content="CRM Odoo pour PME. Pipeline de ventes, suivi prospects, relances automatiques. Intégration native avec vos autres modules." />
+  <link rel="canonical" href="https://rejoice-agency.fr/fonctionnalites/crm-odoo" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "CRM Odoo — Gestion des ventes et prospects pour PME",
+    "description": "CRM Odoo pour PME : pipeline de ventes, suivi prospects, relances automatiques, historique client et rapports commerciaux. Intégration native avec tous les modules Odoo.",
+    "url": "https://rejoice-agency.fr/fonctionnalites/crm-odoo",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <span>Fonctionnalités</span>
+          <span>/</span>
+          <span>CRM Odoo</span>
+        </div>
+        <h1>CRM Odoo&nbsp;: centralisez vos ventes et boostez <em>votre taux de conversion</em></h1>
+        <p>Vos commerciaux jonglent entre des emails, des fichiers Excel et leur mémoire pour suivre leurs prospects&nbsp;? Le CRM Odoo centralise tout en un seul endroit — et s'intègre nativement avec votre facturation, votre stock et votre agenda.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#128200;</span> Pipeline visuel</div>
+          <div class="hero-stat"><span aria-hidden="true">&#9889;</span> Relances automatiques</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128257;</span> Intégration native</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Marchand</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Pourquoi un CRM est indispensable pour une PME</div>
+          <h2>Sans CRM, vous perdez des opportunités sans même le savoir</h2>
+          <p>Dans une PME sans CRM, la relation client repose sur les individus — pas sur l'organisation. Quand un commercial est absent, en déplacement ou qu'il quitte l'entreprise, le suivi des prospects disparaît avec lui. Les relances passent à la trappe, les opportunités chaudes refroidissent, et les clients existants se sentent oubliés.</p>
+          <p>Un CRM bien configuré ne remplace pas le talent commercial — il l'amplifie. Il garantit qu'aucun prospect ne tombe dans les oubliettes, que chaque opportunité est suivie au bon moment, et que la direction a une visibilité réelle sur le pipeline sans attendre le reporting mensuel.</p>
+          <p><em>Le CRM Odoo a l'avantage décisif sur les CRM standalone&nbsp;: il partage la même base de données que vos ventes, votre facturation et votre stock.</em> Pas de doublon, pas de resaisie, pas de synchronisation à configurer.</p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--rose)"><span aria-hidden="true">&#128200;</span> Pipeline</span>
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#128101;</span> Prospects</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#9889;</span> Relances</span>
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#128202;</span> Reporting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FONCTIONNALITÉS CLÉS ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Fonctionnalités clés</div>
+        <h2>Tout ce dont votre équipe commerciale a besoin</h2>
+        <p>Le CRM Odoo couvre l'intégralité du cycle de vente — de la première prise de contact à la signature, et au-delà.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128200;</div>
+          <h3>Pipeline de ventes</h3>
+          <p>Vue kanban visuelle de toutes vos opportunités, classées par étape du cycle de vente. Glissez-déposez les opportunités d'une colonne à l'autre, voyez en un coup d'œil le montant potentiel de chaque étape et identifiez les goulots d'étranglement dans votre process commercial.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128101;</div>
+          <h3>Suivi des prospects</h3>
+          <p>Fiche complète pour chaque prospect et client&nbsp;: coordonnées, historique des échanges, notes, pièces jointes, activités planifiées. Tout ce qu'un commercial doit savoir avant d'appeler ou d'écrire est au même endroit — accessible en déplacement depuis l'application mobile.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#9889;</div>
+          <h3>Relances automatiques</h3>
+          <p>Définissez des séquences de relance automatisées selon l'étape du pipeline ou l'inactivité d'une opportunité. Email de suivi après 3 jours sans réponse, rappel de rappel téléphonique, alerte si une opportunité n'a pas bougé depuis 2 semaines — les relances se font sans effort.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128220;</div>
+          <h3>Historique client complet</h3>
+          <p>Pour chaque client, Odoo centralise l'intégralité de la relation&nbsp;: toutes les opportunités passées et en cours, les devis émis, les commandes livrées, les factures payées ou en retard, les échanges email. Un contexte complet en quelques secondes avant chaque contact.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128202;</div>
+          <h3>Rapports commerciaux</h3>
+          <p>Tableaux de bord en temps réel sur les performances commerciales&nbsp;: chiffre d'affaires par commercial, taux de conversion par étape, durée moyenne du cycle de vente, opportunités perdues et leurs raisons. La direction pilote avec des données fraîches, pas des rapports mensuels en retard.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128073;</div>
+          <h3>Gestion des activités</h3>
+          <p>Chaque opportunité porte ses prochaines actions planifiées&nbsp;: appel à passer, email à envoyer, démo à préparer, devis à finaliser. Vue agenda pour chaque commercial, rappels automatiques, et vision managériale de la charge d'activité de toute l'équipe.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTÉGRATION NATIVE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Intégration native</div>
+        <h2>Le CRM qui parle à tous vos outils Odoo</h2>
+        <p>C'est ce qui distingue fondamentalement le CRM Odoo d'un CRM standalone comme Salesforce ou HubSpot&nbsp;: tout est dans le même système, sans connecteur à maintenir.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128203;</div>
+          <h3>Connecté aux Ventes</h3>
+          <p>En un clic, transformez une opportunité CRM en devis dans le module Ventes. Le client, les produits pressentis, les conditions commerciales négociées — tout est déjà là. Pas de saisie double, pas d'erreur de recopie entre deux outils qui ne se parlent pas.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128181;</div>
+          <h3>Connecté à la Facturation</h3>
+          <p>L'historique de facturation de chaque client est visible directement depuis sa fiche CRM. Montant facturé, factures en attente, retards de paiement — votre commercial sait si son client a des impayés avant de lui proposer une nouvelle affaire.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128140;</div>
+          <h3>Connecté à l'Email</h3>
+          <p>Tous les emails échangés avec un prospect sont automatiquement archivés dans son opportunité CRM. Répondez directement depuis Odoo, créez des modèles d'emails pour standardiser vos communications, et gardez un fil de conversation complet sans quitter votre CRM.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128197;</div>
+          <h3>Connecté à l'Agenda</h3>
+          <p>Planifiez des rendez-vous directement depuis une opportunité CRM — ils apparaissent dans votre agenda Odoo, synchronisable avec Google Calendar ou Outlook. Invitation automatique au prospect, rappels, compte-rendu de réunion attaché à l'opportunité.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128230;</div>
+          <h3>Connecté au Stock</h3>
+          <p>Votre commercial peut vérifier la disponibilité d'un produit en temps réel depuis la fiche produit du CRM, sans avoir à solliciter le service logistique. Il sait ce qu'il peut promettre avant même d'envoyer un devis — et évite les engagements impossibles à tenir.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128101;</div>
+          <h3>Portail client</h3>
+          <p>Vos clients accèdent à leur espace personnel pour consulter leurs devis en attente, accepter une offre en ligne, télécharger leurs factures et suivre l'avancement de leurs commandes. Une expérience client professionnelle, sans développement supplémentaire.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ POURQUOI REJOICE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Rejoice ?</div>
+        <h2>Un CRM qui colle à votre process commercial réel</h2>
+        <p>Un CRM mal configuré est pire qu'un CRM inexistant — il crée de la friction sans apporter de valeur, et les équipes l'abandonnent en quelques semaines. Chez Rejoice, on configure Odoo en partant de votre façon de vendre, pas d'un template générique.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#127941;</div>
+          <h3>Expert Odoo certifié</h3>
+          <p>La certification Odoo Partner couvre le module CRM en profondeur. Je connais les paramètres qui font la différence — étapes du pipeline, scoring des leads, règles d'attribution automatique, configuration des séquences de relance — et ceux qui créent de la complexité inutile.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128269;</div>
+          <h3>Paramétrage sur mesure</h3>
+          <p>Votre cycle de vente n'est pas celui d'une autre PME. Avant de configurer quoi que ce soit, j'analyse votre processus commercial réel&nbsp;: comment vos leads arrivent, comment vos commerciaux travaillent, quelles sont vos étapes clés. Le CRM s'adapte à vous, pas l'inverse.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#127891;</div>
+          <h3>Formation des équipes commerciales</h3>
+          <p>Un CRM adopté est un CRM formé. Vos commerciaux apprennent à utiliser Odoo dans leur quotidien réel&nbsp;: qualifier un lead, faire avancer une opportunité, planifier leurs activités, lire leur tableau de bord. Pas une démonstration générique — une formation ancrée dans leur métier.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128101;</div>
+          <h3>Interlocuteur unique</h3>
+          <p>Du cadrage au bilan post-lancement, vous avez une seule personne qui connaît votre projet. Le consultant qui a analysé votre process commercial est le même qui configure Odoo et qui forme vos équipes — sans perte de contexte entre les étapes.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128200;</div>
+          <h3>Vision globale ERP + CRM</h3>
+          <p>L'avantage d'Odoo, c'est que le CRM n'est pas isolé. Si vous avez déjà un ERP Odoo ou si vous intégrez les deux en même temps, je configure les interactions entre modules pour que vos commerciaux bénéficient des données de stock, de facturation et de logistique en temps réel.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#9889;</div>
+          <h3>Démarrage en 15 jours</h3>
+          <p>Dès la signature du devis, la phase d'audit de votre processus commercial est planifiée sous 15 jours. Un projet CRM focalisé peut être déployé en 3 à 5 semaines — avec des équipes formées et un pipeline alimenté dès le premier jour en production.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Discuter de votre CRM &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Parlons de votre process commercial &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. On analyse ensemble comment vous gérez vos prospects aujourd'hui, ce qui freine votre conversion, et comment le CRM Odoo peut changer concrètement votre quotidien commercial.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice &#8212; Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

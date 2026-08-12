@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odoo 19 — Nouveautés et migration vers la dernière version | Rejoice</title>
+  <meta name="description" content="Odoo 19 est arrivé. Nouvelles fonctionnalités IA, interface améliorée. Rejoice vous accompagne dans votre migration sans interruption." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/fonctionnalites/odoo-19" />
+  <meta property="og:title" content="Odoo 19 — Nouveautés et migration vers la dernière version | Rejoice" />
+  <meta property="og:description" content="Odoo 19 est arrivé. Nouvelles fonctionnalités IA, interface améliorée. Rejoice vous accompagne dans votre migration sans interruption." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Odoo 19 — Nouveautés et migration vers la dernière version | Rejoice" />
+  <meta name="twitter:description" content="Odoo 19 est arrivé. Nouvelles fonctionnalités IA, interface améliorée. Rejoice vous accompagne dans votre migration sans interruption." />
+  <link rel="canonical" href="https://rejoice-agency.fr/fonctionnalites/odoo-19" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Migration Odoo 19 — Nouveautés et accompagnement",
+    "description": "Découvrez les nouveautés d'Odoo 19 et migrez sereinement vers la dernière version. Accompagnement Rejoice : zéro interruption, formation incluse.",
+    "url": "https://rejoice-agency.fr/fonctionnalites/odoo-19",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <span>Fonctionnalités</span>
+          <span>/</span>
+          <span>Odoo 19</span>
+        </div>
+        <h1>Odoo 19&nbsp;: découvrez les nouveautés et migrez sereinement <em>vers la dernière version</em></h1>
+        <p>Odoo 19 marque une nouvelle étape majeure dans l'évolution de la plateforme — IA plus profonde, interface repensée, performances accrues. Rejoice vous accompagne pour migrer sans stress et profiter immédiatement des nouvelles fonctionnalités.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#129302;</span> IA intégrée nativement</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128640;</span> Migration sans interruption</div>
+          <div class="hero-stat"><span aria-hidden="true">&#127941;</span> Certifiée Odoo Partner</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Marchand</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Qu'est-ce qu'Odoo 19 ?</div>
+          <h2>Une version majeure qui accélère la transformation des PME</h2>
+          <p>Odoo sort une nouvelle version majeure chaque année, enrichie de centaines de nouvelles fonctionnalités développées en collaboration avec la communauté mondiale et les retours de millions d'utilisateurs. Odoo 19 pousse encore plus loin l'intégration de l'intelligence artificielle dans les processus métier quotidiens — pas comme une fonctionnalité gadget, mais comme un accélérateur concret sur les tâches à faible valeur ajoutée.</p>
+          <p>Si vous êtes encore sur Odoo 16, 17 ou 18, la migration vers Odoo 19 n'est pas une obligation immédiate — mais c'est une opportunité à ne pas laisser passer indéfiniment. <em>Chaque version non migrée représente des fonctionnalités que vous n'utilisez pas, et un écart grandissant qui rendra la migration future plus complexe.</em></p>
+          <p>Rejoice accompagne les migrations Odoo depuis plusieurs versions. On sait ce qui est simple, ce qui est délicat, et comment protéger votre activité pendant la transition.</p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#129302;</span> IA native</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#128640;</span> Performances</span>
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#128421;</span> Interface</span>
+            <span class="profil-pill" style="background:var(--rose)"><span aria-hidden="true">&#128736;</span> Nouveaux modules</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ NOUVEAUTÉS ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Nouveautés principales</div>
+        <h2>Ce qui change vraiment dans Odoo 19</h2>
+        <p>Au-delà des corrections de bugs et des améliorations mineures, voici les évolutions qui ont un impact concret sur le quotidien de vos équipes.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#129302;</div>
+          <h3>Fonctionnalités IA intégrées</h3>
+          <p>Odoo 19 pousse l'intégration de l'IA au cœur des modules métier&nbsp;: suggestions de réponse dans le CRM, résumé automatique des fils de discussion, détection d'anomalies comptables, prévisions de demande améliorées pour le stock. L'IA intervient là où elle fait gagner du temps, sans remplacer le jugement humain. Pour aller plus loin, voyez <a href="/fonctionnalites/odoo-ia">nos fonctionnalités Odoo IA en détail</a>.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128421;</div>
+          <h3>Interface repensée</h3>
+          <p>Chaque version d'Odoo affine l'ergonomie de l'interface. Odoo 19 apporte une navigation plus fluide, des vues liste et kanban plus rapides à consulter, des raccourcis clavier étendus et une expérience mobile encore plus aboutie. Vos utilisateurs passent moins de temps à chercher et plus de temps à produire.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128640;</div>
+          <h3>Performances améliorées</h3>
+          <p>Odoo 19 poursuit l'optimisation des performances lancée dans les versions précédentes — temps de chargement réduits, requêtes base de données optimisées, meilleure gestion des grandes volumétries. Pour les PME avec des historiques importants, la différence est perceptible au quotidien.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128736;</div>
+          <h3>Nouveaux modules</h3>
+          <p>Chaque version majeure d'Odoo introduit de nouveaux modules ou en fait évoluer d'existants en profondeur. Odoo 19 enrichit notamment les capacités en gestion de projet, en planification des ressources et en gestion des abonnements — des domaines qui touchent directement les PME de services.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128257;</div>
+          <h3>Meilleures intégrations</h3>
+          <p>Les connecteurs avec les outils tiers les plus courants sont renforcés à chaque version — marketplaces, transporteurs, outils de paiement, plateformes e-commerce, solutions de signature électronique. Odoo 19 élargit encore cet écosystème et simplifie la configuration des intégrations existantes.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128203;</div>
+          <h3>Facturation électronique 2026</h3>
+          <p>Odoo 19 intègre nativement les évolutions réglementaires françaises en matière de facturation électronique — formats Factur-X et UBL, connexion aux PDP homologuées, transmission des données de paiement. Pour les PME qui anticipent l'obligation 2026, c'est un argument de migration supplémentaire.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ MIGRER ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Migrer vers Odoo 19</div>
+        <h2>Pourquoi migrer, comment ça se passe — et comment éviter les mauvaises surprises</h2>
+        <p>Une migration Odoo n'est pas une mise à jour automatique comme un logiciel sur votre téléphone. C'est un projet technique et fonctionnel qui mérite une approche méthodique.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128161;</div>
+          <h3>Pourquoi migrer maintenant ?</h3>
+          <p>Les versions Odoo ont une durée de support limitée. Rester sur une version ancienne, c'est s'exposer à des failles de sécurité non corrigées, à une incompatibilité croissante avec les modules communautaires, et à une migration future plus complexe et coûteuse. Migrer progressivement, version par version, est toujours plus simple que de sauter plusieurs générations d'un coup.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128269;</div>
+          <h3>Audit pré-migration</h3>
+          <p>Avant toute migration, on analyse votre configuration actuelle&nbsp;: modules installés, développements spécifiques, données critiques, intégrations tierces. Cet audit permet d'identifier les points de complexité et d'estimer précisément la charge de travail — sans mauvaise surprise en cours de projet.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128221;</div>
+          <h3>Migration des données</h3>
+          <p>La migration des données est l'étape la plus sensible. Odoo fournit des scripts de migration automatique pour les données standard, mais les données personnalisées et les développements spécifiques nécessitent une attention particulière. On teste la migration complète sur un environnement de recette avant de toucher à votre production.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#9989;</div>
+          <h3>Tests &amp; validation</h3>
+          <p>Avant le go-live, vos équipes clés testent les processus critiques sur l'environnement migré. On valide que tout fonctionne comme attendu — ou on corrige ce qui ne va pas. Aucune migration n'est mise en production sans avoir été validée par vos utilisateurs sur leurs cas d'usage réels.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128336;</div>
+          <h3>Durée et planification</h3>
+          <p>Une migration d'une version à la suivante prend en général entre 2 et 6 semaines selon la complexité de votre configuration et le nombre de développements spécifiques à adapter. Le basculement en production est planifié sur un créneau à faible activité — week-end ou période creuse — pour minimiser l'impact sur votre activité.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128200;</div>
+          <h3>Risques maîtrisés</h3>
+          <p>Les risques d'une migration Odoo sont réels mais maîtrisables avec la bonne méthode&nbsp;: environnement de recette isolé, sauvegarde complète avant basculement, plan de retour arrière défini, période de support renforcé après go-live. On ne migre pas en espérant que ça se passera bien — on s'y prépare pour que ça se passe bien.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ POURQUOI REJOICE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Rejoice ?</div>
+        <h2>Des migrations Odoo conduites avec la rigueur que mérite votre activité</h2>
+        <p>Une migration Odoo ratée, c'est des données corrompues, des processus bloqués, des équipes en panique. Chez Rejoice, on traite chaque migration comme le projet critique qu'elle est — avec méthode, tests exhaustifs et un plan de retour arrière toujours prêt.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#127941;</div>
+          <h3>Expert migration Odoo certifié</h3>
+          <p>La certification Odoo Partner couvre les aspects techniques de la migration — scripts de migration, adaptation des développements spécifiques, résolution des incompatibilités entre versions. J'ai conduit des migrations depuis Odoo 14, 15, 16 et 17 — je connais les pièges propres à chaque saut de version.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128640;</div>
+          <h3>Zéro interruption d'activité</h3>
+          <p>Le basculement en production est planifié pour éviter toute interruption pendant vos heures ouvrées. On prépare tout en amont — l'environnement migré est prêt et validé avant le jour J. Le switch prend quelques heures, pas plusieurs jours. Vos équipes retrouvent un Odoo fonctionnel dès le lundi matin.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128203;</div>
+          <h3>Accompagnement complet</h3>
+          <p>La migration technique n'est que la moitié du travail. L'autre moitié, c'est aider vos équipes à prendre en main les nouveautés d'Odoo 19. Formation sur les nouvelles fonctionnalités, documentation des changements qui impactent leur quotidien, support renforcé dans les premières semaines — on ne livre pas une migration, on livre une transition réussie.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128736;</div>
+          <h3>Développements spécifiques adaptés</h3>
+          <p>Si vous avez des modules sur mesure développés sur votre version actuelle, ils doivent être adaptés à Odoo 19. Je prends en charge cette adaptation en respectant les nouveaux standards de l'éditeur — pour que votre investissement en développement reste exploitable et maintenable dans la durée.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128101;</div>
+          <h3>Interlocuteur unique</h3>
+          <p>Du diagnostic pré-migration au bilan post-lancement, une seule personne pilote l'ensemble du projet. Elle connaît votre configuration actuelle, vos développements spécifiques et vos contraintes métier — et elle assure la continuité entre la version que vous quittez et la version sur laquelle vous arrivez.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128200;</div>
+          <h3>Devis précis, sans dérive</h3>
+          <p>L'audit pré-migration produit un devis détaillé avec le périmètre exact de la migration, les développements à adapter, les tests à réaliser et le planning prévisionnel. Pas de surprise en cours de projet — si quelque chose d'imprévu apparaît lors des tests, on en discute avant d'agir, pas après avoir facturé.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Évaluer votre migration Odoo 19 &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Évaluons votre migration Odoo 19 &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. Dites-moi sur quelle version vous êtes, combien de modules vous utilisez et si vous avez des développements spécifiques — je vous donne une première estimation de la complexité et du délai de votre migration.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice, Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

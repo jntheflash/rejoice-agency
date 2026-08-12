@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développeur Odoo sur mesure — Modules &amp; personnalisation | Rejoice</title>
+  <meta name="description" content="Développement Odoo personnalisé. Modules métier, automatisations, connecteurs. Votre Odoo adapté à 100% à vos processus." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/services/developpement-odoo" />
+  <meta property="og:title" content="Développeur Odoo sur mesure — Modules &amp; personnalisation | Rejoice" />
+  <meta property="og:description" content="Développement Odoo personnalisé. Modules métier, automatisations, connecteurs. Votre Odoo adapté à 100% à vos processus." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Développeur Odoo sur mesure — Modules &amp; personnalisation | Rejoice" />
+  <meta name="twitter:description" content="Développement Odoo personnalisé. Modules métier, automatisations, connecteurs. Votre Odoo adapté à 100% à vos processus." />
+  <link rel="canonical" href="https://rejoice-agency.fr/services/developpement-odoo" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Développement Odoo sur mesure — Modules et personnalisation",
+    "description": "Développement Odoo personnalisé : modules métier, automatisations, connecteurs API, rapports et interfaces sur mesure pour PME.",
+    "url": "https://rejoice-agency.fr/services/developpement-odoo",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <a href="/#services-odoo">Services</a>
+          <span>/</span>
+          <span>Développement Odoo</span>
+        </div>
+        <h1>Développement Odoo sur mesure&nbsp;: des fonctionnalités <em>pensées pour votre métier</em></h1>
+        <p>Odoo couvre l'essentiel — mais votre activité a ses spécificités. Quand le paramétrage standard atteint ses limites, le développement sur mesure prend le relais pour adapter l'outil à 100&nbsp;% à vos processus.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#128736;</span> Développement sur mesure</div>
+          <div class="hero-stat"><span aria-hidden="true">&#127941;</span> Certifiée Odoo Partner</div>
+          <div class="hero-stat"><span aria-hidden="true">&#9989;</span> Code maintenable</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Marchand</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Quand le développement sur mesure est nécessaire</div>
+          <h2>Le paramétrage ne suffit pas toujours</h2>
+          <p>Odoo est un ERP modulaire et très configurable. Dans 80&nbsp;% des cas, un bon paramétrage suffit à couvrir les besoins d'une PME. Mais il reste 20&nbsp;% de situations où vos processus métier sont suffisamment spécifiques pour nécessiter du code&nbsp;: un calcul de prix hors standard, un workflow particulier, un système tiers à connecter.</p>
+          <p>Le développement sur mesure n'est pas une béquille pour compenser un mauvais paramétrage — c'est une extension ciblée qui complète ce qu'Odoo fait nativement. <em>Mal fait, il crée de la dette technique. Bien fait, il devient un avantage compétitif durable.</em></p>
+          <p>Chez Rejoice, chaque développement commence par une analyse rigoureuse du besoin pour s'assurer qu'il ne peut pas être couvert autrement — et s'il le faut, il est réalisé dans les standards Odoo pour faciliter les mises à jour futures.</p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--sky)"><span aria-hidden="true">&#128736;</span> Modules métier</span>
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#9889;</span> Automatisations</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#128257;</span> Connecteurs API</span>
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#128202;</span> Rapports</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CE QU'ON DÉVELOPPE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Ce qu'on développe</div>
+        <h2>Des développements ciblés, pas du code pour du code</h2>
+        <p>Chaque développement répond à un besoin métier précis. Rien n'est fait par défaut — tout est justifié par un gain concret pour vos équipes.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128736;</div>
+          <h3>Modules métier</h3>
+          <p>Développement de modules Odoo entièrement sur mesure pour couvrir vos processus spécifiques&nbsp;: gestion de gammes de production, suivi de chantier, calcul de prix complexe, gestion de contrats récurrents. Des fonctionnalités que vous n'aurez nulle part ailleurs.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#9889;</div>
+          <h3>Automatisations</h3>
+          <p>Élimination des tâches manuelles et répétitives&nbsp;: relances automatiques, génération de documents à la validation d'une étape, alertes sur seuils, synchronisation de statuts entre modules. Vos équipes se concentrent sur ce qui a de la valeur.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128257;</div>
+          <h3>Connecteurs API</h3>
+          <p>Intégration d'Odoo avec vos outils tiers&nbsp;: e-commerce (Shopify, WooCommerce, Prestashop), marketplace, logistique (transporteurs, WMS), comptabilité (Pennylane, Sage), outils RH ou CRM externes. Un seul point de vérité pour toutes vos données.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128202;</div>
+          <h3>Rapports personnalisés</h3>
+          <p>Création de rapports et tableaux de bord sur mesure&nbsp;: états comptables spécifiques, reporting commercial adapté à votre hiérarchie, exports personnalisés pour vos partenaires ou votre expert-comptable. Les données dont vous avez besoin, dans le format que vous voulez.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128396;</div>
+          <h3>Interfaces sur mesure</h3>
+          <p>Adaptation de l'interface Odoo pour vos utilisateurs terrain&nbsp;: vues simplifiées pour les opérateurs, formulaires adaptés aux tablettes en atelier, portail client personnalisé. L'outil s'adapte à l'utilisateur, pas l'inverse.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128260;</div>
+          <h3>Migrations &amp; mises à jour</h3>
+          <p>Migration de vos développements spécifiques vers une version plus récente d'Odoo. Audit du code existant, refactoring aux nouveaux standards, tests de régression — pour que votre investissement tienne dans la durée sans bloquer vos montées de version.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ NOTRE APPROCHE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Notre approche</div>
+        <h2>Du besoin au déploiement, sans zone grise</h2>
+        <p>Le développement logiciel est souvent perçu comme une boîte noire. Chez Rejoice, chaque étape est transparente et produit un livrable concret.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128269;</div>
+          <h3>1 — Analyse du besoin</h3>
+          <p>On commence toujours par vérifier qu'un développement est vraiment nécessaire. Parfois, un paramétrage avancé ou une combinaison de modules natifs résout le problème sans une seule ligne de code. Si le développement est justifié, on rédige un cahier des charges précis avant de commencer.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128221;</div>
+          <h3>2 — Spécifications &amp; devis</h3>
+          <p>Rédaction des spécifications fonctionnelles et techniques. Vous validez ce qui sera développé avant que le moindre code soit écrit. Devis détaillé avec estimation du temps de développement, de test et de déploiement — pas de surprise en fin de mission.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128736;</div>
+          <h3>3 — Développement</h3>
+          <p>Développement dans les standards Odoo (ORM, architecture MVC, bonnes pratiques de sécurité). Le code produit est documenté, versionné sur Git et rédigé pour être compris et maintenu par n'importe quel développeur Odoo — pas seulement par nous.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#9989;</div>
+          <h3>4 — Tests</h3>
+          <p>Tests fonctionnels sur un environnement de recette avec vos données réelles. Vous validez chaque fonctionnalité avant la mise en production. Les anomalies sont corrigées avant le go-live — pas après.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128640;</div>
+          <h3>5 — Déploiement</h3>
+          <p>Mise en production planifiée pour minimiser l'impact sur votre activité. Formation des utilisateurs sur les nouvelles fonctionnalités. Documentation remise pour que vos équipes sachent exactement comment utiliser ce qui a été développé.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128200;</div>
+          <h3>6 — Maintenance</h3>
+          <p>Suivi post-déploiement pour corriger les éventuels comportements inattendus en conditions réelles. Possibilité d'un contrat de maintenance pour les évolutions futures et les mises à jour de version. Votre investissement est protégé dans le temps.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ POURQUOI REJOICE ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Pourquoi Rejoice ?</div>
+        <h2>Du code qui dure, pas du code qui bouche des trous</h2>
+        <p>Un développement Odoo réalisé dans les règles de l'art est un actif. Un développement fait à la va-vite devient un frein à chaque mise à jour. Chez Rejoice, on choisit la première option — même si ça prend un peu plus de temps.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128203;</div>
+          <h3>Code maintenable</h3>
+          <p>Tout le code produit respecte les conventions Odoo&nbsp;: nommage, structure des modules, séparation des couches. Un autre développeur Odoo peut reprendre votre code sans devoir tout déchiffrer. Vous n'êtes pas prisonnier d'un prestataire.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#127941;</div>
+          <h3>Respect des standards Odoo</h3>
+          <p>Les développements qui contournent le framework Odoo fonctionnent — jusqu'à la prochaine mise à jour. On développe dans le cadre prévu par l'éditeur pour que vos montées de version ne soient pas des projets en eux-mêmes.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#128269;</div>
+          <h3>Analyse avant développement</h3>
+          <p>On ne code pas avant d'avoir vérifié qu'il n'existe pas de solution plus simple. Cette discipline évite les développements inutiles, réduit les coûts et produit un Odoo plus léger et plus facile à maintenir sur le long terme.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#127941;</div>
+          <h3>Certifiée Odoo Partner</h3>
+          <p>La certification Odoo Partner couvre les aspects fonctionnels et techniques de la plateforme. Elle atteste d'une connaissance approfondie du framework, des bonnes pratiques de développement et des modules standard — ce qui se reflète directement dans la qualité du code produit.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#128101;</div>
+          <h3>Interlocuteur unique</h3>
+          <p>La même personne comprend votre métier, connaît votre paramétrage et écrit votre code. Pas de perte de contexte entre un consultant fonctionnel et un développeur externe. Les spécifications sont cohérentes avec ce qui existe déjà dans votre Odoo.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128260;</div>
+          <h3>Accompagnement long terme</h3>
+          <p>Les besoins évoluent. Un module développé aujourd'hui devra peut-être être enrichi dans 18 mois ou migré dans 3 ans. Rejoice peut assurer la maintenance et l'évolution de vos développements spécifiques sur la durée — pas seulement livrer et disparaître.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Discuter de votre projet &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Parlons de vos besoins spécifiques &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. Décrivez-moi le processus que vous n'arrivez pas à couvrir avec Odoo standard, et je vous dis s'il faut développer, paramétrer différemment — ou les deux.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice &#8212; Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>

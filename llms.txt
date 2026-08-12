@@ -1,0 +1,55 @@
+# Rejoice Agency
+
+> Rejoice est une agence d'intégration Odoo certifiée, basée à Nantes, qui accompagne les PME et TPE dans leur transformation digitale : audit, intégration, développement et formation sur Odoo. Interlocutrice : Sophie Merdrignac (sophie@rejoice-agency.fr).
+
+## Pages principales
+
+- [Accueil](https://rejoice-agency.fr/): Rejoice Agency, expert Odoo certifié. Intégration ERP sur mesure pour PME. Audit, déploiement, formation. Démarrage en 15 jours.
+- [Tarifs Odoo](https://rejoice-agency.fr/tarifs-odoo): Prix des licences Odoo, coût d'intégration et budget réel d'un projet. Le vrai coût d'Odoo expliqué simplement, sans frais cachés, par une agence certifiée.
+
+## Nos expertises Odoo
+
+- [Consultant Odoo certifié pour PME](https://rejoice-agency.fr/services/consultant-odoo): Audit de votre ERP et CRM, analyse des besoins, recommandations personnalisées. Devis gratuit.
+- [Intégrateur Odoo certifié pour PME](https://rejoice-agency.fr/services/integration-odoo): Intégration Odoo clé en main. Paramétrage, migration de données, formation incluse. Démarrage en 15 jours.
+- [Développeur Odoo sur mesure](https://rejoice-agency.fr/services/developpement-odoo): Modules métier, automatisations, connecteurs. Votre Odoo adapté à 100% à vos processus.
+- [Formation Odoo pour PME](https://rejoice-agency.fr/services/formation-odoo): Formation sur mesure pour vos équipes. Présentiel ou distanciel, débutants ou avancés. Certifiée Odoo Partner.
+
+## Fonctionnalités Odoo
+
+- [Odoo Facture Électronique](https://rejoice-agency.fr/fonctionnalites/odoo-facture-electronique): Facture électronique obligatoire dès 2026. Odoo vous rend conforme automatiquement, solution clé en main.
+- [CRM Odoo](https://rejoice-agency.fr/fonctionnalites/crm-odoo): Pipeline de ventes, suivi prospects, relances automatiques. Intégration native avec vos autres modules Odoo.
+- [Odoo ERP](https://rejoice-agency.fr/fonctionnalites/odoo-erp): ERP tout-en-un pour PME. Ventes, achats, stocks, comptabilité, RH. Modulaire, évolutif, jusqu'à 3x moins cher que SAP.
+- [Odoo Comptabilité](https://rejoice-agency.fr/fonctionnalites/odoo-comptabilite): Facturation, rapprochement bancaire, TVA, bilan. Connecté à tous vos autres modules Odoo.
+- [Odoo Gestion de Stock](https://rejoice-agency.fr/fonctionnalites/odoo-gestion-stock): Gestion des entrepôts, traçabilité, réassort automatique. Connecté à vos ventes et achats en temps réel.
+- [Odoo Logistique](https://rejoice-agency.fr/fonctionnalites/odoo-logistique): Gestion des expéditions, bons de livraison, transporteurs. Intégré à votre stock et vos ventes.
+- [Odoo 19](https://rejoice-agency.fr/fonctionnalites/odoo-19): Nouveautés Odoo 19 (IA, interface). Migration vers la dernière version sans rupture d'activité.
+- [Odoo IA](https://rejoice-agency.fr/fonctionnalites/odoo-ia): Automatisation intelligente, prédictions, assistant IA natif. Boostez la productivité de votre PME.
+
+## Votre métier
+
+- [Odoo pour Gestionnaire de Projet](https://rejoice-agency.fr/metier/gestionnaire-de-projet): Tâches, délais, reporting en temps réel. Pilotez vos projets via l'ERP, intégré aux ventes et à la facturation.
+- [Odoo pour Comptable](https://rejoice-agency.fr/metier/comptable): Facturation, TVA, rapprochement bancaire automatisé. Zéro ressaisie, comptabilité française conforme.
+- [Odoo pour Dirigeant](https://rejoice-agency.fr/metier/dirigeant): Tableaux de bord, KPIs, vision temps réel de votre activité. Décisions éclairées au quotidien.
+- [Odoo pour RH](https://rejoice-agency.fr/metier/rh): Congés, notes de frais, recrutement, évaluations. Toute la fonction RH dans un seul outil.
+
+## Ressources
+
+- [Ressources Odoo (index)](https://rejoice-agency.fr/ressources): Guides Odoo, comparatifs ERP, conseils d'intégration. Tout ce qu'il faut savoir avant de se lancer avec Odoo.
+- [Pourquoi choisir Odoo pour votre PME ?](https://rejoice-agency.fr/ressources/pourquoi-odoo): Les raisons qui font d'Odoo l'ERP des PME. Modulaire, abordable, tout-en-un. Comparatif SAP, Sage, Salesforce.
+- [Qu'est-ce qu'un ERP ?](https://rejoice-agency.fr/ressources/quest-ce-quun-erp): Définition, fonctionnement, avantages. Tout comprendre avant de choisir votre logiciel de gestion.
+- [Comment intégrer Odoo dans votre PME ?](https://rejoice-agency.fr/ressources/comment-integrer-odoo): Guide complet. Étapes, durée, coût, points de vigilance avant de se lancer.
+- [Odoo Community vs Enterprise](https://rejoice-agency.fr/ressources/odoo-community-vs-enterprise): Community gratuit ou Enterprise sur abonnement ? Comparatif et conseils pour choisir la bonne édition Odoo.
+- [Actualités Odoo (juin 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juin-2026): Aperçus d'Odoo 20, nouveau programme d'affiliation, expansion DACH et intégration de l'IA Claude. Le récap de la semaine.
+- [Actualités Odoo (juillet 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juillet-2026): Serveur MCP natif dans Odoo 20, cap des 2,1 millions d'utilisateurs payants, alerte Odoo.sh, route vers Odoo Experience 2026 et report de Veri*Factu.
+
+## L'agence
+
+- [Qui sommes-nous](https://rejoice-agency.fr/agence/qui-sommes-nous): Rejoice Agency, intégratrice Odoo certifiée. 8 ans d'expérience, 40+ projets PME. Équipe et méthode.
+- [Méthodologie Rejoice en 5 étapes](https://rejoice-agency.fr/agence/methodologie): Audit, cadrage, paramétrage, formation, suivi. Une approche structurée pour réussir votre projet Odoo.
+- [Contact](https://rejoice-agency.fr/agence/contact): Appel découverte gratuit de 30 minutes, réponse sous 24 h, devis personnalisé.
+
+## Optional
+
+- [Mentions légales](https://rejoice-agency.fr/mentions-legales): Mentions légales de Rejoice Agency. Éditeur, hébergeur, politique de confidentialité.
+- [Politique de confidentialité](https://rejoice-agency.fr/politique-confidentialite): Données collectées, finalité, droits RGPD et contact.
+- [Politique de cookies](https://rejoice-agency.fr/politique-cookies): Cookies utilisés, durée de conservation et gestion des préférences.

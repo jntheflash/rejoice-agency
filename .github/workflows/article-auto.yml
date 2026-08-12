@@ -1,0 +1,61 @@
+# Rédige automatiquement un article Ressources et ouvre une Pull Request à valider.
+# Fréquence : le 1er de chaque mois à 05:00 UTC (07:00 à Paris en été, 06:00 en hiver).
+# Pour passer en hebdomadaire : cron "0 5 * * 1" (tous les lundis).
+# Lancement manuel : onglet Actions → "Article automatique" → Run workflow.
+
+name: Article automatique
+
+on:
+  schedule:
+    - cron: "0 5 1 * *"
+  workflow_dispatch: {}
+
+jobs:
+  rediger-article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - name: Récupérer le code du site
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Rédiger un article et ouvrir une Pull Request
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Tu travailles sur le dépôt du site Rejoice (rejoice-agency.fr). Lis `claude.md`
+            et respecte-le à la lettre — en particulier la checklist de publication en 7 points
+            et le modèle `templates/article.html`.
+
+            Mission : préparer UN nouvel article Ressources, soumis à validation par Pull Request.
+
+            1. Ouvre `ideas.md` et prends la PREMIÈRE idée non cochée. S'il n'y en a aucune,
+               choisis toi-même un sujet pertinent non couvert (aucune cannibalisation avec les
+               pages existantes — vérifie titles et H1 de tout le site). Si l'idée est une
+               « Actualités » mensuelle, fais une vraie recherche sur l'actualité Odoo du mois
+               écoulé, dans le format des articles `actualites-odoo-*` existants.
+            2. Rédige l'article complet en suivant `.claude/agents/redacteur-web.md` : recherche
+               web réelle, sources citées, SEO on-page soigné, ton Rejoice (expert, concret,
+               honnête sur les coûts), 800-1500 mots.
+            3. Relis-toi avec la checklist de `.claude/agents/relecteur-seo.md` et corrige tout.
+            4. Applique la checklist de publication COMPLÈTE dans la branche : fichier dans
+               `ressources/`, carte + compteurs + vedette éventuelle dans `ressources.html`,
+               `sitemap.xml` (lastmod), ligne `_redirects`, entrée `llms.txt`, maillage
+               « À lire aussi », et coche l'idée traitée dans `ideas.md`.
+            5. Crée une branche `article/<AAAA-MM-JJ>-<slug>`, committe (message en français),
+               pousse la branche, puis ouvre une Pull Request vers `main` avec `gh pr create`.
+               Dans la description de la PR : le titre, la meta description, le mot-clé visé,
+               la catégorie, un résumé en 3 phrases, la liste des sources, la liste des fichiers
+               modifiés avec la raison, et le lien de prévisualisation Netlify si disponible.
+
+            IMPORTANT : ne fusionne JAMAIS la Pull Request toi-même. La fusion (= mise en ligne)
+            est réservée à la propriétaire du site.
+          claude_args: |
+            --max-turns 60
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(git:*),Bash(gh pr:*),Bash(gh auth:*),Bash(date:*),Bash(ls:*),Bash(mkdir:*),Bash(mv:*)"

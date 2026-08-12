@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intégration Odoo en 5 étapes — Méthode Rejoice</title>
+  <meta name="description" content="Découvrez la méthode Rejoice : audit, cadrage, paramétrage, formation, suivi. Une approche structurée pour réussir votre projet Odoo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rejoice-agency.fr/agence/methodologie" />
+  <meta property="og:title" content="Intégration Odoo en 5 étapes — Méthode Rejoice" />
+  <meta property="og:description" content="Découvrez la méthode Rejoice : audit, cadrage, paramétrage, formation, suivi. Une approche structurée pour réussir votre projet Odoo." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Intégration Odoo en 5 étapes — Méthode Rejoice" />
+  <meta name="twitter:description" content="Découvrez la méthode Rejoice : audit, cadrage, paramétrage, formation, suivi. Une approche structurée pour réussir votre projet Odoo." />
+  <link rel="canonical" href="https://rejoice-agency.fr/agence/methodologie" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/fonts/caveat-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Méthodologie d'intégration Odoo — Rejoice",
+    "description": "Méthode d'intégration Odoo en 5 étapes : audit, cadrage, paramétrage, formation, suivi post-lancement. Approche structurée pour les PME françaises.",
+    "url": "https://rejoice-agency.fr/agence/methodologie",
+    "inLanguage": "fr",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "Rejoice",
+      "url": "https://rejoice-agency.fr",
+      "email": "sophie@rejoice-agency.fr",
+      "telephone": "+33 6 48 75 28 57",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nantes",
+        "addressRegion": "Pays de la Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Nantes" },
+        { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
+        { "@type": "Country", "name": "France" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body><div class="top-banner" id="topBanner">
+  <span class="banner-ticker-wrap"><span class="banner-ticker"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="banner-ticker-dup" aria-hidden="true"><span aria-hidden="true">🧾</span> Facture &eacute;lectronique&nbsp;: Anticipez d&egrave;s maintenant avec Odoo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+  <a href="/#rdv">Prendre RDV &#8594;</a>
+  <button class="top-banner-close" onclick="closeBanner()" aria-label="Fermer l'annonce">&#10005;</button>
+</div>
+<script>
+  if (sessionStorage.getItem('topBannerClosed')) {
+    document.getElementById('topBanner').style.display = 'none';
+  } else {
+    document.body.classList.add('has-banner');
+  }
+  function closeBanner() {
+    sessionStorage.setItem('topBannerClosed', '1');
+    document.getElementById('topBanner').style.display = 'none';
+    document.body.classList.remove('has-banner');
+  }
+</script>
+
+  <!-- ════════════════════════ HEADER ════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">&#10022; <span>Rejoice</span></a>
+      <nav>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../services/consultant-odoo"><div class="dd-dot" style="background:var(--lavender)"></div>Audit ERP CRM</a>
+            <a href="../services/formation-odoo"><div class="dd-dot" style="background:var(--rose)"></div>Formation Odoo</a>
+            <a href="../services/integration-odoo"><div class="dd-dot" style="background:var(--mint)"></div>Intégration Odoo</a>
+            <a href="../services/developpement-odoo"><div class="dd-dot" style="background:var(--peach)"></div>Développement sur-mesure</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../fonctionnalites/odoo-facture-electronique"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo facture électronique</a>
+            <a href="../fonctionnalites/crm-odoo"><div class="dd-dot" style="background:var(--rose)"></div>CRM Odoo</a>
+            <a href="../fonctionnalites/odoo-erp"><div class="dd-dot" style="background:var(--mint)"></div>Odoo ERP</a>
+            <a href="../fonctionnalites/odoo-comptabilite"><div class="dd-dot" style="background:var(--peach)"></div>Odoo Comptabilité</a>
+            <a href="../fonctionnalites/odoo-gestion-stock"><div class="dd-dot" style="background:var(--sky)"></div>Odoo Gestion de Stock</a>
+            <a href="../fonctionnalites/odoo-logistique"><div class="dd-dot" style="background:var(--lemon)"></div>Odoo Logistique</a>
+            <a href="../fonctionnalites/odoo-19"><div class="dd-dot" style="background:var(--lavender)"></div>Odoo 19</a>
+            <a href="../fonctionnalites/odoo-ia"><div class="dd-dot" style="background:var(--rose)"></div>Odoo IA</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../metier/gestionnaire-de-projet"><div class="dd-dot" style="background:var(--lavender)"></div>Gestionnaire de projet</a>
+            <a href="../metier/comptable"><div class="dd-dot" style="background:var(--rose)"></div>Comptable</a>
+            <a href="../metier/dirigeant"><div class="dd-dot" style="background:var(--mint)"></div>Dirigeant d'entreprise</a>
+            <a href="../metier/rh"><div class="dd-dot" style="background:var(--peach)"></div>Ressources Humaines</a>
+          </div>
+        </div>
+        <a href="../ressources">Ressources</a>
+        <a href="/tarifs-odoo">Tarifs</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+          <div class="dropdown-menu">
+            <a href="../agence/qui-sommes-nous"><div class="dd-dot" style="background:var(--lavender)"></div>Qui sommes-nous ?</a>
+            <a href="../agence/methodologie"><div class="dd-dot" style="background:var(--mint)"></div>Notre Méthodologie</a>
+            <a href="../agence/contact"><div class="dd-dot" style="background:var(--peach)"></div>Contact</a>
+          </div>
+        </div>
+        <a href="/#rdv" class="btn btn-primary nav-cta">Prendre RDV</a>
+      </nav>
+      <button class="burger" id="burger" onclick="toggleMenu()" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Nos expertises Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../services/consultant-odoo">Audit ERP CRM</a>
+          <a href="../services/formation-odoo">Formation Odoo</a>
+          <a href="../services/integration-odoo">Intégration Odoo</a>
+          <a href="../services/developpement-odoo">Développement sur-mesure</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Fonctionnalités Odoo <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../fonctionnalites/odoo-facture-electronique">Odoo facture électronique</a>
+          <a href="../fonctionnalites/crm-odoo">CRM Odoo</a>
+          <a href="../fonctionnalites/odoo-erp">Odoo ERP</a>
+          <a href="../fonctionnalites/odoo-comptabilite">Odoo Comptabilité</a>
+          <a href="../fonctionnalites/odoo-gestion-stock">Odoo Gestion de Stock</a>
+          <a href="../fonctionnalites/odoo-logistique">Odoo Logistique</a>
+          <a href="../fonctionnalites/odoo-19">Odoo 19</a>
+          <a href="../fonctionnalites/odoo-ia">Odoo IA</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Votre Métier <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../metier/gestionnaire-de-projet">Gestionnaire de projet</a>
+          <a href="../metier/comptable">Comptable</a>
+          <a href="../metier/dirigeant">Dirigeant d'entreprise</a>
+          <a href="../metier/rh">Ressources Humaines</a>
+        </div>
+      </div>
+      <a href="../ressources">Ressources</a>
+      <a href="/tarifs-odoo">Tarifs</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle">L'Agence <span class="dd-arrow" aria-hidden="true">&#9660;</span></button>
+        <div class="dropdown-menu">
+          <a href="../agence/qui-sommes-nous">Qui sommes-nous ?</a>
+          <a href="../agence/methodologie">Notre Méthodologie</a>
+          <a href="../agence/contact">Contact</a>
+        </div>
+      </div>
+      <a href="/#rdv" class="btn btn-primary align-start">Prendre RDV</a>
+    </div>
+  </header>
+  <main>
+
+  <!-- ════════════════════════ PAGE HERO ════════════════════════ -->
+  <section class="page-hero">
+    <div class="blob blob-h1"></div>
+    <div class="blob blob-h2"></div>
+    <div class="blob blob-h3"></div>
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span>/</span>
+          <a href="../agence/qui-sommes-nous">Agence</a>
+          <span>/</span>
+          <span>Méthodologie</span>
+        </div>
+        <h1>Notre méthodologie d'intégration Odoo&nbsp;: 5 étapes pour un projet <em>sans mauvaise surprise</em></h1>
+        <p>Un projet ERP réussi ne dépend pas du logiciel choisi — il dépend de la méthode appliquée. Chez Rejoice, chaque déploiement Odoo suit la même séquence éprouvée&nbsp;: comprendre avant de configurer, former avant de lancer, accompagner après le démarrage.</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span aria-hidden="true">&#128203;</span> 5 étapes structurées</div>
+          <div class="hero-stat"><span aria-hidden="true">&#9203;</span> Opérationnel en 4 à 12 semaines</div>
+          <div class="hero-stat"><span aria-hidden="true">&#128101;</span> Interlocuteur unique</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ INTRO ════════════════════════ -->
+  <section class="profil">
+    <div class="blob blob-p1"></div>
+    <div class="blob blob-p2"></div>
+    <div class="container">
+      <div class="profil-inner">
+
+        <div class="profil-photo">
+          <div style="font-size:.9rem;color:rgba(255,255,255,.8);margin-top:.5rem">Sophie Marchand</div>
+          <div class="profil-badge">&#10022; Odoo Certified Partner</div>
+        </div>
+
+        <div class="profil-content">
+          <div class="tag">Pourquoi une méthode structurée est indispensable</div>
+          <h2>La méthode fait la différence entre un projet qui réussit et un projet qui s'enlise</h2>
+          <p>La plupart des projets ERP qui échouent ne ratent pas à cause du logiciel. Ils ratent à cause du manque de méthode&nbsp;: un périmètre jamais vraiment défini, des équipes non formées au bon moment, une migration de données bâclée, un suivi post-lancement inexistant. Les erreurs se commettent en amont — et se paient pendant des mois.</p>
+          <p>J'ai construit ma méthode en tirant les leçons de chaque déploiement. Chaque étape a un objectif précis, un livrable défini et une validation claire avant de passer à la suivante. Vous savez toujours où on en est, ce qui reste à faire et ce qu'on attend de votre équipe à chaque phase.</p>
+          <p><em>Cette transparence n'est pas un argument commercial — c'est la condition nécessaire pour que votre équipe s'approprie l'outil et que le déploiement produise des résultats durables, pas un outil adopté à moitié puis progressivement abandonné.</em></p>
+
+          <div class="profil-pills">
+            <span class="profil-pill" style="background:var(--lavender)"><span aria-hidden="true">&#128269;</span> Audit</span>
+            <span class="profil-pill" style="background:var(--mint)"><span aria-hidden="true">&#127919;</span> Cadrage</span>
+            <span class="profil-pill" style="background:var(--peach)"><span aria-hidden="true">&#9881;</span> Paramétrage</span>
+            <span class="profil-pill" style="background:var(--sky)"><span aria-hidden="true">&#127891;</span> Formation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ LES 5 ÉTAPES ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Les 5 étapes</div>
+        <h2>De l'analyse à l'adoption&nbsp;: la méthode Rejoice en détail</h2>
+        <p>Chaque étape a un livrable concret et nécessite votre validation avant que nous passions à la suivante. Pas de surprise en fin de projet — vous approuvez chaque bloc au fur et à mesure.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#49;&#65039;&#8419;</div>
+          <h3>Audit — Analyse des processus et des besoins</h3>
+          <p>Avant de toucher à un seul paramètre Odoo, je prends le temps de comprendre comment vous travaillez réellement. Entretiens avec les utilisateurs clés, cartographie des flux existants, identification des outils en place et des points de friction, liste des données à migrer. Cette phase produit un document de synthèse qui décrit votre organisation actuelle et les besoins fonctionnels à couvrir — classés par priorité, pas par ordre alphabétique du catalogue Odoo. <em>Durée&nbsp;: 2 à 5 jours selon la complexité.</em></p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#50;&#65039;&#8419;</div>
+          <h3>Cadrage — Périmètre, planning et budget</h3>
+          <p>À partir des conclusions de l'audit, nous définissons ensemble le périmètre exact du déploiement — quels modules, quels flux, quels utilisateurs, dans quel ordre. Le cahier des charges est formalisé, le planning est établi avec des jalons clairs, le budget est chiffré poste par poste sans ambiguïté. Vous signez sur un périmètre précis — pas sur une vague promesse de "déploiement Odoo complet". <em>Livrable&nbsp;: proposition commerciale détaillée et planning de projet.</em></p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#51;&#65039;&#8419;</div>
+          <h3>Paramétrage — Configuration sur mesure</h3>
+          <p>La configuration d'Odoo est réalisée par blocs fonctionnels, avec une démonstration de validation à la fin de chaque bloc. Vous testez le module sur vos cas d'usage réels — pas sur des données fictives — et vous validez que le paramétrage correspond à votre façon de travailler. Les ajustements se font pendant cette phase, pas après le lancement. La migration des données est préparée en parallèle&nbsp;: nettoyage des sources, structuration des imports, recette sur environnement de test. <em>Durée&nbsp;: 2 à 8 semaines selon le périmètre.</em></p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#52;&#65039;&#8419;</div>
+          <h3>Formation — Équipes formées par profil</h3>
+          <p>La formation n'est pas une démonstration générale de l'interface Odoo. Elle est organisée par profil utilisateur — le comptable est formé sur ses flux comptables, le commercial sur son pipeline CRM, le logisticien sur ses flux de stock. Chaque session couvre les gestes du quotidien, les raccourcis importants et les erreurs fréquentes à éviter. Un support de référence documenté est remis à chaque profil. La formation se déroule sur l'environnement de production avec les vraies données migrées. <em>Durée&nbsp;: 0,5 à 1 jour par profil.</em></p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#53;&#65039;&#8419;</div>
+          <h3>Suivi — Accompagnement post-lancement</h3>
+          <p>Le lancement est le début de l'utilisation réelle, pas la fin du projet. Les premières semaines révèlent toujours des ajustements à faire, des cas particuliers non anticipés, des questions que la formation n'a pas couverts. Je reste disponible pendant 4 à 8 semaines post-lancement pour répondre aux questions, corriger les paramétrages nécessaires et accompagner la montée en compétence des équipes. Un bilan post-lancement à 6 semaines permet d'identifier les évolutions à planifier. <em>Disponibilité&nbsp;: email et visio sous 24h ouvré.</em></p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128257;</div>
+          <h3>Et après ? Les évolutions continues</h3>
+          <p>Un ERP n'est pas un projet avec une date de fin — c'est un outil qui évolue avec votre entreprise. Après le déploiement initial, je reste disponible pour les évolutions de périmètre (ajout de modules, nouvelles automatisations, développements spécifiques), les mises à jour majeures Odoo, et les ajustements liés à vos changements organisationnels. Certains clients me sollicitent ponctuellement, d'autres préfèrent un accompagnement continu mensuel. Les deux modes fonctionnent.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ NOS ENGAGEMENTS ════════════════════════ -->
+  <section class="arguments">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">Nos engagements</div>
+        <h2>Ce que vous pouvez attendre de Rejoice à chaque étape</h2>
+        <p>Au-delà de la méthode, ce qui distingue un bon partenaire d'intégration d'un prestataire ordinaire, c'est la façon dont il travaille avec vous au quotidien — la transparence sur les difficultés, la réactivité quand ça coince, et la constance sur toute la durée du projet.</p>
+      </div>
+
+      <div class="args-grid">
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lavender)" aria-hidden="true">&#128270;</div>
+          <h3>Transparence totale</h3>
+          <p>Vous savez à tout moment où en est le projet, ce qui avance bien et ce qui pose problème. Si une tâche prend plus de temps que prévu, vous en êtes informé immédiatement — pas en fin de phase. Si une fonctionnalité demandée n'est pas réalisable dans le standard Odoo sans développement spécifique, je vous le dis en amont avec une estimation claire du surcoût. Pas de mauvaise surprise en fin de projet.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--mint)" aria-hidden="true">&#9203;</div>
+          <h3>Délais respectés</h3>
+          <p>Le planning établi en phase de cadrage est un engagement, pas une estimation indicative. Si le périmètre ne change pas, les délais sont tenus. Quand un aléa survient — et il en survient toujours dans un projet de transformation — il est identifié, communiqué et traité immédiatement, sans attendre que le retard s'accumule. Vous n'apprenez pas en fin de projet que la date de lancement est décalée de trois semaines.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--peach)" aria-hidden="true">&#128101;</div>
+          <h3>Interlocuteur unique</h3>
+          <p>Du premier appel au bilan post-lancement, vous avez une seule personne en face de vous. Pas de transfert vers un chef de projet junior après la signature, pas d'escalade vers un support éditeur quand ça coince. Je connais votre contexte, vos contraintes, vos équipes — et cette continuité fait une différence concrète dans la qualité des décisions prises tout au long du projet. Si votre déploiement couvre plusieurs modules, les interactions entre eux sont pensées de façon cohérente dès le départ.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--sky)" aria-hidden="true">&#128269;</div>
+          <h3>Honnêteté sur le périmètre</h3>
+          <p>Je ne vends pas un déploiement "complet" si votre budget ou vos ressources ne le permettent pas. Je préfère vous proposer un périmètre réduit mais parfaitement maîtrisé, avec des extensions planifiées, plutôt qu'un projet trop ambitieux qui se termine avec un outil utilisé à 30%. Si votre projet ne correspond pas à mon domaine d'expertise ou si je ne suis pas la meilleure option pour votre situation, je vous le dis — et je vous oriente vers le bon partenaire.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--rose)" aria-hidden="true">&#127891;</div>
+          <h3>Formation réelle, pas symbolique</h3>
+          <p>La formation n'est pas une case à cocher en fin de projet pour justifier le budget. Elle est dimensionnée pour que vos équipes soient vraiment autonomes sur leurs usages quotidiens après le lancement. Si une session ne suffit pas, on en fait une deuxième. Si un utilisateur décroche pendant la formation, on adapte le rythme. L'adoption est un résultat, pas un espoir — et elle se construit pendant la formation, pas après.</p>
+        </div>
+        <div class="arg-card">
+          <div class="arg-icon" style="background:var(--lemon)" aria-hidden="true">&#128200;</div>
+          <h3>Résultats mesurables</h3>
+          <p>Au bilan post-lancement, on mesure ensemble ce que le déploiement a changé concrètement dans votre quotidien — temps économisé sur les saisies répétitives, délai de traitement des factures, temps de rapprochement bancaire, nombre de commandes traitées sans erreur. Ces indicateurs ne sont pas des arguments marketing — ce sont les preuves que le projet a atteint ses objectifs. S'ils ne sont pas atteints, on analyse pourquoi et on ajuste.</p>
+        </div>
+      </div>
+
+      <div class="methode-cta">
+        <a href="/#rdv" class="btn btn-primary">Démarrer avec la méthode Rejoice &#8594;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ CONTACT / RDV ════════════════════════ -->
+  <section class="rdv" id="rdv">
+    <div class="blob blob-r1"></div>
+    <div class="blob blob-r2"></div>
+    <div class="container">
+      <div class="rdv-box">
+        <div class="tag">Contact</div>
+        <h2>Parlons de votre projet &#10024;</h2>
+        <p>Réservez un appel de 30 minutes. Décrivez-moi votre activité, vos outils actuels et ce que vous voulez accomplir avec Odoo — je vous explique comment la méthode Rejoice s'applique à votre contexte et ce que vous pouvez attendre à chaque étape.</p>
+        <a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer" class="btn btn-primary">&#128197; Réserver un créneau en ligne</a>
+        <p class="rdv-alt">Vous préférez l'email ? <a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></p>
+        <div style="margin-top:1rem">
+          <a href="mailto:sophie@rejoice-agency.fr" class="btn btn-outline">&#9993; Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">&#10022; <span>Rejoice</span></div>
+          <p>Intégratrice Odoo indépendante, certifiée et spécialisée PME. J'accompagne votre transformation digitale de A à Z, avec une méthode humaine et sur mesure.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="../services/integration-odoo">Intégration Odoo</a></li>
+            <li><a href="../services/consultant-odoo">Consultant Odoo</a></li>
+            <li><a href="../ressources">Ressources</a></li>
+            <li><a href="../agence/qui-sommes-nous">À propos</a></li>
+            <li><a href="/#rdv">Prendre RDV</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:sophie@rejoice-agency.fr">sophie@rejoice-agency.fr</a></li>
+            <li><a href="https://www.linkedin.com/in/sophie-merdrignac-dutertre-91145110a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://calendar.app.google/6LESjUUWemZpgMEV7" target="_blank" rel="noopener noreferrer">Prendre RDV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; 2025 Rejoice &#8212; Tous droits réservés</span>
+        <span><a href="../mentions-legales">Mentions légales</a> · <a href="../politique-confidentialite">Politique de confidentialité</a> · <a href="../politique-cookies">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ JS ════════════════════════ -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById('mobileNav');
+      var btn = document.getElementById('burger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    }
+    document.querySelectorAll('#mobileNav a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobileNav').classList.remove('open');
+        document.getElementById('burger').classList.remove('open');
+        document.getElementById('burger').setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    window.addEventListener('scroll', function() {
+      var h = document.querySelector('header');
+      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
+    });
+
+    /* Dropdown nav — clic mobile uniquement */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        e.preventDefault();
+        var parent = this.closest('.nav-dropdown');
+        var isOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) parent.classList.add('open');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-labelledby="cookieBannerTitle">
+    <p class="cookie-banner-eyebrow">Parlons cookies</p>
+    <p class="cookie-banner-title" id="cookieBannerTitle">Un cookie avec votre visite&nbsp;?</p>
+    <p>Nous utilisons des cookies pour mesurer l'audience du site et faire fonctionner notre calendrier de prise de rendez-vous. Vous pouvez accepter ou refuser, cela ne change rien à votre navigation.</p>
+    <p class="cookie-banner-link"><a href="../politique-cookies">Voir notre politique de cookies</a></p>
+    <div class="cookie-btns">
+      <button class="cookie-btn-refuse" onclick="refuseCookies()">Refuser</button>
+      <button class="cookie-btn-accept" onclick="acceptCookies()">Accepter</button>
+    </div>
+  </div>
+  <script>
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2PS5JX89ME';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-2PS5JX89ME');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+      loadGA4();
+    }
+    function refuseCookies() {
+      localStorage.setItem('cookieConsent', 'refused');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    (function() {
+      var c = localStorage.getItem('cookieConsent');
+      if (c === 'accepted') { loadGA4(); }
+      else if (!c) { document.getElementById('cookie-banner').style.display = 'flex'; }
+    })();
+  </script>
+</body>
+</html>
