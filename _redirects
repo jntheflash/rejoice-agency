@@ -27,3 +27,9 @@
 /ressources/tarifs-odoo                       /tarifs-odoo                              301
 /ressources/tarifs-odoo.html                  /tarifs-odoo                              301
 /tarifs-odoo.html                             /tarifs-odoo                              301
+
+# Fichiers de travail masqués du site public (llms.txt, robots.txt, sitemap.xml restent publics)
+/claude.md                                    /404.html                                 404!
+/ideas.md                                     /404.html                                 404!
+/templates/*                                  /404.html                                 404!
+/drafts/*                                     /404.html                                 404!
