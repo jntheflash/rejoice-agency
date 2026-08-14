@@ -3131,3 +3131,34 @@ main li a:not([class]):hover {
   /* Articles lies : s'empilent deja en 1 colonne via auto-fit; on fixe le gap */
   .related-grid { gap: .75rem; }
 }
+
+/* ----------------------------------------------------------------
+   PAGE MENTIONS LEGALES — contenu texte (migre du inline vers tokens)
+---------------------------------------------------------------- */
+.legal {
+  max-width: var(--width-md);
+  padding-top: 140px;               /* offset header fixe — exception dimensions */
+  padding-bottom: var(--space-3xl);
+}
+.legal h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--font-display);
+  margin-bottom: var(--space-xxl);
+}
+.legal h2 {
+  font-size: var(--font-xl);
+  margin-top: var(--space-xxl);
+  margin-bottom: var(--space-md);
+}
+.legal h2.legal-break {
+  margin-top: var(--space-2xl);
+}
+.legal ul {
+  margin: var(--space-sm) 0 var(--space-sm) var(--space-lg);
+  line-height: 1.8;
+}
+.legal p.legal-updated {
+  margin-top: var(--space-2xl);
+  color: var(--muted);
+  font-size: var(--font-sm);
+}
