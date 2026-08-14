@@ -3136,6 +3136,7 @@ main li a:not([class]):hover {
    PAGE MENTIONS LEGALES — contenu texte (migre du inline vers tokens)
 ---------------------------------------------------------------- */
 .legal {
+  background: transparent;          /* neutralise la rayure blanche main > section */
   max-width: var(--width-md);
   padding-top: 140px;               /* offset header fixe — exception dimensions */
   padding-bottom: var(--space-3xl);
@@ -3182,6 +3183,6 @@ main li a:not([class]):hover {
   border: 1px solid var(--border);
 }
 .legal th {
-  background: var(--bg);
+  background: var(--white);
   text-align: left;
 }
