@@ -3188,3 +3188,12 @@ main li a:not([class]):hover {
   background: var(--white);
   text-align: left;
 }
+
+/* ----------------------------------------------------------------
+   PAGE 404 — hero d'erreur centré plein écran (migré du inline)
+---------------------------------------------------------------- */
+.error-hero { min-height: 70vh; display: flex; align-items: center; }
+.error-hero .page-hero-inner { text-align: center; max-width: var(--width-sm); margin: 0 auto; }
+.error-hero .tag { margin-bottom: var(--space-lg); }
+.error-hero h1 { font-size: var(--font-display); }
+.error-hero p { margin: var(--space-lg) 0 var(--space-xxl); }
