@@ -45,9 +45,7 @@
 
 ## L'agence
 
-- [Qui sommes-nous](https://rejoice-agency.fr/agence/qui-sommes-nous): Rejoice Agency, intégratrice Odoo certifiée. 8 ans d'expérience, 40+ projets PME. Équipe et méthode.
-- [Méthodologie Rejoice en 5 étapes](https://rejoice-agency.fr/agence/methodologie): Audit, cadrage, paramétrage, formation, suivi. Une approche structurée pour réussir votre projet Odoo.
-- [Contact](https://rejoice-agency.fr/agence/contact): Appel découverte gratuit de 30 minutes, réponse sous 24 h, devis personnalisé.
+- [L'Agence Rejoice](https://rejoice-agency.fr/agence/qui-sommes-nous): Sophie Merdrignac, intégratrice Odoo certifiée à Nantes. Histoire, vision, méthode en 5 étapes (audit, cadrage, paramétrage, formation, suivi) et contact — appel découverte gratuit de 30 min, réponse sous 24 h.
 
 ## Optional
 

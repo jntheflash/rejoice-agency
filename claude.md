@@ -12,7 +12,7 @@ Domaine : rejoice-agency.fr — Interlocutrice : Sophie Merdrignac.
 - Repo GitHub : jntheflash/rejoice-agency (privé, connecté à ce dossier via `origin`)
 - Analytics : Google Analytics 4 (ID : G-2PS5JX89ME), chargé après consentement RGPD
 
-## Arborescence actuelle (32 pages HTML)
+## Arborescence actuelle (30 pages HTML)
 
 **Racine :** `index.html`, `ressources.html`, `tarifs-odoo.html`, `404.html`,
 `mentions-legales.html`, `politique-confidentialite.html`, `politique-cookies.html`
@@ -27,7 +27,9 @@ Domaine : rejoice-agency.fr — Interlocutrice : Sophie Merdrignac.
 **`/ressources/` (6 articles) :** `pourquoi-odoo`, `quest-ce-quun-erp`, `comment-integrer-odoo`,
 `odoo-community-vs-enterprise`, `actualites-odoo-juin-2026`, `actualites-odoo-juillet-2026`
 
-**`/agence/` (3) :** `qui-sommes-nous`, `methodologie`, `contact`
+**`/agence/` (1) :** `qui-sommes-nous` — page unique fusionnée (histoire + vision + chiffres,
+méthode 5 étapes `#methode`, contact + FAQ `#contact`). Les anciennes `methodologie` et `contact`
+redirigent en 301 vers cette page (voir `_redirects`).
 
 **Rédaction :** `drafts/` (brouillons d'articles, jamais en ligne), `templates/article.html` (modèle
 officiel d'article), `ideas.md` (backlog d'idées d'articles)
@@ -49,8 +51,9 @@ officiel d'article), `ideas.md` (backlog d'idées d'articles)
 ## Navigation (header)
 
 Dropdowns desktop + mobile : "Nos expertises Odoo" (4 liens `/services/`), "Fonctionnalités Odoo"
-(8 liens `/fonctionnalites/`), "Votre Métier" (4 liens `/metier/`), "L'Agence" (3 liens `/agence/`).
-Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`. CTA : "Prendre RDV" → `/#rdv`.
+(8 liens `/fonctionnalites/`), "Votre Métier" (4 liens `/metier/`).
+Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`, "L'Agence" →
+`/agence/qui-sommes-nous` (plus de dropdown). CTA : "Prendre RDV" → `/#rdv`.
 
 Règles visuelles : `dd-dot` colorés sur desktop uniquement ; mobile sans `dd-dot`, CTA `align-start`
 (sauf pages légales) ; fond blanc pur ; dropdowns en `<button>` (pas `<a href="#">`).
