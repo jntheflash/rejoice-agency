@@ -76,8 +76,47 @@
   --radius-sm:   6px;
   --radius-md:   10px;
   --radius-lg:   16px;
-  --shadow:      0 4px 24px rgba(45,42,38,.07);
+
+  /* Ombres — rampe 3 tokens (opacités sur l'encre 45,42,38) */
+  --shadow:      0 4px 24px rgba(45,42,38,.06);
   --shadow-md:   0 8px 40px rgba(45,42,38,.10);
+  --shadow-lg:   0 12px 48px rgba(45,42,38,.16);
+
+  /* Couleurs sémantiques (états) + fonds doux consolidés */
+  --success:      #2F855A;
+  --success-soft: #EAFAF4;
+  --danger:       #C53030;
+  --danger-soft:  #FCEFEF;
+  --peach-soft:   #FFF5E6;
+  --sky-soft:     #EAF1F8;
+
+  /* Échelle d'espacement — base 4px, exprimée en rem (t-shirt sizes) */
+  --space-2xs:  0.25rem;  /* 4px  */
+  --space-xs:   0.5rem;   /* 8px  */
+  --space-sm:   0.75rem;  /* 12px */
+  --space-md:   1rem;     /* 16px */
+  --space-lg:   1.5rem;   /* 24px */
+  --space-xl:   2rem;     /* 32px */
+  --space-xxl:  2.5rem;   /* 40px — entre xl et 2xl */
+  --space-2xl:  3rem;     /* 48px */
+  --space-3xl:  4rem;     /* 64px */
+  --section-y:  6rem;     /* 96px — rythme vertical des sections */
+
+  /* Échelle typographique — 6 tailles + 2 display fluides hors échelle */
+  --font-xs:      0.75rem;   /* 12px */
+  --font-sm:      0.875rem;  /* 14px */
+  --font-md:      1rem;      /* 16px */
+  --font-lg:      1.25rem;   /* 20px */
+  --font-xl:      1.5rem;    /* 24px */
+  --font-2xl:     2rem;      /* 32px */
+  --font-display: clamp(1.5rem, 3vw, 2.4rem);
+  --font-hero:    clamp(2.2rem, 5vw, 4rem);
+
+  /* Largeurs max de conteneurs — 4 rôles (56ch conservé tel quel ailleurs) */
+  --width-xs:  360px;
+  --width-sm:  480px;
+  --width-md:  720px;
+  --width-lg:  1200px;
 }
 
 /* ----------------------------------------------------------------

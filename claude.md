@@ -58,6 +58,53 @@ Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`, "L'
 Règles visuelles : `dd-dot` colorés sur desktop uniquement ; mobile sans `dd-dot`, CTA `align-start`
 (sauf pages légales) ; fond blanc pur ; dropdowns en `<button>` (pas `<a href="#">`).
 
+## Design system — règles CSS (STRICTES)
+
+Tous les tokens sont dans le `:root` de `style.css`. Aucune valeur
+en dur n'est autorisée en dehors des exceptions listées plus bas.
+
+**Interdits absolus :**
+- Aucun attribut `style=""` inline dans le HTML. Toute règle va
+  dans `style.css`, via une classe. Si une classe manque, on la crée.
+- Aucune valeur d'espacement en dur : uniquement `var(--space-*)`
+- Aucune taille de police en dur : uniquement `var(--font-*)`
+- Aucune couleur en dur : uniquement les variables de couleur
+- Aucune ombre en dur : uniquement `var(--shadow*)`
+- Aucune largeur de conteneur en dur : uniquement `var(--width-*)`
+- Aucune police ajoutée : Caveat + DM Sans, point.
+- Aucune librairie, dépendance ou framework ajouté.
+
+**Échelles disponibles :**
+- Espacement : `--space-2xs` → `--space-3xl` (9 échelons)
+- Rythme vertical des sections : `--section-y` — jamais autre chose
+- Typo : `--font-xs` → `--font-2xl` (6 tailles)
+- Titres display : `--font-display` et `--font-hero` uniquement.
+  Ne jamais écrire un nouveau `clamp()`.
+- Largeurs : `--width-xs/sm/md/lg`
+
+**Exceptions validées (ne pas tokeniser) :**
+- Dimensions de composants : 80/100/110/140px (photos, offsets sticky)
+- `56ch` : mesure de lecture, plus juste qu'une valeur en px
+- `max-width: 300px` et `320px` dans les media queries mobiles et
+  sur `.footer-brand p`
+- `0`, `auto`, `100%`, `none`
+
+**Méthode de travail sur le CSS :**
+- Une section ou un fichier à la fois. Jamais une page entière.
+- Toujours imiter une section existante du site plutôt qu'inventer.
+- Avant de coder : annoncer les fichiers touchés et l'approche.
+- Migration en cours : les `style=""` inline existants sont
+  progressivement supprimés. Ne jamais en ajouter de nouveau, et
+  supprimer ceux rencontrés sur une page qu'on modifie.
+
+**Checklist avant de dire qu'une modif CSS est terminée :**
+1. Relire le diff : chaque valeur numérique est un token ou une
+   exception listée ci-dessus
+2. Zéro `style=""` ajouté
+3. Rendu vérifié à 375px, 768px et 1440px
+4. Aucune régression sur les pages voisines
+5. Scores PageSpeed non dégradés
+
 ## Conventions à respecter
 
 **URLs internes :** toujours SANS extension `.html` (ex : `/services/consultant-odoo`).
