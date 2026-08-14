@@ -3162,3 +3162,26 @@ main li a:not([class]):hover {
   color: var(--muted);
   font-size: var(--font-sm);
 }
+.legal h3 {
+  font-size: var(--font-md);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-sm);
+}
+.legal th,
+.legal td {
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--border);
+}
+.legal th {
+  background: var(--bg);
+  text-align: left;
+}
