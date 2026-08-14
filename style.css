@@ -47,6 +47,7 @@
 :root {
   --bg:          #FAFAF8;
   --white:       #FFFFFF;
+  --white-80:    rgba(255,255,255,.8);
   --text:        #2D2A26;
   --muted:       #5C5955;
   --border:      #EDEAE5;
@@ -2820,7 +2821,8 @@ main li a:not([class]):hover {
 .arg-icon--sky      { background: var(--sky); }
 .arg-icon--lemon    { background: var(--lemon); }
 
-.profil-photo-name { font-size: .9rem; color: rgba(255,255,255,.8); margin-top: .5rem; }
+.profil-photo-name { font-size: .9rem; color: var(--white-80); margin-top: .5rem; }
+.rdv-box-secondary { margin-top: var(--space-md); }
 
 /* --- Variantes "aligne a gauche" pour composants centres par defaut --- */
 .section-header--left { text-align: left; max-width: none; margin: 0 0 2rem; }
