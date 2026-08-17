@@ -76,7 +76,8 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 
 **Échelles disponibles :**
 - Espacement : `--space-2xs` → `--space-3xl` (9 échelons)
-- Rythme vertical des sections : `--section-y` — jamais autre chose
+- Rythme vertical des sections : `var(--section-y)` en desktop et
+  `var(--section-y-sm)` en mobile — jamais autre chose
 - Typo : `--font-xs` → `--font-2xl` (6 tailles)
 - Titres display : `--font-display` et `--font-hero` uniquement.
   Ne jamais écrire un nouveau `clamp()`.

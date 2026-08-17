@@ -102,6 +102,7 @@
   --space-2xl:  3rem;     /* 48px */
   --space-3xl:  4rem;     /* 64px */
   --section-y:  6rem;     /* 96px — rythme vertical des sections */
+  --section-y-sm: 4rem;   /* 64px — rythme vertical des sections (mobile) */
 
   /* Échelle typographique — 6 tailles + 2 display fluides hors échelle */
   --font-xs:      0.75rem;   /* 12px */
@@ -267,7 +268,7 @@ body::after {
 }
 
 /* Section base */
-section { padding: 96px 0; }
+section { padding: var(--section-y) 0; }
 
 /* Fonds de section : alternance centralisée
    Par défaut blanc, sections paires en gris très clair.
@@ -2111,7 +2112,7 @@ footer {
   nav            { display: none; }
   .burger        { display: flex; }
   .blob          { display: none; }
-  section        { padding: 64px 0; }
+  section        { padding: var(--section-y-sm) 0; }
 
   /* Index */
   .hero          { padding: 100px 0 60px; min-height: auto; }
