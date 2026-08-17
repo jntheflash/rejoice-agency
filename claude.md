@@ -12,7 +12,7 @@ Domaine : rejoice-agency.fr — Interlocutrice : Sophie Merdrignac.
 - Repo GitHub : jntheflash/rejoice-agency (privé, connecté à ce dossier via `origin`)
 - Analytics : Google Analytics 4 (ID : G-2PS5JX89ME), chargé après consentement RGPD
 
-## Arborescence actuelle (32 pages HTML)
+## Arborescence actuelle (30 pages HTML)
 
 **Racine :** `index.html`, `ressources.html`, `tarifs-odoo.html`, `404.html`,
 `mentions-legales.html`, `politique-confidentialite.html`, `politique-cookies.html`
@@ -27,7 +27,9 @@ Domaine : rejoice-agency.fr — Interlocutrice : Sophie Merdrignac.
 **`/ressources/` (6 articles) :** `pourquoi-odoo`, `quest-ce-quun-erp`, `comment-integrer-odoo`,
 `odoo-community-vs-enterprise`, `actualites-odoo-juin-2026`, `actualites-odoo-juillet-2026`
 
-**`/agence/` (3) :** `qui-sommes-nous`, `methodologie`, `contact`
+**`/agence/` (1) :** `qui-sommes-nous` — page unique fusionnée (histoire + vision + chiffres,
+méthode 5 étapes `#methode`, contact + FAQ `#contact`). Les anciennes `methodologie` et `contact`
+redirigent en 301 vers cette page (voir `_redirects`).
 
 **Rédaction :** `drafts/` (brouillons d'articles, jamais en ligne), `templates/article.html` (modèle
 officiel d'article), `ideas.md` (backlog d'idées d'articles)
@@ -49,11 +51,74 @@ officiel d'article), `ideas.md` (backlog d'idées d'articles)
 ## Navigation (header)
 
 Dropdowns desktop + mobile : "Nos expertises Odoo" (4 liens `/services/`), "Fonctionnalités Odoo"
-(8 liens `/fonctionnalites/`), "Votre Métier" (4 liens `/metier/`), "L'Agence" (3 liens `/agence/`).
-Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`. CTA : "Prendre RDV" → `/#rdv`.
+(8 liens `/fonctionnalites/`), "Votre Métier" (4 liens `/metier/`).
+Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`, "L'Agence" →
+`/agence/qui-sommes-nous` (plus de dropdown). CTA : "Prendre RDV" → `/#rdv`.
 
 Règles visuelles : `dd-dot` colorés sur desktop uniquement ; mobile sans `dd-dot`, CTA `align-start`
 (sauf pages légales) ; fond blanc pur ; dropdowns en `<button>` (pas `<a href="#">`).
+
+## Design system — règles CSS (STRICTES)
+
+Tous les tokens sont dans le `:root` de `style.css`. Aucune valeur
+en dur n'est autorisée en dehors des exceptions listées plus bas.
+
+**Interdits absolus :**
+- Aucun attribut `style=""` inline dans le HTML. Toute règle va
+  dans `style.css`, via une classe. Si une classe manque, on la crée.
+- Aucune valeur d'espacement en dur : uniquement `var(--space-*)`
+- Aucune taille de police en dur : uniquement `var(--font-*)`
+- Aucune couleur en dur : uniquement les variables de couleur
+- Palette de marque réduite à 3 pastels : `lavender`, `mint`, `peach`
+  (+ variantes `-d`). Les anciens `rose`, `sky` et `lemon` n'existent
+  plus (tokens et classes modificatrices supprimés) ; ne pas les
+  réintroduire.
+- Aucune ombre : le site n'en utilise plus (`box-shadow` interdit, tokens
+  `--shadow*` supprimés). La délimitation passe par `1px solid var(--border)` ;
+  le survol par `border-color: var(--lavender-deep)` (ou `translateY(-2px)` sur
+  les boutons pleins). Seule exception : l'anneau de focus `.form-input:focus`.
+- Aucune largeur de conteneur en dur : uniquement `var(--width-*)`
+- Aucune police ajoutée : Caveat + DM Sans, point.
+- Aucune librairie, dépendance ou framework ajouté.
+
+**Échelles disponibles :**
+- Espacement : `--space-2xs` → `--space-3xl` (9 échelons)
+- Rythme vertical des sections : `var(--section-y)` en desktop et
+  `var(--section-y-sm)` en mobile — jamais autre chose
+- Typo : `--font-xs` → `--font-2xl` (6 tailles)
+- Titres display : `--font-display` et `--font-hero` uniquement.
+  Ne jamais écrire un nouveau `clamp()`.
+- Largeurs : `--width-xs/sm/md/lg`
+
+**Exceptions validées (ne pas tokeniser) :**
+- Dimensions de composants : 80/100/110/140px (photos, offsets sticky)
+- `56ch` : mesure de lecture, plus juste qu'une valeur en px
+- `max-width: 300px` et `320px` dans les media queries mobiles et
+  sur `.footer-brand p`
+- `0`, `auto`, `100%`, `none`
+- `max-width: 540px` (`.temos-grid`) et `560px` (`.page-hero p`) restent
+  en dur : elles tombent entre `--width-sm` (480) et `--width-md` (720),
+  aucun token n'est assez proche.
+- `ressources.html` : la géométrie décorative des cercles (`.deco-circle`),
+  les dégradés de cartes (`.card-img`/`.featured-img`) et l'emoji vedette
+  (`font-size:5rem`) restent inline — valeurs uniques, non réutilisables,
+  choisies visuellement.
+
+**Méthode de travail sur le CSS :**
+- Une section ou un fichier à la fois. Jamais une page entière.
+- Toujours imiter une section existante du site plutôt qu'inventer.
+- Avant de coder : annoncer les fichiers touchés et l'approche.
+- Migration en cours : les `style=""` inline existants sont
+  progressivement supprimés. Ne jamais en ajouter de nouveau, et
+  supprimer ceux rencontrés sur une page qu'on modifie.
+
+**Checklist avant de dire qu'une modif CSS est terminée :**
+1. Relire le diff : chaque valeur numérique est un token ou une
+   exception listée ci-dessus
+2. Zéro `style=""` ajouté
+3. Rendu vérifié à 375px, 768px et 1440px
+4. Aucune régression sur les pages voisines
+5. Scores PageSpeed non dégradés
 
 ## Conventions à respecter
 

@@ -21,6 +21,10 @@
 /secteurs/negoce-distribution              /metier/dirigeant                     301
 /secteurs/services-professionnels          /metier/dirigeant                     301
 /apropos                                   /agence/qui-sommes-nous               301
+/agence/methodologie                       /agence/qui-sommes-nous#methode       301
+/agence/methodologie.html                  /agence/qui-sommes-nous#methode       301
+/agence/contact                            /agence/qui-sommes-nous#contact       301
+/agence/contact.html                       /agence/qui-sommes-nous#contact       301
 /ressources/odoo-community-vs-enterprise.html /ressources/odoo-community-vs-enterprise 301
 /ressources/actualites-odoo-juin-2026.html    /ressources/actualites-odoo-juin-2026    301
 /ressources/actualites-odoo-juillet-2026.html /ressources/actualites-odoo-juillet-2026 301
