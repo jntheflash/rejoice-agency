@@ -635,7 +635,7 @@ footer {
   margin-bottom: 1.2rem;
 }
 .hero h1 {
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-size: var(--font-hero);
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.4rem;
