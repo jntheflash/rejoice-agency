@@ -3217,9 +3217,22 @@ main li a:not([class]):hover {
 /* ----------------------------------------------------------------
    AGENCE (qui-sommes-nous) — variantes couleur step-num + lien accentué
 ---------------------------------------------------------------- */
-.step-num--rose     { background: var(--rose);     color: var(--text); }
-.step-num--lavender { background: var(--lavender); color: var(--text); }
-.step-num--mint     { background: var(--mint);     color: var(--text); }
-.step-num--peach    { background: var(--peach);    color: var(--text); }
-.step-num--sky      { background: var(--sky);      color: var(--text); }
+.step-num--rose     { background: var(--rose); }
+.step-num--lavender { background: var(--lavender); }
+.step-num--mint     { background: var(--mint); }
+.step-num--peach    { background: var(--peach); }
+.step-num--sky      { background: var(--sky); }
 .link-accent        { color: var(--lavender-deep); font-weight: 600; }
+
+/* ----------------------------------------------------------------
+   ACCUEIL (index) — avatars témoignages, dégradés d'article, bouton article
+---------------------------------------------------------------- */
+.temo-avatar--lavender { background: var(--lavender); }
+.temo-avatar--mint     { background: var(--mint); }
+.temo-avatar--rose     { background: var(--rose); }
+.temo-avatar--sky      { background: var(--sky); }
+.temo-avatar--lemon    { background: var(--lemon); }
+.article-img--rose  { background: linear-gradient(135deg, var(--rose), var(--lavender)); }
+.article-img--mint  { background: linear-gradient(135deg, var(--mint), var(--sky)); }
+.article-img--peach { background: linear-gradient(135deg, var(--peach), var(--lemon)); }
+.article-btn { align-self: flex-start; padding: var(--space-xs) var(--space-md); font-size: var(--font-sm); }
