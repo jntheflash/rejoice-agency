@@ -52,18 +52,12 @@
   --muted:       #5C5955;
   --border:      #EDEAE5;
 
-  --rose:        #F7C5C5;
-  --rose-d:      #F0A0A0;
   --lavender:    #D4C9F0;
   --lavender-d:  #B8A8E8;
   --mint:        #B8E8D4;
   --mint-d:      #88D4B4;
   --peach:       #FDDCB5;
   --peach-d:     #FAC07A;
-  --sky:         #B8D8F0;
-  --sky-d:       #88BEE8;
-  --lemon:       #F0EBB0;
-  --lemon-d:     #E0D870;
   --lavender-soft: #F0ECFC;
   --lavender-deep: #5546B8;
 
@@ -86,7 +80,6 @@
   --danger:       #C53030;
   --danger-soft:  #FCEFEF;
   --peach-soft:   #FFF5E6;
-  --sky-soft:     #EAF1F8;
 
   /* Échelle d'espacement — base 4px, exprimée en rem (t-shirt sizes) */
   --space-2xs:  0.25rem;  /* 4px  */
@@ -220,11 +213,8 @@ body::after {
   margin-bottom: var(--space-sm);
 }
 .article-badge--lavender { background: var(--lavender); }
-.article-badge--rose     { background: var(--rose); }
 .article-badge--mint     { background: var(--mint); }
 .article-badge--peach    { background: var(--peach); }
-.article-badge--sky      { background: var(--sky); }
-.article-badge--lemon    { background: var(--lemon); }
 
 .btn {
   display: inline-flex;
@@ -245,12 +235,10 @@ body::after {
 .btn-primary    { background: var(--lavender-deep); color: var(--white); }
 .btn-primary:hover { background: #4536A0; }
 .btn-outline    { background: transparent; border-color: var(--text); color: var(--text); }
-.btn-rose       { background: var(--rose);     color: var(--text); }
 .btn-lavender   { background: var(--lavender-deep); color: var(--white); }
 .btn-lavender:hover { background: #4536A0; }
 .btn-mint       { background: var(--mint);     color: var(--text); }
 .btn-peach      { background: var(--peach);    color: var(--text); }
-.btn-sky        { background: var(--sky);      color: var(--text); }
 .btn-white      { background: var(--white);    color: var(--text); }
 
 /* Blobs */
@@ -323,7 +311,7 @@ header {
 .logo span {
   display: inline-block;
   padding-right: .14em;
-  background: linear-gradient(135deg, var(--rose), var(--lavender), var(--mint));
+  background: linear-gradient(135deg, var(--peach), var(--lavender), var(--mint));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -492,8 +480,8 @@ nav a.active  { color: var(--text); }
    TEMOIGNAGES (partagé services + index)
 ---------------------------------------------------------------- */
 .temoignages { position: relative; overflow: hidden; }
-.temoignages .blob-t1 { width: 320px; height: 320px; background: var(--rose); top: -80px; left: -80px; }
-.temoignages .blob-t2 { width: 260px; height: 260px; background: var(--sky); bottom: -60px; right: -60px; }
+.temoignages .blob-t1 { width: 320px; height: 320px; background: var(--peach); top: -80px; left: -80px; }
+.temoignages .blob-t2 { width: 260px; height: 260px; background: var(--lavender); bottom: -60px; right: -60px; }
 .temos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -607,7 +595,7 @@ footer {
   display: flex;
   align-items: center;
 }
-.hero .blob-1 { width: 420px; height: 420px; background: var(--rose);     top: -80px;  right: -60px; }
+.hero .blob-1 { width: 420px; height: 420px; background: var(--peach);     top: -80px;  right: -60px; }
 .hero .blob-2 { width: 300px; height: 300px; background: var(--lavender); bottom: 0;   left:  -60px; }
 .hero .blob-3 { width: 200px; height: 200px; background: var(--mint);     top: 40%;    right: 20%;   }
 .hero-grid {
@@ -672,7 +660,7 @@ footer {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 6px;
-  background: linear-gradient(90deg, var(--rose), var(--lavender), var(--mint), var(--peach));
+  background: linear-gradient(90deg, var(--peach), var(--lavender), var(--mint));
 }
 .hero-svg-placeholder {
   width: 100%;
@@ -830,12 +818,12 @@ footer {
 .arg-card:hover               {
   border-color: var(--lavender-deep); }
 .arg-card:hover::after        { opacity: 1; }
-.arg-card:nth-child(1)::after { background: var(--rose); }
+.arg-card:nth-child(1)::after { background: var(--peach); }
 .arg-card:nth-child(2)::after { background: var(--lavender); }
 .arg-card:nth-child(3)::after { background: var(--mint); }
 .arg-card:nth-child(4)::after { background: var(--peach); }
-.arg-card:nth-child(5)::after { background: var(--sky); }
-.arg-card:nth-child(6)::after { background: var(--lemon); }
+.arg-card:nth-child(5)::after { background: var(--lavender); }
+.arg-card:nth-child(6)::after { background: var(--mint); }
 .arg-icon {
   width: 48px; height: 48px;
   border-radius: var(--radius-sm);
@@ -848,7 +836,7 @@ footer {
 
 /* PROFIL */
 .profil { position: relative; overflow: hidden; }
-.profil .blob-p1 { width: 300px; height: 300px; background: var(--rose); top: -100px; right: -100px; }
+.profil .blob-p1 { width: 300px; height: 300px; background: var(--peach); top: -100px; right: -100px; }
 .profil .blob-p2 { width: 250px; height: 250px; background: var(--mint); bottom: -80px; left: -80px; }
 .profil-inner {
   display: grid;
@@ -861,7 +849,7 @@ footer {
 .profil-photo {
   aspect-ratio: 4/5;
   border-radius: var(--radius-lg);
-  background: linear-gradient(145deg, var(--rose), var(--lavender));
+  background: linear-gradient(145deg, var(--peach), var(--lavender));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -916,7 +904,7 @@ footer {
   position: absolute;
   top: 28px; left: 10%; right: 10%;
   height: 3px;
-  background: linear-gradient(90deg, var(--rose), var(--lavender), var(--mint), var(--peach), var(--sky));
+  background: linear-gradient(90deg, var(--peach), var(--lavender), var(--mint));
   border-radius: 3px;
   z-index: 0;
 }
@@ -1157,7 +1145,7 @@ footer {
 /* PAGE HERO — variante services */
 .page-hero .blob-h1 { width: 380px; height: 380px; background: var(--lavender); top: -120px; right: -80px; }
 .page-hero .blob-h2 { width: 280px; height: 280px; background: var(--mint); bottom: -60px; left: -60px; }
-.page-hero .blob-h3 { width: 200px; height: 200px; background: var(--rose); top: 30%; left: 15%; }
+.page-hero .blob-h3 { width: 200px; height: 200px; background: var(--peach); top: 30%; left: 15%; }
 
 /* SERVICES NAV (ancres rapides) */
 .services-nav {
@@ -1432,8 +1420,8 @@ footer {
 
 /* PAGE HERO — variante ressources */
 .page-hero .blob-h1 { width: 400px; height: 400px; background: var(--mint);   top: -130px; right: -80px; }
-.page-hero .blob-h2 { width: 280px; height: 280px; background: var(--rose);   bottom: -60px; left: -60px; }
-.page-hero .blob-h3 { width: 180px; height: 180px; background: var(--lemon);  top: 25%; left: 8%; }
+.page-hero .blob-h2 { width: 280px; height: 280px; background: var(--peach);   bottom: -60px; left: -60px; }
+.page-hero .blob-h3 { width: 180px; height: 180px; background: var(--mint);  top: 25%; left: 8%; }
 
 /* Stat pills in hero */
 .hero-stats {
@@ -1725,7 +1713,7 @@ footer {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 5px;
-  background: linear-gradient(90deg, var(--rose), var(--lavender), var(--mint), var(--peach), var(--sky), var(--lemon));
+  background: linear-gradient(90deg, var(--peach), var(--lavender), var(--mint));
 }
 
 .newsletter-left .tag { margin-bottom: var(--space-md); }
@@ -1848,8 +1836,8 @@ footer {
 
 /* PAGE HERO — variante secteurs */
 .page-hero .blob-h1 { width: 380px; height: 380px; background: var(--peach);    top: -120px; right: -80px; }
-.page-hero .blob-h2 { width: 280px; height: 280px; background: var(--sky);      bottom: -60px; left: -60px; }
-.page-hero .blob-h3 { width: 200px; height: 200px; background: var(--lemon);    top: 30%; left: 10%; }
+.page-hero .blob-h2 { width: 280px; height: 280px; background: var(--lavender);      bottom: -60px; left: -60px; }
+.page-hero .blob-h3 { width: 200px; height: 200px; background: var(--mint);    top: 30%; left: 10%; }
 
 /* SECTEURS NAV (ancres) */
 .secteurs-nav {
@@ -1963,7 +1951,7 @@ footer {
   border-radius: var(--radius-md);
   padding: var(--space-lg);
 }
-.pb-block  { background: #FFF5F5; border: 1px solid var(--rose); }
+.pb-block  { background: #FFF5F5; border: 1px solid var(--peach); }
 .sol-block { background: #F0FDF7; border: 1px solid var(--mint); }
 .block-title {
   font-family: 'DM Sans', sans-serif;
@@ -1993,7 +1981,7 @@ footer {
   flex-shrink: 0;
   margin-top: var(--space-xs);
 }
-.pb-block  .dot { background: var(--rose-d); }
+.pb-block  .dot { background: var(--peach-d); }
 .sol-block .dot { background: var(--mint-d); }
 
 /* Modules chips — secteurs */
@@ -2500,7 +2488,6 @@ body.has-banner header { top: 40px; }
 .service-icon-lavender { background: var(--lavender); }
 .service-icon-mint     { background: var(--mint); }
 .service-icon-peach    { background: var(--peach); }
-.service-icon-sky      { background: var(--sky); }
 .service-card h3 {
   font-family: 'DM Sans', sans-serif;
   font-size: var(--font-md);
@@ -2791,18 +2778,12 @@ main li a:not([class]):hover {
    les badges de categorie. Les eyebrows utilisent simplement .tag desormais. */
 
 .profil-pill--lavender { background: var(--lavender); }
-.profil-pill--rose     { background: var(--rose); }
 .profil-pill--mint     { background: var(--mint); }
 .profil-pill--peach    { background: var(--peach); }
-.profil-pill--sky      { background: var(--sky); }
-.profil-pill--lemon    { background: var(--lemon); }
 
 .arg-icon--lavender { background: var(--lavender); }
-.arg-icon--rose     { background: var(--rose); }
 .arg-icon--mint     { background: var(--mint); }
 .arg-icon--peach    { background: var(--peach); }
-.arg-icon--sky      { background: var(--sky); }
-.arg-icon--lemon    { background: var(--lemon); }
 
 .profil-photo-name { font-size: var(--font-sm); color: var(--white-80); margin-top: var(--space-xs); }
 .rdv-box-secondary { margin-top: var(--space-md); }
@@ -3184,8 +3165,7 @@ main li a:not([class]):hover {
 .card-cat--lavender { background: var(--lavender); color: var(--text); }
 .card-cat--mint     { background: var(--mint);     color: var(--text); }
 .card-cat--peach    { background: var(--peach);    color: var(--text); }
-.card-cat--rose     { background: var(--rose);     color: var(--text); }
-.perk-dot--rose     { background: var(--rose); }
+.perk-dot--peach    { background: var(--peach); }
 .perk-dot--lavender { background: var(--lavender); }
 .perk-dot--mint     { background: var(--mint); }
 .featured-actions   { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-xs); }
@@ -3194,11 +3174,9 @@ main li a:not([class]):hover {
 /* ----------------------------------------------------------------
    AGENCE (qui-sommes-nous) — variantes couleur step-num + lien accentué
 ---------------------------------------------------------------- */
-.step-num--rose     { background: var(--rose); }
 .step-num--lavender { background: var(--lavender); }
 .step-num--mint     { background: var(--mint); }
 .step-num--peach    { background: var(--peach); }
-.step-num--sky      { background: var(--sky); }
 .link-accent        { color: var(--lavender-deep); font-weight: 600; }
 
 /* ----------------------------------------------------------------
@@ -3206,10 +3184,8 @@ main li a:not([class]):hover {
 ---------------------------------------------------------------- */
 .temo-avatar--lavender { background: var(--lavender); }
 .temo-avatar--mint     { background: var(--mint); }
-.temo-avatar--rose     { background: var(--rose); }
-.temo-avatar--sky      { background: var(--sky); }
-.temo-avatar--lemon    { background: var(--lemon); }
-.article-img--rose  { background: linear-gradient(135deg, var(--rose), var(--lavender)); }
-.article-img--mint  { background: linear-gradient(135deg, var(--mint), var(--sky)); }
-.article-img--peach { background: linear-gradient(135deg, var(--peach), var(--lemon)); }
+.temo-avatar--peach    { background: var(--peach); }
+.article-img--peach-lavender { background: linear-gradient(135deg, var(--peach), var(--lavender)); }
+.article-img--mint-lavender  { background: linear-gradient(135deg, var(--mint), var(--lavender)); }
+.article-img--peach-mint     { background: linear-gradient(135deg, var(--peach), var(--mint)); }
 .article-btn { align-self: flex-start; padding: var(--space-xs) var(--space-md); font-size: var(--font-sm); }

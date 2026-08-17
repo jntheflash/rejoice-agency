@@ -69,6 +69,10 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 - Aucune valeur d'espacement en dur : uniquement `var(--space-*)`
 - Aucune taille de police en dur : uniquement `var(--font-*)`
 - Aucune couleur en dur : uniquement les variables de couleur
+- Palette de marque réduite à 3 pastels : `lavender`, `mint`, `peach`
+  (+ variantes `-d`). Les anciens `rose`, `sky` et `lemon` n'existent
+  plus (tokens et classes modificatrices supprimés) ; ne pas les
+  réintroduire.
 - Aucune ombre : le site n'en utilise plus (`box-shadow` interdit, tokens
   `--shadow*` supprimés). La délimitation passe par `1px solid var(--border)` ;
   le survol par `border-color: var(--lavender-deep)` (ou `translateY(-2px)` sur
