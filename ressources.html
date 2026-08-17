@@ -203,7 +203,7 @@
         </div>
         <div class="featured-body">
           <div class="featured-meta">
-            <span style="background:var(--rose);color:var(--text);padding:.2rem .7rem;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase">Actualités</span>
+            <span class="card-cat card-cat--rose">Actualités</span>
             <span class="sep">·</span>
             <span>12 août 2026</span>
             <span class="sep">·</span>
@@ -211,7 +211,7 @@
           </div>
           <h2>Actualités Odoo (août 2026) : facture électronique</h2>
           <p>Le décret qui verrouille le calendrier de la facture électronique, deux nouveautés côté OCA, les nominés des Odoo Awards 2026 et le programme complet d'Odoo Experience 2026. Le récap du mois.</p>
-          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem">
+          <div class="featured-actions">
             <a href="ressources/actualites-odoo-aout-2026" class="btn btn-primary">Lire l'article →</a>
             <span class="read-time">⏱️ 5 min</span>
           </div>
@@ -221,11 +221,11 @@
   </section>
 
   <!-- ════════════════════════ GUIDES ODOO ════════════════════════ -->
-  <section class="blog-section" style="padding-top:0">
+  <section class="blog-section">
     <div class="container">
-      <div class="filters-bar" style="margin-bottom:1.5rem">
+      <div class="filters-bar filters-bar--tight">
         <div class="tag">Guides pratiques</div>
-        <span style="font-size:1rem;font-weight:600;color:var(--text)">Les essentiels avant de se lancer</span>
+        <span class="filter-label">Les essentiels avant de se lancer</span>
       </div>
       <div class="articles-grid">
 
@@ -237,7 +237,7 @@
             <span class="card-img-emoji">&#x2753;</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--lavender);color:var(--text)">Guide</span>
+            <span class="card-cat card-cat--lavender">Guide</span>
             <h3>Pourquoi choisir Odoo ?</h3>
             <p class="card-excerpt">Les 6 raisons qui font d'Odoo l'ERP préféré des PME</p>
             <div class="card-footer">
@@ -257,7 +257,7 @@
             <span class="card-img-emoji">&#x1F4D6;</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--mint);color:var(--text)">Guide</span>
+            <span class="card-cat card-cat--mint">Guide</span>
             <h3>Qu'est-ce qu'un ERP ?</h3>
             <p class="card-excerpt">Définition, fonctionnement et guide pour choisir le bon logiciel</p>
             <div class="card-footer">
@@ -277,7 +277,7 @@
             <span class="card-img-emoji">&#x1F6E0;&#xFE0F;</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--peach);color:var(--text)">Guide</span>
+            <span class="card-cat card-cat--peach">Guide</span>
             <h3>Comment intégrer Odoo ?</h3>
             <p class="card-excerpt">Les étapes clés d'un déploiement réussi pour votre PME</p>
             <div class="card-footer">
@@ -297,7 +297,7 @@
             <span class="card-img-emoji">&#x2696;&#xFE0F;</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--rose);color:var(--text)">Comparatif</span>
+            <span class="card-cat card-cat--rose">Comparatif</span>
             <h3>Community vs Enterprise</h3>
             <p class="card-excerpt">Quelle édition Odoo choisir pour votre activité ?</p>
             <div class="card-footer">
@@ -335,7 +335,7 @@
             <span class="card-img-emoji">🧾</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--rose);color:var(--text)">Actualités</span>
+            <span class="card-cat card-cat--rose">Actualités</span>
             <h3>Actualités Odoo (août 2026) : facture électronique</h3>
             <p class="card-excerpt">Décret facture électronique, compte à rebours vers le 1er septembre, nouveautés OCA, Odoo Awards 2026 et programme d'Odoo Experience 2026.</p>
             <div class="card-footer">
@@ -357,7 +357,7 @@
             <span class="card-img-emoji">🤖</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--rose);color:var(--text)">Actualités</span>
+            <span class="card-cat card-cat--rose">Actualités</span>
             <h3>Actualités Odoo (juillet 2026) : MCP natif et 2,1 M d'utilisateurs</h3>
             <p class="card-excerpt">Serveur MCP natif dans Odoo 20, cap des 2,1 millions d'utilisateurs payants, alerte de sécurité sur Odoo.sh et route vers Odoo Experience 2026 à Bruxelles.</p>
             <div class="card-footer">
@@ -379,7 +379,7 @@
             <span class="card-img-emoji">📰</span>
           </div>
           <div class="card-body">
-            <span class="card-cat" style="background:var(--rose);color:var(--text)">Actualités</span>
+            <span class="card-cat card-cat--rose">Actualités</span>
             <h3>Actualités Odoo : Odoo 20, affiliation et expansion DACH</h3>
             <p class="card-excerpt">L'écosystème Odoo a connu une semaine dense : aperçus techniques d'Odoo 20, lancement d'un programme d'affiliation grand public et nouvelles du Partner Day DACH 2026.</p>
             <div class="card-footer">
@@ -424,15 +424,15 @@
           <p>Chaque mois, un email avec le meilleur de l'actualité Odoo : nouvelles fonctionnalités, retours d'expérience, conseils pratiques et ressources exclusives.</p>
           <div class="newsletter-perks">
             <div class="perk">
-              <div class="perk-dot" style="background:var(--rose)">✓</div>
+              <div class="perk-dot perk-dot--rose">✓</div>
               1 email par mois, pas de spam
             </div>
             <div class="perk">
-              <div class="perk-dot" style="background:var(--lavender)">✓</div>
+              <div class="perk-dot perk-dot--lavender">✓</div>
               Contenus exclusifs réservés aux abonnés
             </div>
             <div class="perk">
-              <div class="perk-dot" style="background:var(--mint)">✓</div>
+              <div class="perk-dot perk-dot--mint">✓</div>
               Désabonnement en un clic, à tout moment
             </div>
           </div>

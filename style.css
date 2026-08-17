@@ -3197,3 +3197,18 @@ main li a:not([class]):hover {
 .error-hero .tag { margin-bottom: var(--space-lg); }
 .error-hero h1 { font-size: var(--font-display); }
 .error-hero p { margin: var(--space-lg) 0 var(--space-xxl); }
+
+/* ----------------------------------------------------------------
+   RESSOURCES — variantes couleur (fonds token) + petits blocs
+---------------------------------------------------------------- */
+.card-cat--lavender { background: var(--lavender); color: var(--text); }
+.card-cat--mint     { background: var(--mint);     color: var(--text); }
+.card-cat--peach    { background: var(--peach);    color: var(--text); }
+.card-cat--rose     { background: var(--rose);     color: var(--text); }
+.perk-dot--rose     { background: var(--rose); }
+.perk-dot--lavender { background: var(--lavender); }
+.perk-dot--mint     { background: var(--mint); }
+.filter-label       { font-size: var(--font-md); font-weight: 600; color: var(--text); }
+.featured-actions   { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-xs); }
+.filters-bar--tight { margin-bottom: var(--space-lg); }
+.featured-meta .card-cat { align-self: auto; }  /* badge vedette : recentré dans la ligne méta */

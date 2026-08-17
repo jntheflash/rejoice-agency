@@ -88,6 +88,10 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 - `max-width: 300px` et `320px` dans les media queries mobiles et
   sur `.footer-brand p`
 - `0`, `auto`, `100%`, `none`
+- `ressources.html` : la géométrie décorative des cercles (`.deco-circle`),
+  les dégradés de cartes (`.card-img`/`.featured-img`) et l'emoji vedette
+  (`font-size:5rem`) restent inline — valeurs uniques, non réutilisables,
+  choisies visuellement.
 
 **Méthode de travail sur le CSS :**
 - Une section ou un fichier à la fois. Jamais une page entière.
