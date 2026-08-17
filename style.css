@@ -261,7 +261,7 @@ main > section { background: var(--section-bg); }
 main > section:nth-of-type(even) { background: var(--section-bg-alt); }
 .section-header {
   text-align: center;
-  max-width: 660px;
+  max-width: var(--width-md);
   margin: 0 auto 3.5rem;
 }
 .section-header h2 { margin-bottom: var(--space-sm); }
@@ -402,7 +402,7 @@ nav a.active  { color: var(--text); }
 .page-hero-inner {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: var(--width-md);
   margin: 0 auto;
 }
 .breadcrumb {
@@ -466,14 +466,14 @@ nav a.active  { color: var(--text); }
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: 3.5rem;
-  max-width: 700px;
+  max-width: var(--width-md);
   margin: 0 auto;
   position: relative;
   z-index: 1;
   text-align: center;
 }
 .cta-box h2 { margin-bottom: var(--space-sm); }
-.cta-box p  { color: var(--muted); max-width: 480px; margin: 0 auto var(--space-xl); }
+.cta-box p  { color: var(--muted); max-width: var(--width-sm); margin: 0 auto var(--space-xl); }
 .cta-btns   { display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; }
 
 /* ----------------------------------------------------------------
@@ -632,7 +632,7 @@ footer {
 .hero-body {
   font-size: var(--font-md);
   color: var(--muted);
-  max-width: 480px;
+  max-width: var(--width-sm);
   margin-bottom: var(--space-xl);
 }
 .hero-btns    { display: flex; gap: var(--space-md); flex-wrap: wrap; }
@@ -955,7 +955,7 @@ footer {
   background: var(--white);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
-  max-width: 700px;
+  max-width: var(--width-md);
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -970,7 +970,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
-  max-width: 1200px;
+  max-width: var(--width-lg);
   margin: 0 auto;
   align-items: start;
   position: relative;
@@ -983,7 +983,7 @@ footer {
 .rdv-intro { text-align: left; }
 .rdv-intro .tag { margin-bottom: var(--space-sm); }
 .rdv-intro h2   { margin: 0 0 var(--space-sm); }
-.rdv-intro > p  { color: var(--muted); margin: 0 0 var(--space-lg); max-width: 480px; }
+.rdv-intro > p  { color: var(--muted); margin: 0 0 var(--space-lg); max-width: var(--width-sm); }
 .rdv-intro .btn-outline { margin: 0 0 var(--space-md); }
 .rdv-intro .rdv-alt,
 .rdv-intro .rdv-calendar-fallback {
@@ -1030,7 +1030,7 @@ footer {
   border-radius: var(--radius-md);
   background: var(--bg);
 }
-.rdv-calendar-notice p { margin: 0; max-width: 480px; color: var(--muted); font-size: var(--font-md); }
+.rdv-calendar-notice p { margin: 0; max-width: var(--width-sm); color: var(--muted); font-size: var(--font-md); }
 
 /* Indicateur de chargement affiche pendant que l'iframe se charge.
    Overlay plein cadre, masque au declenchement de iframe.load. */
@@ -1070,7 +1070,7 @@ footer {
 .rdv-alt a { text-decoration: underline; color: var(--text); }
 
 /* FAQ */
-.faq-list { max-width: 740px; margin: 0 auto; }
+.faq-list { max-width: var(--width-md); margin: 0 auto; }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-item:last-child { border-bottom: none; }
 .faq-question {
@@ -1699,7 +1699,7 @@ footer {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: var(--space-3xl) 3.5rem;
-  max-width: 780px;
+  max-width: var(--width-md);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2314,7 +2314,7 @@ body.has-banner header { top: 40px; }
   right: 20px;
   z-index: 9998;
   width: calc(100% - 40px);
-  max-width: 380px;
+  max-width: var(--width-xs);
   display: none;
   flex-direction: column;
   gap: var(--space-sm);

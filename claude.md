@@ -96,6 +96,9 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 - `max-width: 300px` et `320px` dans les media queries mobiles et
   sur `.footer-brand p`
 - `0`, `auto`, `100%`, `none`
+- `max-width: 540px` (`.temos-grid`) et `560px` (`.page-hero p`) restent
+  en dur : elles tombent entre `--width-sm` (480) et `--width-md` (720),
+  aucun token n'est assez proche.
 - `ressources.html` : la géométrie décorative des cercles (`.deco-circle`),
   les dégradés de cartes (`.card-img`/`.featured-img`) et l'emoji vedette
   (`font-size:5rem`) restent inline — valeurs uniques, non réutilisables,
