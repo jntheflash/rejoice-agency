@@ -1566,8 +1566,6 @@ footer {
 .results-count strong { color: var(--text); }
 
 /* GRILLE D'ARTICLES */
-.blog-section { padding-top: 0; }
-
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3190,9 +3188,7 @@ main li a:not([class]):hover {
 .perk-dot--rose     { background: var(--rose); }
 .perk-dot--lavender { background: var(--lavender); }
 .perk-dot--mint     { background: var(--mint); }
-.filter-label       { font-size: var(--font-md); font-weight: 600; color: var(--text); }
 .featured-actions   { display: flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-xs); }
-.filters-bar--tight { margin-bottom: var(--space-lg); }
 .featured-meta .card-cat { align-self: auto; }  /* badge vedette : recentré dans la ligne méta */
 
 /* ----------------------------------------------------------------
