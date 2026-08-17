@@ -157,10 +157,6 @@
         document.getElementById('burger').setAttribute('aria-expanded', 'false');
       });
     });
-    window.addEventListener('scroll', function() {
-      var h = document.querySelector('header');
-      h.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(45,42,38,.08)' : 'none';
-    });
     /* Dropdown nav — clic mobile uniquement */
     document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
       toggle.addEventListener('click', function(e) {

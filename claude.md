@@ -69,7 +69,10 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 - Aucune valeur d'espacement en dur : uniquement `var(--space-*)`
 - Aucune taille de police en dur : uniquement `var(--font-*)`
 - Aucune couleur en dur : uniquement les variables de couleur
-- Aucune ombre en dur : uniquement `var(--shadow*)`
+- Aucune ombre : le site n'en utilise plus (`box-shadow` interdit, tokens
+  `--shadow*` supprimés). La délimitation passe par `1px solid var(--border)` ;
+  le survol par `border-color: var(--lavender-deep)` (ou `translateY(-2px)` sur
+  les boutons pleins). Seule exception : l'anneau de focus `.form-input:focus`.
 - Aucune largeur de conteneur en dur : uniquement `var(--width-*)`
 - Aucune police ajoutée : Caveat + DM Sans, point.
 - Aucune librairie, dépendance ou framework ajouté.
