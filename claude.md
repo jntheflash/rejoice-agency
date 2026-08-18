@@ -58,6 +58,14 @@ Liens simples : "Ressources" → `/ressources`, "Tarifs" → `/tarifs-odoo`, "L'
 Règles visuelles : `dd-dot` colorés sur desktop uniquement ; mobile sans `dd-dot`, CTA `align-start`
 (sauf pages légales) ; fond blanc pur ; dropdowns en `<button>` (pas `<a href="#">`).
 
+**Libellés des liens de rendez-vous (accessibilité — libellé unique par destination) :**
+- **"Prendre RDV"** = liens vers l'ancre `/#rdv` (section RDV de l'accueil). Toujours
+  `/#rdv` avec le slash, jamais `#rdv` nu.
+- **"Réserver un créneau"** = liens vers le calendrier externe
+  `calendar.app.google` (footer, boutons de section, fallback). Ne pas réutiliser
+  "Prendre RDV" pour le calendrier. Seule exception tolérée : un lien de prose
+  inline (ex. `link-accent`), qui suit la grammaire de la phrase.
+
 ## Design system — règles CSS (STRICTES)
 
 Tous les tokens sont dans le `:root` de `style.css`. Aucune valeur
@@ -66,6 +74,11 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 **Interdits absolus :**
 - Aucun attribut `style=""` inline dans le HTML. Toute règle va
   dans `style.css`, via une classe. Si une classe manque, on la crée.
+- Aucune flèche (`→`) dans le texte d'un lien : elle est rendue en CSS
+  via `::after`. Classes porteuses : `.top-banner a`, `.arg-card-link`,
+  `.card-btn`, `.article-btn`, `.related-card-link`, et `.btn-arrow`
+  (modificateur à ajouter aux boutons CTA qui doivent afficher une flèche ;
+  ne jamais le mettre sur la nav, le footer ou les boutons calendrier).
 - Aucune valeur d'espacement en dur : uniquement `var(--space-*)`
 - Aucune taille de police en dur : uniquement `var(--font-*)`
 - Aucune couleur en dur : uniquement les variables de couleur

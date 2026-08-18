@@ -241,6 +241,16 @@ body::after {
 .btn-peach      { background: var(--peach);    color: var(--text); }
 .btn-white      { background: var(--white);    color: var(--text); }
 
+/* Flèche des liens/CTA — rendue en CSS, jamais dans le texte du lien.
+   Sur les conteneurs inline-flex (.btn, .arg-card-link, .card-btn),
+   le gap gère l'espacement ; sinon on préfixe d'une espace insécable. */
+.arg-card-link::after,
+.card-btn::after,
+.article-btn::after,
+.btn-arrow::after      { content: "\2192"; }
+.top-banner a::after,
+.related-card-link::after { content: "\00a0\2192"; }
+
 /* Blobs */
 .blob {
   position: absolute;
