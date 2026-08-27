@@ -834,6 +834,8 @@ footer {
 .arg-card:nth-child(4)::after { background: var(--peach); }
 .arg-card:nth-child(5)::after { background: var(--lavender); }
 .arg-card:nth-child(6)::after { background: var(--mint); }
+/* Cartes de prix : pas d'accent coloré en bas, seul le contour réagit au survol */
+.arg-card:has(.pricing-price)::after { display: none; }
 .arg-icon {
   width: 48px; height: 48px;
   border-radius: var(--radius-sm);
@@ -1320,25 +1322,27 @@ footer {
 .compare-table th {
   padding: var(--space-md) var(--space-lg);
   text-align: left;
+  vertical-align: top;
   font-size: var(--font-xs);
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--muted);
   background: var(--bg);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
+.compare-table thead th { border-bottom: 2px solid var(--border); }
 .compare-table td {
   padding: var(--space-md) var(--space-lg);
   border-bottom: 1px solid var(--border);
-  vertical-align: middle;
+  vertical-align: top;
 }
 .compare-table tr:last-child td { border-bottom: none; }
 .compare-table tr:hover td { background: #F7F4F0; }
 .compare-table .service-name {
   font-weight: 700;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-xs);
 }
 .check-yes  { color: #48BB78; font-size: var(--font-md); }
@@ -2702,7 +2706,7 @@ main li a:not([class]):hover {
 }
 .feature-visual--lavande { background: var(--lavender-soft); }
 .feature-visual--menthe  { background: #EAFAF4; }
-.feature-visual--peche   { background: #FFF5E6; }
+.feature-visual--peche   { background: var(--peach-soft); }
 .feature-visual--ciel    { background: #E8F4FD; }
 .feature-visual-emoji {
   font-size: 2.4rem;
@@ -2739,6 +2743,8 @@ main li a:not([class]):hover {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: var(--space-lg);
 }
+/* Écart quand le bandeau suit directement une grille (cartes de prix) */
+.args-grid + .benefit-band { margin-top: var(--space-xl); }
 .benefit-item {
   display: flex;
   flex-direction: column;
@@ -2809,20 +2815,23 @@ main li a:not([class]):hover {
   display: block;
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: clamp(2.4rem, 3.8vw, 3.2rem);
+  font-size: var(--font-display);
   line-height: 1;
   color: var(--text);
-  margin: var(--space-2xs) 0 var(--space-2xs);
+  margin: var(--space-xs) 0 var(--space-2xs);
 }
 .pricing-unit { display: block; font-size: var(--font-sm); color: var(--muted); margin-bottom: var(--space-2xs); }
 .pricing-alt  { display: block; font-size: var(--font-xs); color: var(--muted); }
+.pricing-unit + p, .pricing-alt + p { margin-top: var(--space-sm); }
+/* Sous-titre suivant une note : rétablit le rythme vertical entre les textes */
+.muted-note + h3 { margin-top: var(--space-2xl); }
 
 /* --- Carte tarif mise en avant --- */
-.arg-card--featured { border: 2px solid var(--lavender-deep); position: relative; }
+.arg-card--featured { border: 2px solid var(--lavender-deep); position: relative; overflow: visible; }
 .arg-card--featured::before {
   content: 'Le plus choisi';
   position: absolute;
-  top: -.7rem; left: 1.25rem;
+  top: calc(-1 * var(--space-sm)); left: var(--space-lg);
   background: var(--lavender-deep);
   color: var(--white);
   font-family: 'DM Sans', sans-serif;

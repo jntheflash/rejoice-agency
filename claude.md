@@ -74,6 +74,8 @@ en dur n'est autorisée en dehors des exceptions listées plus bas.
 **Interdits absolus :**
 - Aucun attribut `style=""` inline dans le HTML. Toute règle va
   dans `style.css`, via une classe. Si une classe manque, on la crée.
+- Aucun tiret cadratin (`—`) nulle part dans le contenu : jamais.
+  Utiliser deux-points, une virgule ou un point selon la phrase.
 - Aucune flèche (`→`) dans le texte d'un lien : elle est rendue en CSS
   via `::after`. Classes porteuses : `.top-banner a`, `.arg-card-link`,
   `.card-btn`, `.article-btn`, `.related-card-link`, et `.btn-arrow`
