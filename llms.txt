@@ -43,6 +43,7 @@
 - [Actualités Odoo (juin 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juin-2026): Aperçus d'Odoo 20, nouveau programme d'affiliation, expansion DACH et intégration de l'IA Claude. Le récap de la semaine.
 - [Actualités Odoo (juillet 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juillet-2026): Serveur MCP natif dans Odoo 20, cap des 2,1 millions d'utilisateurs payants, alerte Odoo.sh, route vers Odoo Experience 2026 et report de Veri*Factu.
 - [Actualités Odoo (août 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-aout-2026): Décret sur la facture électronique, compte à rebours vers le 1er septembre 2026, nouveautés OCA, nominés Odoo Awards 2026 et programme complet d'Odoo Experience 2026.
+- [Odoo vs Dolibarr](https://rejoice-agency.fr/ressources/odoo-vs-dolibarr): Comparatif fonctionnel, coûts réels et cas d'usage entre Dolibarr (gratuit, léger) et Odoo (suite complète et évolutive) pour choisir le bon ERP.
 
 ## L'agence
 
