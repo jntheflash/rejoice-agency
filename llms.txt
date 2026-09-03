@@ -40,13 +40,14 @@
 - [Comment intégrer Odoo dans votre PME ?](https://rejoice-agency.fr/ressources/comment-integrer-odoo): Guide complet. Étapes, durée, coût, points de vigilance avant de se lancer.
 - [Odoo Community vs Enterprise](https://rejoice-agency.fr/ressources/odoo-community-vs-enterprise): Community gratuit ou Enterprise sur abonnement ? Comparatif et conseils pour choisir la bonne édition Odoo.
 - [Combien d'outils une PME peut remplacer par Odoo ?](https://rejoice-agency.fr/ressources/outils-remplaces-par-odoo): CRM, compta, stock, RH, site web, mailing… l'inventaire des logiciels qu'Odoo remplace vraiment, la consolidation d'abonnements et les limites.
+- [Facture électronique 2026 : ce qui change pour les PME](https://rejoice-agency.fr/ressources/facture-electronique-2026): Réception obligatoire depuis le 1er septembre 2026, émission en 2027 pour les PME, formats Factur-X, UBL, CII et comment préparer votre entreprise.
 - [Actualités Odoo (juin 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juin-2026): Aperçus d'Odoo 20, nouveau programme d'affiliation, expansion DACH et intégration de l'IA Claude. Le récap de la semaine.
 - [Actualités Odoo (juillet 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juillet-2026): Serveur MCP natif dans Odoo 20, cap des 2,1 millions d'utilisateurs payants, alerte Odoo.sh, route vers Odoo Experience 2026 et report de Veri*Factu.
 - [Actualités Odoo (août 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-aout-2026): Décret sur la facture électronique, compte à rebours vers le 1er septembre 2026, nouveautés OCA, nominés Odoo Awards 2026 et programme complet d'Odoo Experience 2026.
 
 ## L'agence
 
-- [L'Agence Rejoice](https://rejoice-agency.fr/agence/qui-sommes-nous): Sophie Merdrignac, intégratrice Odoo certifiée à Nantes. Histoire, vision, méthode en 5 étapes (audit, cadrage, paramétrage, formation, suivi) et contact — appel découverte gratuit de 30 min, réponse sous 24 h.
+- [L'Agence Rejoice](https://rejoice-agency.fr/agence/qui-sommes-nous): Sophie Merdrignac, intégratrice Odoo certifiée à Nantes. Histoire, vision, méthode en 5 étapes (audit, cadrage, paramétrage, formation, suivi) et contact. Appel découverte gratuit de 30 min, réponse sous 24 h.
 
 ## Optional
 
