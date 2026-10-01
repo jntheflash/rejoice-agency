@@ -1,13 +1,13 @@
-# Rejoice Agency
+# Rejoice
 
-> Rejoice est une agence d'intégration Odoo certifiée, basée à Nantes, qui accompagne les PME et TPE dans leur transformation digitale : audit, intégration, développement et formation sur Odoo. Interlocutrice : Sophie Merdrignac (sophie@rejoice-agency.fr).
+> Rejoice est le nom sous lequel Sophie Merdrignac exerce comme intégratrice Odoo certifiée freelance, basée à Nantes. Elle accompagne les PME et TPE dans leur transformation digitale : audit, intégration, développement et formation sur Odoo. Interlocutrice unique : Sophie Merdrignac (sophie@rejoice-agency.fr).
 
 ## Pages principales
 
-- [Accueil](https://rejoice-agency.fr/): Rejoice Agency, expert Odoo certifié. Intégration ERP sur mesure pour PME. Audit, déploiement, formation. Démarrage en 15 jours.
-- [Tarifs Odoo](https://rejoice-agency.fr/tarifs-odoo): Prix des licences Odoo, coût d'intégration et budget réel d'un projet. Le vrai coût d'Odoo expliqué simplement, sans frais cachés, par une agence certifiée.
+- [Accueil](https://rejoice-agency.fr/): Rejoice : Sophie Merdrignac, intégratrice Odoo certifiée en freelance. ERP sur mesure pour PME : audit, déploiement, formation. Démarrage en 15 jours.
+- [Tarifs Odoo](https://rejoice-agency.fr/tarifs-odoo): Prix des licences Odoo, coût d'intégration et budget réel d'un projet. Le vrai coût d'Odoo expliqué simplement, sans frais cachés, par une intégratrice certifiée.
 
-## Nos expertises Odoo
+## Mes expertises Odoo
 
 - [Consultant Odoo certifié pour PME](https://rejoice-agency.fr/services/consultant-odoo): Audit de votre ERP et CRM, analyse des besoins, recommandations personnalisées. Devis gratuit.
 - [Intégrateur Odoo certifié pour PME](https://rejoice-agency.fr/services/integration-odoo): Intégration Odoo clé en main. Paramétrage, migration de données, formation incluse. Démarrage en 15 jours.
@@ -47,12 +47,12 @@
 - [Actualités Odoo (juillet 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-juillet-2026): Serveur MCP natif dans Odoo 20, cap des 2,1 millions d'utilisateurs payants, alerte Odoo.sh, route vers Odoo Experience 2026 et report de Veri*Factu.
 - [Actualités Odoo (août 2026)](https://rejoice-agency.fr/ressources/actualites-odoo-aout-2026): Décret sur la facture électronique, compte à rebours vers le 1er septembre 2026, nouveautés OCA, nominés Odoo Awards 2026 et programme complet d'Odoo Experience 2026.
 
-## L'agence
+## À propos
 
-- [L'Agence Rejoice](https://rejoice-agency.fr/agence/qui-sommes-nous): Sophie Merdrignac, intégratrice Odoo certifiée à Nantes. Histoire, vision, méthode en 5 étapes (audit, cadrage, paramétrage, formation, suivi) et contact. Appel découverte gratuit de 30 min, réponse sous 24 h.
+- [À propos de Rejoice](https://rejoice-agency.fr/agence/qui-sommes-nous): Sophie Merdrignac, intégratrice Odoo certifiée à Nantes. Histoire, vision, méthode en 5 étapes (audit, cadrage, paramétrage, formation, suivi) et contact. Appel découverte gratuit de 30 min, réponse sous 24 h.
 
 ## Optional
 
-- [Mentions légales](https://rejoice-agency.fr/mentions-legales): Mentions légales de Rejoice Agency. Éditeur, hébergeur, politique de confidentialité.
+- [Mentions légales](https://rejoice-agency.fr/mentions-legales): Mentions légales de Rejoice. Éditeur, hébergeur, politique de confidentialité.
 - [Politique de confidentialité](https://rejoice-agency.fr/politique-confidentialite): Données collectées, finalité, droits RGPD et contact.
 - [Politique de cookies](https://rejoice-agency.fr/politique-cookies): Cookies utilisés, durée de conservation et gestion des préférences.
