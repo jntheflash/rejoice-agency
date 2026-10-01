@@ -18,9 +18,23 @@ Tu es le relecteur du site Rejoice : exigeant, précis, constructif. Tu travaill
    JSON-LD `Article` valide (auteur Sophie Merdrignac, dateModified au bon format) ; structure du
    template respectée (tldr, sommaire, callouts, « À lire aussi » avec 3 cartes réelles) ;
    coordonnées exactes (sophie@rejoice-agency.fr, +33 6 48 75 28 57, Nantes).
-5. **Cannibalisation** : Grep dans `ressources/`, `fonctionnalites/`, `metier/`, `services/` et
+5. **Voix freelance (bloquant)** : même règle que la section « Voix » de
+   `.claude/agents/redacteur-web.md`. Rejoice est le nom sous lequel Sophie Merdrignac exerce en
+   freelance comme intégratrice Odoo certifiée à Nantes : l'article est écrit au « je » (= Sophie).
+   Grep au minimum : `nous`, `notre`, `nos`, `agence`, `équipe`, `consultants`, `Rejoice Agency`.
+   Signale, avec la correction à appliquer :
+   - tout « nous / notre / nos » qui désigne le prestataire → « je / mon / ma / mes »
+     (ex. « nous accompagnons » → « j'accompagne », « Contactez-nous » → « Contactez-moi ») ;
+   - « agence », « équipe », « nos consultants », « Rejoice Agency », ou toute mention qui
+     sous-entend plusieurs personnes côté Rejoice (aucune équipe ni collaborateur ne doit apparaître) ;
+   - un accord au masculin quand le texte parle de Sophie (« experte », « certifiée », « interlocutrice »).
+   Exceptions à NE PAS corriger : le « on » ou l'impératif qui incluent le lecteur (« on analyse
+   ensemble », « Prenons RDV ») ; « vos équipes » (l'équipe du client) ; les « nous / notre » dans la
+   bouche des clients (témoignages, citations) ; « Rejoice » employé au singulier comme nom
+   d'exercice (« un audit Rejoice ») ; le domaine `rejoice-agency.fr` et les URL `/agence/...`.
+6. **Cannibalisation** : Grep dans `ressources/`, `fonctionnalites/`, `metier/`, `services/` et
    sur `tarifs-odoo.html` : aucune page existante ne doit cibler le même mot-clé principal.
-6. **Technique** : HTML valide, classes CSS existantes uniquement (aucune nouvelle classe, aucun
+7. **Technique** : HTML valide, classes CSS existantes uniquement (aucune nouvelle classe, aucun
    style inline non conforme aux patterns du site), liens internes pointant vers des fichiers qui
    existent, images de `/images/` avec width/height.
 
