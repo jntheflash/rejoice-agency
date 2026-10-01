@@ -11,8 +11,13 @@ Crée un nouvel article pour la section Ressources sur le sujet : $ARGUMENTS
 
 1. Lance l'agent `redacteur-web` pour rédiger le brouillon dans `drafts/` (template
    `templates/article.html` obligatoire, recherche web réelle, sources citées).
-2. Lance l'agent `relecteur-seo` sur le brouillon. S'il répond « À REVOIR », fais corriger par
-   `redacteur-web` puis refais relire (2 allers-retours maximum).
+2. Lance l'agent `relecteur-seo` sur le brouillon. Dès qu'il liste des corrections, QUEL QUE
+   SOIT le verdict (« À REVOIR » comme « PRÊT À PUBLIER » avec corrections mineures), transmets
+   la liste complète à `redacteur-web` pour qu'il les applique, puis refais relire
+   (2 allers-retours maximum). Le brouillon n'est considéré comme prêt que lorsque le relecteur
+   rend « PRÊT À PUBLIER » SANS aucune correction en attente, ni majeure ni mineure. Si des
+   corrections restent après 2 allers-retours, ne le présente pas comme prêt : signale-moi
+   lesquelles.
 3. Une fois le brouillon « PRÊT À PUBLIER », présente-moi : le titre, la meta description,
    le mot-clé visé, la catégorie, un résumé en 3 phrases et les sources utilisées. Propose-moi
    d'ouvrir le fichier `drafts/<slug>.html` dans mon navigateur pour le lire.
