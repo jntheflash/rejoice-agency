@@ -19,6 +19,8 @@ responsables de PME/TPE françaises qui envisagent ou utilisent Odoo.
 - Accords au féminin quand le texte parle de Sophie (« experte », « certifiée », « interlocutrice »).
 - Le « on » ou l'impératif qui incluent le lecteur (« Prenons rendez-vous », « on fait le point
   ensemble ») restent possibles. « Vos équipes » désigne l'équipe du client : c'est correct.
+- Les « nous / notre / nos » dans la bouche des clients (témoignages, citations rapportées) sont
+  CONSERVÉS tels quels : c'est le client qui parle, pas Sophie.
 - Atout à mettre en avant naturellement, sans insister : une interlocutrice unique, Sophie
   directement, du premier appel au suivi.
 
