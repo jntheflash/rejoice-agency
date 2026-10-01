@@ -12,7 +12,7 @@
 - [Consultant Odoo certifié pour PME](https://rejoice-agency.fr/services/consultant-odoo): Audit de votre ERP et CRM, analyse des besoins, recommandations personnalisées. Devis gratuit.
 - [Intégrateur Odoo certifié pour PME](https://rejoice-agency.fr/services/integration-odoo): Intégration Odoo clé en main. Paramétrage, migration de données, formation incluse. Démarrage en 15 jours.
 - [Développeur Odoo sur mesure](https://rejoice-agency.fr/services/developpement-odoo): Modules métier, automatisations, connecteurs. Votre Odoo adapté à 100% à vos processus.
-- [Formation Odoo pour PME](https://rejoice-agency.fr/services/formation-odoo): Formation sur mesure pour vos équipes. Présentiel ou distanciel, débutants ou avancés. Certifiée Odoo Partner.
+- [Formation Odoo pour PME](https://rejoice-agency.fr/services/formation-odoo): Formation sur mesure pour vos équipes. Présentiel ou distanciel, débutants ou avancés. Intégratrice Odoo certifiée.
 
 ## Fonctionnalités Odoo
 
